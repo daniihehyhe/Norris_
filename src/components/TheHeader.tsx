@@ -34,7 +34,12 @@ function TheHeader() {
         };
     }, []);
 
-    const menuItems = [
+interface MenuItem {
+    label: string;
+    link: string;
+}
+
+    const menuItems: MenuItem[] = [
         { label: t("services"), link: "/services" },
         { label: t("aboutUs"), link: "/about" },
         { label: t("portfolio"), link: "/portfolio" },
