@@ -9,9 +9,8 @@ const nextIntlMiddleware = createMiddleware({
     defaultLocale: "ru",
 });
 
-
-export default function (req:NextRequest) {
-	return nextIntlMiddleware(req)
+export default function intlMiddleware(req: NextRequest) {
+    return nextIntlMiddleware(req);
 }
 
 export const config = {
