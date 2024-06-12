@@ -29,12 +29,11 @@
     "slides_slide5_description": "Үйүңүздүн функционалдуулугун жана ыңгайлуулугун жогорулатуу үчүн ар кандай сенсорлорду орнотуу жана конфигурациялоо.",
     "contactButton": "Байланыш",
     "learnMoreButton": "Көбүрөөк билүү",
-    "contactModal":{
- "contactButton": "Байланыш",
-  "modalTitle": "Байланыш",
-  "nameLabel": "Аты-жөнү",
-  "emailLabel": "Электрондук почта",
-  "phoneLabel": "Телефон",
-  "submitButton": "Жөнөтүү"
+    
+ "contactModal_contactButton": "Байланыш",
+  "contactModal_modalTitle": "Байланыш",
+  "contactModal_nameLabel": "Аты-жөнү",
+  "contactModal_emailLabel": "Электрондук почта",
+  "contactModal_phoneLabel": "Телефон",
+  "contactModal_submitButton": "Жөнөтүү"
 }
-  }

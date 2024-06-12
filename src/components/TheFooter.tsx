@@ -1,4 +1,3 @@
-// app/components/TheFooter.jsx
 "use client";
 
 import Link from "next/link";

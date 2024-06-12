@@ -7,7 +7,6 @@ import TheHeader from "../../components/TheHeader";
 import TheFooter from "../../components/TheFooter";
 
 
-
 type Props ={
     children: React.ReactNode;
     params:{
@@ -29,7 +28,7 @@ const RootLayout:React.FC<Props>=({
                     <ThemeProvider>
                         <TheHeader />
                         {children}
-                        <TheFooter/>
+                        <TheFooter />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>

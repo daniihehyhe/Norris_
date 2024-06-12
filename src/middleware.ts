@@ -1,19 +1,14 @@
 import createMiddleware from "next-intl/middleware";
-import { NextRequest } from "next/server";
+import { locales, pathnames, localePrefix } from "./navigation";
 
-const nextIntlMiddleware = createMiddleware({
-    // A list of all locales that are supported
-    locales: ["en", "ru", "kg", "kz"],
-
-    // Used when no locale matches
+export default createMiddleware({
     defaultLocale: "ru",
+    localePrefix,
+    pathnames,
+    locales,
 });
 
-export default function intlMiddleware(req: NextRequest) {
-    return nextIntlMiddleware(req);
-}
-
 export const config = {
-    // Match only internationalized pathnames
-    matcher: ["/", "/(en|ru|kg|kz)/:path*"],
+    // Skip all paths that should not be internationalized
+    matcher: ["/((?!_next|.*\\..*).*)"],
 };

@@ -29,12 +29,10 @@
     "slides_slide5_description": "Үйіңіздің функционалдығын және ыңғайлылығын арттыру үшін әртүрлі датчиктерді орнату және конфигурациялау.",
     "contactButton": "Байланыс",
     "learnMoreButton": "Көбірек білу",
-    "contactModal":{
-        "contactButton": "Байланыс",
-        "modalTitle": "Байланыс",
-        "nameLabel": "Аты",
-        "emailLabel": "Электрондық пошта",
-        "phoneLabel": "Телефон",
-        "submitButton": "Жіберу"
-    }
+        "contactModal_contactButton": "Байланыс",
+        "contactModal_modalTitle": "Байланыс",
+        "contactModal_nameLabel": "Аты",
+        "contactModal_emailLabel": "Электрондық пошта",
+        "contactModal_phoneLabel": "Телефон",
+        "contactModal_submitButton": "Жіберу"
 }

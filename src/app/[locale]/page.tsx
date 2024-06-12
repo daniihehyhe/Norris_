@@ -2,7 +2,7 @@
 "use client";
 
 
-import MainSlider from '../home/MainSlider';
+import MainSlider from './home/MainSlider';
 
 export default function Page() {
 

@@ -29,12 +29,12 @@
     "slides_slide5_description": "Установка и настройка различных датчиков для повышения функциональности и удобства вашего дома.",
     "contactButton": "Связаться",
     "learnMoreButton": "Подробнее",
-    "contactModal":{
-        "contactButton": "Связаться с нами",
-        "modalTitle": "Связаться с нами",
-        "nameLabel": "Имя",
-        "emailLabel": "Электронная почта",
-        "phoneLabel": "Телефон",
-        "submitButton": "Отправить"
-    }
+
+        "contactModal_contactButton": "Связаться с нами",
+        "contactModal_modalTitle": "Связаться с нами",
+        "contactModal_nameLabel": "Имя",
+        "contactModal_emailLabel": "Электронная почта",
+        "contactModal_phoneLabel": "Телефон",
+        "contactModal_submitButton": "Отправить"
+    
 }

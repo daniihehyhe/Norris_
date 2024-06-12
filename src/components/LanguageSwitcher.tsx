@@ -3,18 +3,29 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import en from "@public/flag/en.png";
-import ru from "@public/flag/ru.png";
-import kg from "@public/flag/kg.png";
-import kz from "@public/flag/kz.png";
 import Image from "next/image";
+import Link from "next/link";
+
+
+interface Language {
+    locale: "ru" | "en" | "kg" | "kz";
+    label: string;
+    flag: string;
+}
+
+const languages: Language[] = [
+    { locale: "en", label: "english", flag: "/flag/en.png" },
+    { locale: "ru", label: "russian", flag: "/flag/ru.png" },
+    { locale: "kg", label: "kyrgyz", flag: "/flag/kg.png" },
+    { locale: "kz", label: "kazakh", flag: "/flag/kz.png" },
+];
 
 export default function LanguageSwitcher() {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
     const t = useTranslations();
 
-    const handleLanguageChange = (locale: string) => {
+    const handleLanguageChange = (locale: Language["locale"]) => {
         setIsOpen(false);
         router.replace(`/${locale}`);
     };
@@ -56,62 +67,25 @@ export default function LanguageSwitcher() {
                     aria-orientation="vertical"
                     aria-labelledby="options-menu">
                     <div className="py-1" role="none">
-                        <a
-                            href="#"
-                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                            role="menuitem"
-                            onClick={() => handleLanguageChange("en")}>
-                            <Image
-                                src={en}
-                                alt="English"
-                                width={20}
-                                height={20}
-                                className="mr-2"
-                            />
-                            {t("english")}
-                        </a>
-                        <a
-                            href="#"
-                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                            role="menuitem"
-                            onClick={() => handleLanguageChange("ru")}>
-                            <Image
-                                src={ru}
-                                alt="Russian"
-                                width={20}
-                                height={20}
-                                className="mr-2"
-                            />
-                            {t("russian")}
-                        </a>
-                        <a
-                            href="#"
-                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                            role="menuitem"
-                            onClick={() => handleLanguageChange("kg")}>
-                            <Image
-                                src={kg}
-                                alt="Kyrgyz"
-                                width={20}
-                                height={20}
-                                className="mr-2"
-                            />
-                            {t("kyrgyz")}
-                        </a>
-                        <a
-                            href="#"
-                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                            role="menuitem"
-                            onClick={() => handleLanguageChange("kz")}>
-                            <Image
-                                src={kz}
-                                alt="Kazakh"
-                                width={20}
-                                height={20}
-                                className="mr-2"
-                            />
-                            {t("kazakh")}
-                        </a>
+                        {languages.map((language) => (
+                            <Link
+                                href={`/${language.locale}`}
+                                key={language.locale}
+                                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                role="menuitem"
+                                onClick={() =>
+                                    handleLanguageChange(language.locale)
+                                }>
+                                <Image
+                                    src={language.flag}
+                                    alt={t(language.label)}
+                                    width={20}
+                                    height={20}
+                                    className="mr-2"
+                                />
+                                {t(language.label)}
+                            </Link>
+                        ))}
                     </div>
                 </div>
             )}

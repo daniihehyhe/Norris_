@@ -29,15 +29,12 @@
   "slides_slide5_description": "Installation and configuration of various sensors to enhance the functionality and convenience of your home.",
   "contactButton": "Contact Us",
   "learnMoreButton": "Learn More",
+  
+  "contactModal_contactButton": "Contact Us",
+  "contactModal_modalTitle": "Contact Us",
+  "contactModal_nameLabel": "Name",
+  "contactModal_emailLabel": "Email",
+  "contactModal_phoneLabel": "Phone",
+  "contactModal_submitButton": "Submit"
 
-  "contactModal":{
-  "contactButton": "Contact Us",
-  "modalTitle": "Contact Us",
-  "nameLabel": "Name",
-  "emailLabel": "Email",
-  "phoneLabel": "Phone",
-  "submitButton": "Submit"
 }
-}
-
-
