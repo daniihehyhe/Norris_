@@ -6,14 +6,12 @@ import { ThemeProvider } from "../../contexts/ThemeContext";
 import TheHeader from "../../components/TheHeader";
 import TheFooter from "../../components/TheFooter";
 
-
 type Props ={
     children: React.ReactNode;
     params:{
         locale: "ru"|"en"|"kg"|"kz"
     }
 }
-
 
 const RootLayout:React.FC<Props>=({
     children,
@@ -35,6 +33,5 @@ const RootLayout:React.FC<Props>=({
         </html>
     );
 }
-
 
 export default RootLayout

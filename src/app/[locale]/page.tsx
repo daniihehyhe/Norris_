@@ -2,13 +2,16 @@
 "use client";
 
 
+import { useTranslations } from 'next-intl';
 import MainSlider from './home/MainSlider';
+import ContractStages from './home/ContractStages';
 
 export default function Page() {
-
+  const t = useTranslations("Index");
   return (
       <>
           <MainSlider />
+          <ContractStages/>
           <main className="relative bg-smart-home bg-cover bg-no-repeat min-h-screen">
               <div className="absolute inset-0 bg-black opacity-50"></div>
               <div className="relative flex items-center justify-center min-h-screen">

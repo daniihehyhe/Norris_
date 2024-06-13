@@ -1,5 +1,4 @@
-import TheFooter from "@/components/TheFooter";
-
+import './globals.css'
 export default function RootLayout({
     children,
 }: Readonly<{

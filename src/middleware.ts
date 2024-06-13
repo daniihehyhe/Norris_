@@ -1,14 +1,24 @@
 import createMiddleware from "next-intl/middleware";
-import { locales, pathnames, localePrefix } from "./navigation";
+import { localePrefix, defaultLocale, locales, pathnames } from "./config";
 
 export default createMiddleware({
-    defaultLocale: "ru",
+    defaultLocale,
+    locales,
     localePrefix,
     pathnames,
-    locales,
 });
 
 export const config = {
-    // Skip all paths that should not be internationalized
-    matcher: ["/((?!_next|.*\\..*).*)"],
+    matcher: [
+        // Enable a redirect to a matching locale at the root
+        "/",
+
+        // Set a cookie to remember the previous locale for
+        // all requests that have a locale prefix
+        "/(en|ru|kg|kz)/:path*",
+
+        // Enable redirects that add missing locales
+        // (e.g. `/pathnames` -> `/en/pathnames`)
+        "/((?!_next|_vercel|.*\\..*).*)",
+    ],
 };

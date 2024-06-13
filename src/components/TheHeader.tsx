@@ -11,7 +11,7 @@ import { LuPhone } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function TheHeader() {
-    const t = useTranslations();
+    const t = useTranslations("header");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 

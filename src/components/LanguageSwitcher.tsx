@@ -2,32 +2,54 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-
 interface Language {
     locale: "ru" | "en" | "kg" | "kz";
-    label: string;
-    flag: string;
+    labelKey: any;
+    flag: any;
 }
 
 const languages: Language[] = [
-    { locale: "en", label: "english", flag: "/flag/en.png" },
-    { locale: "ru", label: "russian", flag: "/flag/ru.png" },
-    { locale: "kg", label: "kyrgyz", flag: "/flag/kg.png" },
-    { locale: "kz", label: "kazakh", flag: "/flag/kz.png" },
+    { locale: "en", labelKey: "english", flag: "/flag/en.png" },
+    { locale: "ru", labelKey: "russian", flag: "/flag/ru.png" },
+    { locale: "kg", labelKey: "kyrgyz", flag: "/flag/kg.png" },
+    { locale: "kz", labelKey: "kazakh", flag: "/flag/kz.png" },
 ];
 
 export default function LanguageSwitcher() {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
-    const t = useTranslations();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const t = useTranslations("header");
 
     const handleLanguageChange = (locale: Language["locale"]) => {
         setIsOpen(false);
-        router.replace(`/${locale}`);
+
+        // Remove the current locale from the pathname
+        const segments = pathname.split("/").filter(Boolean);
+        if (
+            segments[0] === "en" ||
+            segments[0] === "ru" ||
+            segments[0] === "kg" ||
+            segments[0] === "kz"
+        ) {
+            segments.shift();
+        }
+
+        // Build the new path with the selected locale
+        const newPath = `/${locale}/${segments.join("/")}`;
+
+        // Preserve query parameters
+        const searchParamsString = searchParams.toString();
+        const newUrl = searchParamsString
+            ? `${newPath}?${searchParamsString}`
+            : newPath;
+
+        router.replace(newUrl);
     };
 
     const toggleDropdown = () => {
@@ -41,7 +63,7 @@ export default function LanguageSwitcher() {
                     type="button"
                     className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     id="options-menu"
-                    aria-expanded="true"
+                    aria-expanded={isOpen}
                     aria-haspopup="true"
                     onClick={toggleDropdown}>
                     <span className="mr-2">{t("chooseLanguage")}</span>
@@ -68,23 +90,22 @@ export default function LanguageSwitcher() {
                     aria-labelledby="options-menu">
                     <div className="py-1" role="none">
                         {languages.map((language) => (
-                            <Link
-                                href={`/${language.locale}`}
+                            <button
                                 key={language.locale}
-                                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full text-left"
                                 role="menuitem"
                                 onClick={() =>
                                     handleLanguageChange(language.locale)
                                 }>
                                 <Image
                                     src={language.flag}
-                                    alt={t(language.label)}
+                                    alt={t(language.labelKey)}
                                     width={20}
                                     height={20}
                                     className="mr-2"
                                 />
-                                {t(language.label)}
-                            </Link>
+                                {t(language.labelKey)}
+                            </button>
                         ))}
                     </div>
                 </div>
