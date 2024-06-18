@@ -5,11 +5,12 @@ interface ThemeContextProps {
     theme: string;
     toggleTheme: () => void;
 }
-
+// Определение типов для контекста темы
 export const ThemeContext = createContext<ThemeContextProps | undefined>(
     undefined,
 );
 
+// Создание контекста с типами
 interface ThemeProviderProps {
     children: ReactNode;
 }
@@ -22,6 +23,15 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
         if (savedTheme) {
             setTheme(savedTheme);
             document.documentElement.classList.add(savedTheme);
+        } else {
+            // Если тема не сохранена, использовать системные настройки
+            const systemTheme = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            ).matches
+                ? "dark"
+                : "light";
+            setTheme(systemTheme);
+            document.documentElement.classList.add(systemTheme);
         }
     }, []);
 

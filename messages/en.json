@@ -17,10 +17,10 @@
         "contacts": "Contacts",
         "welcome": "Welcome"
     },
-  "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, kg {🇰🇬 Kyrgyz} en {🇺🇸 English} kz {🇰🇿 Kazakh} ru {🇷🇺 Russian} other {Unknown}}"
-  },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, kg {🇰🇬 Kyrgyz} en {🇺🇸 English} kz {🇰🇿 Kazakh} ru {🇷🇺 Russian} other {Unknown}}"
+    },
 
     "slides_slide1_img": "/images/slider/2.webp",
     "slides_slide1_title": "Smart Home Installation",
@@ -45,5 +45,32 @@
     "contactModal_nameLabel": "Name",
     "contactModal_emailLabel": "Email",
     "contactModal_phoneLabel": "Phone",
-    "contactModal_submitButton": "Submit"
+    "contactModal_submitButton": "Submit",
+    "SmartHomeServices": {
+        "camera": {
+            "title": "Camera",
+            "description": "Manage your home cameras from anywhere in the world. You can monitor live footage, review recordings, and even control the angle of the cameras remotely. It's a perfect solution for ensuring your home security at all times.",
+            "image": "1.webp"
+        },
+        "security": {
+            "title": "Security",
+            "description": "Ensure your home's security with advanced systems. Our security solutions include alarms, motion detectors, and smart locks that you can control from your phone. Keep your home and loved ones safe with our comprehensive security systems.",
+            "image": "2.webp"
+        },
+        "smartSpeakers": {
+            "title": "Smart Speakers",
+            "description": "Control smart speakers like Alice, Siri. With smart speakers, you can play music, control other smart devices, and get information using just your voice. Experience the convenience of a hands-free, voice-controlled environment.",
+            "image": "3.webp"
+        },
+        "sensors": {
+            "title": "Sensors",
+            "description": "Presence, light, gas, temperature sensors. Our range of sensors can detect motion, changes in lighting, gas leaks, and temperature fluctuations. These sensors ensure you are always aware of the conditions in your home.",
+            "image": "4.webp"
+        },
+        "curtainsLighting": {
+            "title": "Curtains and Lighting",
+            "description": "Manage your curtains, lighting, and blinds from anywhere. You can set schedules, control them remotely, and create the perfect ambiance for any time of day or night. Enhance your comfort and convenience with smart control over your home’s lighting and window treatments.",
+            "image": "5.webp"
+        }
+    }
 }

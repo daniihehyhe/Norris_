@@ -9,6 +9,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import { LuPhone } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function TheHeader() {
     const t = useTranslations("header");
@@ -47,16 +48,38 @@ interface MenuItem {
         { label: t("news"), link: "/news" },
         { label: t("contacts"), link: "/contacts" },
     ];
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            delayChildren: 0.5,
+            staggerDirection: -1,
+        },
+    },
+};
 
+const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+};
     return (
         <header
             className={`fixed w-full z-10 py-5 transition-all duration-300 ${
                 isScrolled
                     ? "bg-gray-200 dark:bg-gray-900 dark:text-white"
-                    : "bg-transparent text-white shadow-md"
+                    : "bg-transparent text-green-700 shadow-md"
             }`}>
-            <section className="w-11/12 mx-auto flex justify-between items-center">
-                <div className="flex items-center gap-4">
+            <motion.section
+                variants={container}
+                initial="hidden"
+                animate="show"
+                className="w-11/12 mx-auto flex justify-between items-center">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="flex items-center gap-4">
                     <Link href="/">
                         <Image
                             src={logo}
@@ -71,21 +94,29 @@ interface MenuItem {
                         <LuPhone className="dark:text-white mr-1" />
                         <span>+996 553 228 888</span>
                     </Link>
-                </div>
+                </motion.div>
                 <div className="hidden xl:flex md:items-center md:gap-5">
                     <nav className="flex gap-5 items-center">
                         {menuItems.map((item, index) => (
-                            <div
+                            <motion.div
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 1.1 }}
+                                drag="x"
+                                dragConstraints={{ left: -100, right: 100 }}
                                 key={index}
                                 className="px-4 hover:border-b-2 dark:hover:border-blue-500 hover:border-yellow-600 rounded-b-md">
                                 <Link href={item.link}>{item.label}</Link>
-                            </div>
+                            </motion.div>
                         ))}
                     </nav>
-                    <div className="flex items-center gap-4">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.5 }}
+                        className="flex items-center gap-4">
                         <ThemeToggleButton />
                         <LanguageSwitcher />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="xl:hidden flex items-center">
                     <button
@@ -98,7 +129,7 @@ interface MenuItem {
                         )}
                     </button>
                 </div>
-            </section>
+            </motion.section>
             {isMenuOpen && (
                 <div className="xl:hidden bg-gray-200 dark:bg-gray-900 py-4">
                     <div className="flex flex-col items-center gap-4 mb-4">

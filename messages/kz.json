@@ -43,5 +43,32 @@
     "contactModal_nameLabel": "Аты",
     "contactModal_emailLabel": "Электрондық пошта",
     "contactModal_phoneLabel": "Телефон",
-    "contactModal_submitButton": "Жіберу"
+    "contactModal_submitButton": "Жіберу",
+    "SmartHomeServices": {
+        "camera": {
+            "title": "Камера",
+            "description": "Үйіңіздің камераларын әлемнің кез келген жерінен басқарыңыз.",
+            "image": "1.webp"
+        },
+        "security": {
+            "title": "Қауіпсіздік",
+            "description": "Үйіңіздің қауіпсіздігін алдыңғы қатарлы жүйелермен қамтамасыз етіңіз.",
+            "image": "2.webp"
+        },
+        "smartSpeakers": {
+            "title": "Ақылды Динамиктер",
+            "description": "Алиса, Сири сияқты ақылды динамиктерді басқару.",
+            "image": "3.webp"
+        },
+        "sensors": {
+            "title": "Датчиктер",
+            "description": "Қатысу, жарық, газ, температура датчиктері.",
+            "image": "4.webp"
+        },
+        "curtainsLighting": {
+            "title": "Перделер мен Жарықтандыру",
+            "description": "Перделерді, жарықтандыруды және жалюзиді әлемнің кез келген жерінен басқарыңыз.",
+            "image": "5.webp"
+        }
+    }
 }
