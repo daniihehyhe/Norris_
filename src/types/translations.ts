@@ -1,14 +1,13 @@
-// src/types/translations.d.ts
-export interface SmartHomeServiceTranslation {
+export interface Translations {
+    camera: ServiceTranslation;
+    security: ServiceTranslation;
+    smartSpeakers: ServiceTranslation;
+    sensors: ServiceTranslation;
+    curtainsLighting: ServiceTranslation;
+}
+
+interface ServiceTranslation {
     title: string;
     description: string;
     image: string;
-}
-
-export interface Translations {
-    camera: SmartHomeServiceTranslation;
-    security: SmartHomeServiceTranslation;
-    smartSpeakers: SmartHomeServiceTranslation;
-    sensors: SmartHomeServiceTranslation;
-    curtainsLighting: SmartHomeServiceTranslation;
 }
