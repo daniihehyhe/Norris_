@@ -1,20 +1,28 @@
 "use client";
-import { createContext, useState, useLayoutEffect, ReactNode } from "react";
+import {
+    createContext,
+    useState,
+    useLayoutEffect,
+    ReactNode,
+    useContext,
+} from "react";
 
+// Définition des types pour le contexte de thème
 interface ThemeContextProps {
     theme: string;
     toggleTheme: () => void;
 }
-// Определение типов для контекста темы
+
+// Création du contexte de thème avec les types appropriés
 export const ThemeContext = createContext<ThemeContextProps | undefined>(
     undefined,
 );
 
-// Создание контекста с типами
 interface ThemeProviderProps {
     children: ReactNode;
 }
 
+// Création du fournisseur de contexte de thème
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const [theme, setTheme] = useState("light");
 
@@ -24,7 +32,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
             setTheme(savedTheme);
             document.documentElement.classList.add(savedTheme);
         } else {
-            // Если тема не сохранена, использовать системные настройки
+            // Utiliser les paramètres système si aucune thème n'est enregistrée
             const systemTheme = window.matchMedia(
                 "(prefers-color-scheme: dark)",
             ).matches
@@ -51,4 +59,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
             </div>
         </ThemeContext.Provider>
     );
+};
+
+// Hook personnalisé pour utiliser le contexte de thème
+export const useTheme = () => {
+    const context = useContext(ThemeContext);
+    if (!context) {
+        throw new Error("useTheme must be used within a ThemeProvider");
+    }
+    return context;
 };

@@ -1,15 +1,15 @@
 "use client";
-
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
-import { ThemeContext } from "../contexts/ThemeContext";
+import { useTheme } from "../contexts/ThemeContext";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 interface ThemeOption {
     label: string;
-    icon: React.ComponentType;
+    icon: React.ComponentType<{ className?: string }>;
     value: string;
 }
+
 
 const themeOptions: ThemeOption[] = [
     { label: "Светлая тема", icon: FaSun, value: "light" },
@@ -17,12 +17,14 @@ const themeOptions: ThemeOption[] = [
 ];
 
 const ThemeToggleButton: React.FC = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { theme, toggleTheme } = useTheme();
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     const handleThemeChange = (newTheme: string) => {
-        toggleTheme(newTheme);
-        localStorage.setItem("theme", newTheme);
+        if (theme !== newTheme) {
+            toggleTheme();
+            localStorage.setItem("theme", newTheme);
+        }
         setMenuOpen(false);
     };
 
