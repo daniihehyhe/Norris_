@@ -59,10 +59,6 @@ const container = {
     },
 };
 
-const item = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
-};
     return (
         <header
             className={`fixed w-full z-10 py-5 transition-all duration-300 ${

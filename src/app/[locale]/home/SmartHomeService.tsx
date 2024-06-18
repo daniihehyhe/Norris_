@@ -7,8 +7,8 @@ import { motion, useAnimation } from "framer-motion";
 import { Translations } from "@/types/translations";
 
 const SmartHomeService: React.FC = () => {
-    const t = useTranslations<Translations>("SmartHomeServices");
-    const keys: (keyof Translations)[] = [
+    const t = useTranslations("SmartHomeServices");
+    const keys: (keyof Translations["SmartHomeServices"])[] = [
         "camera",
         "security",
         "smartSpeakers",
