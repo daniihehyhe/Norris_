@@ -7,7 +7,7 @@ import { motion, useAnimation } from "framer-motion";
 import { Translations } from "@/types/translations";
 
 const SmartHomeService: React.FC = () => {
-    const t = useTranslations("SmartHomeServices");
+    const t = useTranslations<Translations>("SmartHomeServices");
     const keys: (keyof Translations)[] = [
         "camera",
         "security",
@@ -17,11 +17,11 @@ const SmartHomeService: React.FC = () => {
     ];
 
     return (
-        <div className="space-y-16 py-16 bg-gray-100 dark:bg-gray-900">
+        <div className="space-y-24 py-16 bg-gray-100 dark:bg-gray-900 px-6 md:px-12">
             {keys.map((key, index) => {
-                let title = t(`${key}.title`);
-                let description = t(`${key}.description`);
-                let image = t(`${key}.image`);
+                const title = t(`${key}.title`);
+                const description = t(`${key}.description`);
+                const image = t(`${key}.image`);
 
                 if (
                     typeof title !== "string" ||
@@ -96,7 +96,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({
                 "flex flex-col md:flex-row items-center",
                 reverse ? "md:flex-row-reverse" : "",
             )}>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 p-4">
                 <Image
                     src={`/images/slider/${image}`}
                     alt={title}
@@ -106,10 +106,10 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({
                 />
             </div>
             <div className="w-full md:w-1/2 p-6">
-                <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">
                     {title}
                 </h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
+                <p className="text-md md:text-lg text-gray-600 dark:text-gray-300">
                     {description}
                 </p>
             </div>

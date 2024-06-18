@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import smartHomeImage from "@/../public/images/bg_main.jpg";
-import flat from "@/../public/images/flat.jpg"; // Фоновое изображение
+import flat from "@/../public/images/flat.jpg"; 
 import { useTranslations } from "next-intl";
 import ContactModal from "@/components/ContactModal";
 
