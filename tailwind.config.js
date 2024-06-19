@@ -15,7 +15,10 @@ module.exports = {
         highlight2: '#22B8CF',
         highlight3: '#FFC81A',
         highlight4: '#0CD66E',
+        moss_green: '#68826A',
+        moss_green_dark: '#3c4f3e'
       },
+      
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
       },

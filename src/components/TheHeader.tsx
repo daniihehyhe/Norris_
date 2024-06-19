@@ -3,13 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import logo from "@public/images/norris_logo_SITE_PNG.png";
-import ThemeToggleButton from "./ThemeToggleButton";
-import LanguageSwitcher from "./LanguageSwitcher";
+import logo from "@public/images/logo_norris.png";
 import { useTranslations } from "next-intl";
-import { LuPhone } from "react-icons/lu";
+import { FaPhoneVolume } from "react-icons/fa6";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Menu from './Menu'
 
 function TheHeader() {
     const t = useTranslations("header");
@@ -40,14 +39,15 @@ interface MenuItem {
     link: string;
 }
 
-    const menuItems: MenuItem[] = [
+    const menuItemsWindowHeader: MenuItem[] = [
         { label: t("services"), link: "/services" },
         { label: t("aboutUs"), link: "/about" },
         { label: t("portfolio"), link: "/portfolio" },
         { label: t("articles"), link: "/articles" },
-        { label: t("news"), link: "/news" },
+        //{ label: t("news"), link: "/news" },
         { label: t("contacts"), link: "/contacts" },
     ];
+
 const container = {
     hidden: { opacity: 0 },
     show: {
@@ -61,16 +61,16 @@ const container = {
 
     return (
         <header
-            className={`fixed w-full z-10 py-5 transition-all duration-300 ${
+            className={`fixed w-full z-10 transition-all duration-300 p-2 ${
                 isScrolled
                     ? "bg-gray-200 dark:bg-gray-900 dark:text-white"
-                    : "bg-transparent text-green-700 shadow-md"
+                    : "bg-transparent  shadow-md"
             }`}>
             <motion.section
                 variants={container}
                 initial="hidden"
                 animate="show"
-                className="w-11/12 mx-auto flex justify-between items-center">
+                className="container mx-auto flex justify-between items-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -84,16 +84,10 @@ const container = {
                             alt="logo_norris.kg"
                         />
                     </Link>
-                    <Link
-                        href="tel:+996553228888"
-                        className="flex items-center ml-4">
-                        <LuPhone className="dark:text-white mr-1" />
-                        <span>+996 553 228 888</span>
-                    </Link>
                 </motion.div>
                 <div className="hidden xl:flex md:items-center md:gap-5">
                     <nav className="flex gap-5 items-center">
-                        {menuItems.map((item, index) => (
+                        {menuItemsWindowHeader.map((item, index) => (
                             <motion.div
                                 whileHover={{ scale: 1.2 }}
                                 whileTap={{ scale: 1.1 }}
@@ -105,45 +99,34 @@ const container = {
                             </motion.div>
                         ))}
                     </nav>
+
+                </div>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.5 }}
                         className="flex items-center gap-4">
-                        <ThemeToggleButton />
-                        <LanguageSwitcher />
+                        <Link href="#" className="btn">
+                            Бокомбаева 177
+                        </Link>
+                        <Link
+                            href="tel:+996553228888"
+                            className="flex items-center ml-4">
+                            <FaPhoneVolume className="dark:text-white mr-1" />
+                        </Link>
+                        <button
+                            onClick={toggleMenu}
+                            className="p-2 rounded-md focus:outline-none">
+                            {isMenuOpen ? (
+                                <FaTimes className="w-6 h-6" />
+                            ) : (
+                                <FaBars className="w-6 h-6" />
+                            )}
+                        </button>
                     </motion.div>
-                </div>
-                <div className="xl:hidden flex items-center">
-                    <button
-                        onClick={toggleMenu}
-                        className="p-2 rounded-md focus:outline-none">
-                        {isMenuOpen ? (
-                            <FaTimes className="w-6 h-6" />
-                        ) : (
-                            <FaBars className="w-6 h-6" />
-                        )}
-                    </button>
-                </div>
             </motion.section>
-            {isMenuOpen && (
-                <div className="xl:hidden bg-gray-200 dark:bg-gray-900 py-4">
-                    <div className="flex flex-col items-center gap-4 mb-4">
-                        <ThemeToggleButton />
-                        <LanguageSwitcher />
-                    </div>
-                    <nav className="flex flex-col items-start pl-5 gap-3">
-                        {menuItems.map((item, index) => (
-                            <Link
-                                key={index}
-                                href={item.link}
-                                className="w-full py-2 border-t border-gray-300 dark:border-gray-700">
-                                {item.label}
-                            </Link>
-                        ))}
-                    </nav>
-                </div>
-            )}
+
+            {isMenuOpen && <Menu onClose={toggleMenu} />}
         </header>
     );
 }

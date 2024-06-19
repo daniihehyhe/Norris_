@@ -25,7 +25,9 @@ const RootLayout:React.FC<Props>=({
                 <NextIntlClientProvider messages={messages}>
                     <ThemeProvider>
                         <TheHeader />
+                        <div className='container mx-auto '>
                         {children}
+                        </div>
                         <TheFooter />
                     </ThemeProvider>
                 </NextIntlClientProvider>

@@ -3,6 +3,7 @@
         "title": "Hello world!"
     },
     "header": {
+        "home": "Home",
         "chooseLanguage": "Choose Language",
         "english": "English",
         "russian": "Russian",
@@ -14,8 +15,20 @@
         "portfolio": "Portfolio",
         "articles": "Articles",
         "news": "News",
+          "location": "Bokombaeva",
         "contacts": "Contacts",
-        "welcome": "Welcome"
+        "welcome": "Welcome",
+           "contactButton": "Contact Us",
+    "modalTitle": "Contact Us",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "submitButton": "Submit",
+          "email": "Enter your email",
+      "phone": "Enter your phone number",
+      "name": "Enter your name",
+        "leavePhone": "Leave your phone number, and we will contact you as soon as possible.",
+        "agreePolicy": "By sending us your phone number, you agree to the Privacy Policy.We do not share your phone number with third parties."
     },
     "LocaleSwitcher": {
         "label": "Change language",
@@ -39,13 +52,15 @@
     "slides_slide5_description": "Installation and configuration of various sensors to enhance the functionality and convenience of your home.",
     "contactButton": "Contact Us",
     "learnMoreButton": "Learn More",
-
-    "contactModal_contactButton": "Contact Us",
-    "contactModal_modalTitle": "Contact Us",
-    "contactModal_nameLabel": "Name",
-    "contactModal_emailLabel": "Email",
-    "contactModal_phoneLabel": "Phone",
-    "contactModal_submitButton": "Submit",
+"contactModal":{
+    "contactButton": "Contact Us",
+    "modalTitle": "Contact Us",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "submitButton": "Submit"
+},
+  
     "SmartHomeServices": {
         "camera": {
             "title": "Camera",
