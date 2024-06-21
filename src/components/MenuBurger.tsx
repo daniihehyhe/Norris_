@@ -1,25 +1,30 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 //import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import ThemeToggleButton from "./ThemeToggleButton";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { FaPhoneVolume } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
 import logo from "@/../public/images/logo_norris.png";
+import whiteLogo from "@/../public/images/white_logo.png";
+import Arrow_long_right from "@/../public/images/Arrow_long_right.png";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { MdLocationOn } from "react-icons/md";
 import Image from "next/image";
+import { useTheme } from "@/contexts/ThemeContext";
 
-interface MenuProps{
-    onClose: () => void
+
+interface MenuProps {
+    onClose: () => void;
 }
 
-const Menu: React.FC<MenuProps> = ({onClose}) => {
+const MenuBurger: React.FC<MenuProps> = ({ onClose }) => {
     interface MenuItem {
         label: string;
         link: string;
     }
-
+    const { theme } = useTheme();
     const t = useTranslations("header");
     const menuItems: MenuItem[] = [
         { label: t("home"), link: "/" },
@@ -31,13 +36,14 @@ const Menu: React.FC<MenuProps> = ({onClose}) => {
         { label: t("contacts"), link: "/contacts" },
     ];
 
+
     return (
-        <main className="fixed top-0 left-0 h-screen w-full bg-gray-200 dark:bg-blue-950 p-4 md:p-10 md:mx-auto overflow-y-auto">
-            <section className="flex relative flex-col gap-5 md:gap-0 md:flex-row justify-between items-center mt-5 md:mb-10">
+        <main className="fixed top-0 left-0 h-screen w-full bg-gray-200 dark:bg-blue-950 p-4 md:mx-auto overflow-y-auto">
+            <section className="flex  container mx-auto  relative flex-col-reverse gap-5 md:gap-0 md:flex-row justify-between items-center  md:mb-5">
                 <Link href="/">
                     <Image
                         onClick={onClose}
-                        src={logo}
+                        src={theme === "light" ? logo.src : whiteLogo.src}
                         width={150}
                         height={70}
                         alt="logo_norris.kg"
@@ -56,25 +62,27 @@ const Menu: React.FC<MenuProps> = ({onClose}) => {
                 </Link>
                 <button
                     onClick={onClose}
-                    className="absolute text-4xl right-0 -top-12">
+                    className=" text-4xl self-end md:mr-5 hover:text-red-500">
                     <RiCloseLargeLine />
                 </button>
             </section>
-            <section className="flex flex-col md:flex-row items-center justify-between">
-                <nav className="flex flex-col  items-start gap-3 w-full mb-10 md:mb-0">
+            <section className="flex  container mx-auto  flex-col md:flex-row items-center justify-between">
+                <nav className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full mb-10 md:mb-0">
                     {menuItems.map((item, index) => (
                         <Link
                             onClick={onClose}
                             key={index}
                             href={item.link}
-                            className="w-fit text-xl md:text-3xl py-2  hover:border-b-2 dark:hover:border-blue-500 hover:tracking-wider hover:border-yellow-600">
+                            className="w-fit text-xl md:text-3xl py-2 hover:border-b-2 dark:hover:border-blue-500 hover:tracking-wider hover:border-yellow-600">
                             {item.label}
                         </Link>
                     ))}
                 </nav>
 
                 <form className="flex self-start flex-col gap-5 p-6 bg-gray-800 rounded-lg w-full max-w-md md:mx-auto">
-                    <p className="text-lg text-center">{t("leavePhone")}</p>
+                    <p className="text-lg text-white text-center">
+                        {t("leavePhone")}
+                    </p>
                     <div>
                         <label
                             className="block text-white text-lg font-bold mb-2"
@@ -114,18 +122,30 @@ const Menu: React.FC<MenuProps> = ({onClose}) => {
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
-                    <button className="btn">{t("submitButton")}</button>
+                    <button className="btn flex self-center px-6 py-2 w-fit items-center justify-center">
+                        {t("submitButton")}
+                        <Image
+                            className="ml-10"
+                            src={Arrow_long_right}
+                            width={40}
+                            height={20}
+                            alt="Arrow_long_right"
+                        />
+                    </button>
                     <p className="text-sm text-white text-center">
                         {t("agreePolicy")}
                     </p>
                 </form>
             </section>
-            <footer className="flex flex-col md:flex-row justify-between items-center mt-10">
+            <footer className="flex flex-col  container mx-auto  md:flex-row justify-between items-center mt-10">
                 <Link
                     href="#"
                     className="flex items-center text-2xl md:text-3xl mb-4 md:mb-0">
                     <MdLocationOn className="mr-2" /> {t("location")} 177
                 </Link>
+                <span className="flex items-center text-2xl">
+                    <HiOutlineMail className="mr-2 " /> sale@norris.kg
+                </span>
                 <div className="flex space-x-4">
                     <Link
                         href="https://facebook.com"
@@ -182,4 +202,4 @@ const Menu: React.FC<MenuProps> = ({onClose}) => {
     );
 };
 
-export default Menu;
+export default MenuBurger;

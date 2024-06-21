@@ -4,13 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import logo from "@public/images/logo_norris.png";
+import whiteLogo from "@public/images/white_logo.png";
 import { useTranslations } from "next-intl";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 import { motion } from "framer-motion";
-import Menu from './Menu'
+import MenuBurger from "./MenuBurger";
+import { useTheme } from "@/contexts/ThemeContext";
+import CallbackRequest from "./CallbackRequest";
 
 function TheHeader() {
+    const { theme } = useTheme();
     const t = useTranslations("header");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -18,15 +23,20 @@ function TheHeader() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
+       useEffect(() => {
+           if (isMenuOpen) {
+               document.body.style.overflow = "hidden";
+               } else {
+               document.body.style.overflow = "auto";
+           }
+       }, [isMenuOpen]);
     const handleScroll = () => {
         if (window.scrollY > 50) {
             setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
-        }
-    };
-
+            } else {
+                setIsScrolled(false);
+                }
+                };
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -44,7 +54,6 @@ interface MenuItem {
         { label: t("aboutUs"), link: "/about" },
         { label: t("portfolio"), link: "/portfolio" },
         { label: t("articles"), link: "/articles" },
-        //{ label: t("news"), link: "/news" },
         { label: t("contacts"), link: "/contacts" },
     ];
 
@@ -66,6 +75,10 @@ const container = {
                     ? "bg-gray-200 dark:bg-gray-900 dark:text-white"
                     : "bg-transparent  shadow-md"
             }`}>
+
+                {/*выпадающая компонент форма для обраный связи*/}
+                
+                <CallbackRequest/>
             <motion.section
                 variants={container}
                 initial="hidden"
@@ -78,9 +91,9 @@ const container = {
                     className="flex items-center gap-4">
                     <Link href="/">
                         <Image
-                            src={logo}
-                            width={80}
-                            height={100}
+                            src={theme === "light" ? logo.src : whiteLogo.src}
+                            width={150}
+                            height={70}
                             alt="logo_norris.kg"
                         />
                     </Link>
@@ -99,34 +112,37 @@ const container = {
                             </motion.div>
                         ))}
                     </nav>
-
                 </div>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.5 }}
-                        className="flex items-center gap-4">
-                        <Link href="#" className="btn">
-                            Бокомбаева 177
-                        </Link>
-                        <Link
-                            href="tel:+996553228888"
-                            className="flex items-center ml-4">
-                            <FaPhoneVolume className="dark:text-white mr-1" />
-                        </Link>
-                        <button
-                            onClick={toggleMenu}
-                            className="p-2 rounded-md focus:outline-none">
-                            {isMenuOpen ? (
-                                <FaTimes className="w-6 h-6" />
-                            ) : (
-                                <FaBars className="w-6 h-6" />
-                            )}
-                        </button>
-                    </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="flex items-center gap-4">
+                    <Link
+                        href="#"
+                        className="hidden sm:flex sm:items-center btn px-6 py-2">
+                        <MdLocationOn className="mr-2" /> {t("location")} 177
+                    </Link>
+                    <Link
+                        href="tel:+996553228888"
+                        className="flex items-center ml-4">
+                        <FaPhoneVolume className="dark:text-white mr-1" />
+                    </Link>
+                    <button
+                        onClick={toggleMenu}
+                        className="p-2 rounded-md focus:outline-none">
+                        {isMenuOpen ? (
+                            <FaTimes className="w-6 h-6" />
+                        ) : (
+                            <FaBars className="w-6 h-6" />
+                        )}
+                    </button>
+                </motion.div>
             </motion.section>
 
-            {isMenuOpen && <Menu onClose={toggleMenu} />}
+            {isMenuOpen && (
+                <MenuBurger onClose={toggleMenu} />
+            )}
         </header>
     );
 }

@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useRef, useState, ReactNode } from "react";
 import { motion, useAnimation, Variants } from "framer-motion";
 
@@ -7,7 +8,7 @@ const letterVariants: Variants = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: i * 0.05, // Уменьшенная задержка между буквами для улучшения производительности
+            delay: i * 0.03, // Уменьшенная задержка между буквами для улучшения производительности
         },
     }),
 };
@@ -54,7 +55,7 @@ const LetterByLetter: React.FC<LetterByLetterProps> = ({ children }) => {
     }, [isInView, controls]);
 
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div>
             <div ref={ref}>
                 {React.Children.map(children, (child, index) => {
                     if (typeof child === "string") {
@@ -65,7 +66,7 @@ const LetterByLetter: React.FC<LetterByLetterProps> = ({ children }) => {
                                 initial="hidden"
                                 animate={controls}
                                 variants={letterVariants}
-                                className="text-4xl font-bold">
+                                className="">
                                 {char}
                             </motion.span>
                         ));
