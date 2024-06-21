@@ -4,7 +4,6 @@ import Image from "next/image";
 import smartHomeImage from "@/../public/images/bg_main.jpg";
 import flat from "@/../public/images/flat.jpg"; 
 import { useTranslations } from "next-intl";
-import ContactModal from "@/components/ContactModal";
 
 const textVariants = {
     hidden: { opacity: 0, x: -1000 },
@@ -48,10 +47,6 @@ const ComponentA: React.FC = () => {
                     onClick={handleOpenModal}>
                     {t("contactButton")}
                 </button>
-                <ContactModal
-                    showModal={showModal}
-                    handleClose={handleCloseModal}
-                />
             </motion.div>
             <motion.div
                 initial="hidden"
