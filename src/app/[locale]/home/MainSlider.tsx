@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./MainSlider.css";
-import ContactModal from "../../../components/ContactModal";
 
 import slide1 from "/public/images/slider/1.webp";
 import slide2 from "/public/images/slider/2.webp";
@@ -144,10 +143,6 @@ const MainSlider: React.FC = () => {
                     onClick={handleOpenModal}>
                     {t("contactButton")}
                 </button>
-                <ContactModal
-                    showModal={showModal}
-                    handleClose={handleCloseModal}
-                />
             </div>
         </div>
     );
