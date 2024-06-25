@@ -9,7 +9,7 @@ import Link from "next/link";
 interface Language {
     locale: "ru" | "en" | "kg" | "kz";
     labelKey: any;
-    flag: any;
+    flag: string;
 }
 
 const languages: Language[] = [
@@ -30,13 +30,8 @@ export default function LanguageSwitcher() {
         setIsOpen(false);
 
         // Remove the current locale from the pathname
-        const segments = pathname.split("/").filter(Boolean);
-        if (
-            segments[0] === "en" ||
-            segments[0] === "ru" ||
-            segments[0] === "kg" ||
-            segments[0] === "kz"
-        ) {
+        let segments = pathname ? pathname.split("/").filter(Boolean) : [];
+        if (segments.length > 0 && ["en", "ru", "kg", "kz"].includes(segments[0])) {
             segments.shift();
         }
 
@@ -44,10 +39,8 @@ export default function LanguageSwitcher() {
         const newPath = `/${locale}/${segments.join("/")}`;
 
         // Preserve query parameters
-        const searchParamsString = searchParams.toString();
-        const newUrl = searchParamsString
-            ? `${newPath}?${searchParamsString}`
-            : newPath;
+        const searchParamsString = searchParams ? searchParams.toString() : "";
+        const newUrl = searchParamsString ? `${newPath}?${searchParamsString}` : newPath;
 
         router.replace(newUrl);
     };
