@@ -6,7 +6,7 @@ import konditsioner from "@/../public/images/konditsioner.jpg";
 import night_light from "@/../public/images/night_light.jpeg";
 import auto_light from "@/../public/images/auto_light.jpg";
 import vacuum_cleaner from "@/../public/images/vacuum_cleaner.jpg";
-import Slider from "@/app/[locale]/home/Slider";
+import Slider from "@/components/Slider";
 
 interface SliderItem {
     id: "item1" | "item2" | "item3" | "item4";

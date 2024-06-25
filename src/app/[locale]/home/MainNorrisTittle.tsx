@@ -1,13 +1,18 @@
 'use client'
 import Image from 'next/image';
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import phone from '@/../public/images/phone_smart_home.png'
 import LetterByLetter from '@/components/LetterByLetter';
 import { useTranslations } from 'next-intl';
+import ContactModal from '@/components/ContactModal';
 
 function MainNorrisTittle() {
      const t = useTranslations("MainNorrisTittle");
+     const [showModal, setShowModal] = useState(false);
+     const handleClose = () => {
+        setShowModal(false);
+    };
 	return (
         <>
             <main className="pt-20 flex justify-between">
@@ -23,11 +28,15 @@ function MainNorrisTittle() {
                         <LetterByLetter>{t("description")}</LetterByLetter>
                     </div>
                     <motion.button
+                    onClick={() => setShowModal(true)}
                         className="btn px-6 text-lg py-2"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
                         {t("button")}
                     </motion.button>
+                    { showModal &&
+            <ContactModal showModal={showModal} onClose={handleClose} />
+          }
                 </motion.div>
                 <motion.div
                     className="hidden md:block"

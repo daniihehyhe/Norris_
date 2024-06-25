@@ -7,13 +7,16 @@ import {
     FaMoneyBillWave,
     FaTachometerAlt,
 } from "react-icons/fa";
+import PageInProgress from "@/components/PageInProgress";
+import LinkPage from "@/components/LinkPage";
 
 
 const AboutPage = () => {
    
     return (
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 py-16">
-            <motion.div
+            <PageInProgress/>
+            {/* <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -170,7 +173,8 @@ const AboutPage = () => {
                         </li>
                     </ul>
                 </div>
-            </motion.div>
+            </motion.div> */}
+        <LinkPage/>
         </div>
     );
 };

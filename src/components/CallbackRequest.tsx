@@ -1,6 +1,6 @@
 // components/CallbackRequest.tsx
 import React, { useState, useEffect } from "react";
-import CallbackModal from "./ContactModal";
+import ContactModal from "./ContactModal";
 
 const CallbackRequest: React.FC = () => {
     const [showModal, setShowModal] = useState(false);
@@ -12,8 +12,8 @@ const CallbackRequest: React.FC = () => {
             }, delay);
         };
 
-        let initialDelay = 15000; // 10 seconds
-        let subsequentDelay = 90000; // 15 seconds
+        let initialDelay = 90000; 
+        let subsequentDelay = 600000; 
 
         showModalWithDelay(initialDelay);
 
@@ -36,7 +36,7 @@ const CallbackRequest: React.FC = () => {
 
     return (
         <div>
-            <CallbackModal showModal={showModal} onClose={handleClose} />
+            <ContactModal showModal={showModal} onClose={handleClose} />
         </div>
     );
 };

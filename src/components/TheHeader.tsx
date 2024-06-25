@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import MenuBurger from "./MenuBurger";
 import { useTheme } from "@/contexts/ThemeContext";
 import CallbackRequest from "./CallbackRequest";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 function TheHeader() {
     const { theme } = useTheme();
@@ -76,7 +77,6 @@ const container = {
                     : "bg-transparent  shadow-md"
             }`}>
 
-                {/*выпадающая компонент форма для обраный связи*/}
                 
                 <CallbackRequest/>
             <motion.section
@@ -119,7 +119,7 @@ const container = {
                     transition={{ delay: 0.5 }}
                     className="flex items-center gap-4">
                     <Link
-                        href="#"
+                        href="#googleMap"
                         className="hidden sm:flex sm:items-center btn px-6 py-2">
                         <MdLocationOn className="mr-2" /> {t("location")} 177
                     </Link>
@@ -143,6 +143,7 @@ const container = {
             {isMenuOpen && (
                 <MenuBurger onClose={toggleMenu} />
             )}
+            <ScrollToTopButton/>
         </header>
     );
 }

@@ -23,6 +23,7 @@ import HomeAutomation from "./component/HomeAutomation";
 import PowerSystems from "./component/PowerSystems";
 import Multimedia from "./component/Multimedia";
 import SmartHomeProject from "./component/SmartHomeProject";
+import LinkPage from "@/components/LinkPage";
 
 const ServicesPage = () => {
     return (
@@ -36,7 +37,7 @@ const ServicesPage = () => {
         <PowerSystems/>
         <Multimedia/>
         <SmartHomeProject/>
-            <div className="bg-gray-900 text-white">
+            {/* <div className="bg-gray-900 text-white">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -194,7 +195,8 @@ const ServicesPage = () => {
                         </motion.button>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <LinkPage/>
         </>
     );
 };

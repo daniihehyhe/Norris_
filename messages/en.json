@@ -1,149 +1,184 @@
 {
-    "Index": {
-        "title": "Hello world!"
-    },
-    "header": {
-        "home": "Home",
-        "chooseLanguage": "Choose Language",
-        "english": "English",
-        "russian": "Russian",
-        "kyrgyz": "Kyrgyz",
-        "kazakh": "Kazakh",
-        "system": "System",
-        "services": "Services",
-        "aboutUs": "About Us",
-        "portfolio": "Portfolio",
-        "articles": "Articles",
-        "news": "News",
-        "location": "Bokombaeva",
-        "contacts": "Contacts",
-        "welcome": "Welcome",
-        "contactButton": "Contact Us",
-        "modalTitle": "Contact Us",
-        "nameLabel": "Name",
-        "emailLabel": "Email",
-        "phoneLabel": "Phone",
-        "submitButton": "Submit",
-        "email": "Enter your email",
-        "phone": "Enter your phone number",
-        "name": "Enter your name",
-        "leavePhone": "Leave your phone number, and we will contact you as soon as possible.",
-        "agreePolicy": "By sending us your phone number, you agree to the Privacy Policy.We do not share your phone number with third parties."
-    },
-    "LocaleSwitcher": {
-        "label": "Change language",
-        "locale": "{locale, select, kg {🇰🇬 Kyrgyz} en {🇺🇸 English} kz {🇰🇿 Kazakh} ru {🇷🇺 Russian} other {Unknown}}"
-    },
-
-    "slides_slide1_img": "/images/slider/2.webp",
-    "slides_slide1_title": "Smart Home Installation",
-    "slides_slide1_description": "We offer professional smart home installation services. Ensure your home is equipped with the latest technology for ultimate convenience and security.",
-    "slides_slide2_img": "/images/slider/3.webp",
-    "slides_slide2_title": "Camera Installation",
-    "slides_slide2_description": "Our specialists will install cameras for your home and office, providing you with peace of mind and increased security.",
-    "slides_slide3_img": "/images/slider/4.webp",
-    "slides_slide3_title": "Software Integration",
-    "slides_slide3_description": "We help integrate smart home systems into your existing software, making sure everything works seamlessly together.",
-    "slides_slide4_img": "/images/slider/5.webp",
-    "slides_slide4_title": "Security",
-    "slides_slide4_description": "Enhance the security of your home with modern technology. We offer a variety of solutions to keep you and your loved ones safe.",
-    "slides_slide5_img": "/images/slider/6.webp",
-    "slides_slide5_title": "Sensors",
-    "slides_slide5_description": "Installation and configuration of various sensors to enhance the functionality and convenience of your home.",
+  "Index": {
+    "title": "Hello world!"
+  },
+  "header": {
+    "home": "Home",
+    "chooseLanguage": "Choose Language",
+    "english": "English",
+    "russian": "Russian",
+    "kyrgyz": "Kyrgyz",
+    "kazakh": "Kazakh",
+    "system": "System",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "portfolio": "Portfolio",
+    "articles": "Articles",
+    "news": "News",
+    "location": "Bokombaeva",
+    "contacts": "Contacts",
+    "welcome": "Welcome",
     "contactButton": "Contact Us",
-    "learnMoreButton": "Learn More",
-    "contactModal": {
-        "contactButton": "Contact Us",
-        "modalTitle": "Contact Us",
-        "nameLabel": "Name",
-        "emailLabel": "Email",
-        "phoneLabel": "Phone",
-        "submitButton": "Submit"
-    },
+    "modalTitle": "Contact Us",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "submitButton": "Submit",
+    "email": "Enter your email",
+    "phone": "Enter your phone number",
+    "name": "Enter your name"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, kg {🇰🇬 Kyrgyz} en {🇺🇸 English} kz {🇰🇿 Kazakh} ru {🇷🇺 Russian} other {Unknown}}"
+  },
+  "footer": {
+    "home": "Home",
+    "system": "System",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "portfolio": "Portfolio",
+    "articles": "Articles",
+    "news": "News",
+    "location": "Bokombaeva",
+    "contacts": "Contacts",
+    "description": "Smart home system from Norris.kg in Bishkek for flats, offices, hotels and other objects from Norris Service Company. Development of projects for individual order, a large selection of ready-made solutions. Development of printed circuit boards, integrated circuits, software development for controllers. Installation, adjustment, maintenance of equipment at a high professional level. ",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "address": "Address: Bishkek, Bokombaeva 177 ",
+    "company": "All rights reserved."
+  },
+  "contactUs": {
+    "customerService": "Customer Service",
+    "monFri": "Mon-Fri: 10am - 18:30pm",
+    "support247": "24/7 Support",
+    "supportManager": "Support Manager",
+    "phoneLabel": "Phone",
+    "contactUs": "Contact Us",
+    "emailLabel": "Email",
+    "location": "location",
+    "address": "Address: Bishkek, Bokombaeva 177 ",
+    "linkOrOffice": "Reach out to us via phone, email, or visit us at our location.",
+    "officeManager": "Office Manager",
+    "socialTitle": "We are on social networks",
+    "socialSubtitle":"Subscribe to get more information"
+  },
+  "slides_slide1_img": "/images/slider/2.webp",
+  "slides_slide1_title": "Smart Home Installation",
+  "slides_slide1_description": "We offer professional smart home installation services. Ensure your home is equipped with the latest technology for ultimate convenience and security.",
+  "slides_slide2_img": "/images/slider/3.webp",
+  "slides_slide2_title": "Camera Installation",
+  "slides_slide2_description": "Our specialists will install cameras for your home and office, providing you with peace of mind and increased security.",
+  "slides_slide3_img": "/images/slider/4.webp",
+  "slides_slide3_title": "Software Integration",
+  "slides_slide3_description": "We help integrate smart home systems into your existing software, making sure everything works seamlessly together.",
+  "slides_slide4_img": "/images/slider/5.webp",
+  "slides_slide4_title": "Security",
+  "slides_slide4_description": "Enhance the security of your home with modern technology. We offer a variety of solutions to keep you and your loved ones safe.",
+  "slides_slide5_img": "/images/slider/6.webp",
+  "slides_slide5_title": "Sensors",
+  "slides_slide5_description": "Installation and configuration of various sensors to enhance the functionality and convenience of your home.",
+  "contactButton": "Contact Us",
+  "learnMoreButton": "Learn More",
+  "contactModal": {
+    "leavePhone": "Leave your phone",
+    "contactButton": "Contact Us",
+    "modalTitle": "Contact Us",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "submitButton": "Submit",
+    "agreePolicy": "By sending us your phone, you agree to the Personal Data Processing Policy. We do not share your phone with third parties."
+  },
 
-    "SmartHomeServices": {
-        "camera": {
-            "title": "Camera",
-            "description": "Manage your home cameras from anywhere in the world. You can monitor live footage, review recordings, and even control the angle of the cameras remotely. It's a perfect solution for ensuring your home security at all times.",
-            "image": "1.webp"
-        },
-        "security": {
-            "title": "Security",
-            "description": "Ensure your home's security with advanced systems. Our security solutions include alarms, motion detectors, and smart locks that you can control from your phone. Keep your home and loved ones safe with our comprehensive security systems.",
-            "image": "2.webp"
-        },
-        "smartSpeakers": {
-            "title": "Smart Speakers",
-            "description": "Control smart speakers like Alice, Siri. With smart speakers, you can play music, control other smart devices, and get information using just your voice. Experience the convenience of a hands-free, voice-controlled environment.",
-            "image": "3.webp"
-        },
-        "sensors": {
-            "title": "Sensors",
-            "description": "Presence, light, gas, temperature sensors. Our range of sensors can detect motion, changes in lighting, gas leaks, and temperature fluctuations. These sensors ensure you are always aware of the conditions in your home.",
-            "image": "4.webp"
-        },
-        "curtainsLighting": {
-            "title": "Curtains and Lighting",
-            "description": "Manage your curtains, lighting, and blinds from anywhere. You can set schedules, control them remotely, and create the perfect ambiance for any time of day or night. Enhance your comfort and convenience with smart control over your home’s lighting and window treatments.",
-            "image": "5.webp"
-        }
+  "SmartHomeServices": {
+    "camera": {
+      "title": "Camera",
+      "description": "Manage your home cameras from anywhere in the world. You can monitor live footage, review recordings, and even control the angle of the cameras remotely. It's a perfect solution for ensuring your home security at all times.",
+      "image": "1.webp"
     },
-    "MainNorrisTittle": {
-        "title": "Smart Home System",
-        "description": "Smart home system from Norris.kg in Bishkek for flats, offices, hotels and other objects from Norris Service Company. Development of projects for individual order, a large selection of ready-made solutions. Development of printed circuit boards, integrated circuits, software development for controllers. Installation, adjustment, maintenance of equipment at a high professional level. ",
-        "button": "Calculate cost",
-        "benefit1": "Custom project development, a wide selection of ready-made solutions",
-        "benefit2": "PCB design, IC design, software development for controllers",
-        "benefit3": "Installation, setup, maintenance of equipment at a high professional level",
-        "request": "Leave a request for turnkey work via the website or Instagram Norris.kg of our company.",
-        "discount": "We offer discounts for partners: design studios, developers, as well as when purchasing additional elements and devices, we offer good prices and convenient cooperation conditions."
+    "security": {
+      "title": "Security",
+      "description": "Ensure your home's security with advanced systems. Our security solutions include alarms, motion detectors, and smart locks that you can control from your phone. Keep your home and loved ones safe with our comprehensive security systems.",
+      "image": "2.webp"
     },
-    "TypesSliderItemSmartHome": {
-        "item1": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room.",
-        "item2": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room.",
-        "item3": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room.",
-        "item4": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room."
+    "smartSpeakers": {
+      "title": "Smart Speakers",
+      "description": "Control smart speakers like Alice, Siri. With smart speakers, you can play music, control other smart devices, and get information using just your voice. Experience the convenience of a hands-free, voice-controlled environment.",
+      "image": "3.webp"
     },
-    "ProjectStagesSmartHome": {
-        "title": "What does the project work include?",
-        "description": "It consists of a number of activities, each of which plays an important role in the successful implementation of the task. They can be conditionally divided into several main stages:",
-        "steps": {
-            "step1": {
-                "title": "Gathering information about the object.",
-                "description": "The state of communications, architecture, room layout, ease of connection to power supply are assessed. The purpose of the building, the requirements of the owners, the possibility of using additional subsystems for further long-term operation are taken into account."
-            },
-            "step2": {
-                "title": "Creating a sketch.",
-                "description": "The number of parts, the length and cross-section of wires and cables necessary for installation in the 'smart home' are calculated. The estimate is drawn up and agreed with the customer. Changes are made to it if necessary."
-            },
-            "step3": {
-                "title": "Preparation of documentation.",
-                "description": "Drawings are created according to which the switchboard, video cameras, power supplies and other elements will be placed in the building. The paths for laying low-current and power cable lines are modeled."
-            },
-            "step4": {
-                "title": "Timing",
-                "description": "The deadlines for the work are determined, their schedule is approved, and instructions for installation teams are drawn up. After a detailed development of the system, the process of its implementation begins according to the approved plan."
-            }
-        }
+    "sensors": {
+      "title": "Sensors",
+      "description": "Presence, light, gas, temperature sensors. Our range of sensors can detect motion, changes in lighting, gas leaks, and temperature fluctuations. These sensors ensure you are always aware of the conditions in your home.",
+      "image": "4.webp"
     },
-    "TypesSmartHome": {
-        "title": "Smart Systems: Types, Applications",
-        "intro1": "High technology is used in all areas of activity today. They allow us to significantly simplify our lives, making them comfortable. Homes that take care of their owners have become commonplace.",
-        "intro2": "A smart home from NORRIS.KG is an automated complex that controls and manages electronic equipment located in buildings, outside, or in mobile objects (cars or motorcycles). The system is divided into three main types:",
-        "wireless": "wireless",
-        "wired": "wired",
-        "hybrid": "hybrid",
-        "details1": "For small premises with a budget solution, wireless systems are sufficient. In large areas, wired or hybrid complexes should be used. Otherwise, the signal quality will be low, and the commands given to the equipment will be executed with a delay. In practice, wireless and wired solutions are used together to complement each other.",
-        "details2": "Effectively performing their tasks, they provide:",
-        "benefit1": "Increased comfort, safety of people.",
-        "benefit2": "Extended equipment life (generators, exhaust systems, air conditioners, heating and heating appliances)",
-        "benefit3": "Preservation of engineering communications.",
-        "benefit4": "Protection of property, material assets.",
-        "details3": "Systems are equipped in both residential and commercial buildings, bank offices and other facilities, including mobile objects such as cars, boats, scooters, and other transport.",
-        "management_title": "Management methods, capabilities",
-        "details4": "The smart home system requires minimal attention from a person and can function without their participation. The main advantages are multitasking, economy, and simplicity of settings.",
-        "details5": "The system is controlled using a touch panel, computer, remote control, remotely via a smartphone. The possibilities of the internet allow you to make changes to the settings of heating equipment, lighting, etc., from anywhere in the world.",
-        "details6": "Set a specific algorithm, and the actions will be accurately executed by the smart home. Possible scenarios:"
+    "curtainsLighting": {
+      "title": "Curtains and Lighting",
+      "description": "Manage your curtains, lighting, and blinds from anywhere. You can set schedules, control them remotely, and create the perfect ambiance for any time of day or night. Enhance your comfort and convenience with smart control over your home’s lighting and window treatments.",
+      "image": "5.webp"
     }
-    
+  },
+  "MainNorrisTittle": {
+    "title": "Smart Home System",
+    "description": "Smart home system from Norris.kg in Bishkek for flats, offices, hotels and other objects from Norris Service Company. Development of projects for individual order, a large selection of ready-made solutions. Development of printed circuit boards, integrated circuits, software development for controllers. Installation, adjustment, maintenance of equipment at a high professional level. ",
+    "button": "Calculate cost",
+    "benefit1": "Custom project development, a wide selection of ready-made solutions",
+    "benefit2": "PCB design, IC design, software development for controllers",
+    "benefit3": "Installation, setup, maintenance of equipment at a high professional level",
+    "request": "Leave a request for turnkey work via the website or Instagram Norris.kg of our company.",
+    "discount": "We offer discounts for partners: design studios, developers, as well as when purchasing additional elements and devices, we offer good prices and convenient cooperation conditions."
+  },
+  "TypesSliderItemSmartHome": {
+    "item1": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room.",
+    "item2": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room.",
+    "item3": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room.",
+    "item4": "Automatic switching on and off the lighting depending on the time of day and the user's location in the room."
+  },
+  "ProjectStagesSmartHome": {
+    "title": "What does the project work include?",
+    "description": "It consists of a number of activities, each of which plays an important role in the successful implementation of the task. They can be conditionally divided into several main stages:",
+    "steps": {
+      "step1": {
+        "title": "Gathering information about the object.",
+        "description": "The state of communications, architecture, room layout, ease of connection to power supply are assessed. The purpose of the building, the requirements of the owners, the possibility of using additional subsystems for further long-term operation are taken into account."
+      },
+      "step2": {
+        "title": "Creating a sketch.",
+        "description": "The number of parts, the length and cross-section of wires and cables necessary for installation in the 'smart home' are calculated. The estimate is drawn up and agreed with the customer. Changes are made to it if necessary."
+      },
+      "step3": {
+        "title": "Preparation of documentation.",
+        "description": "Drawings are created according to which the switchboard, video cameras, power supplies and other elements will be placed in the building. The paths for laying low-current and power cable lines are modeled."
+      },
+      "step4": {
+        "title": "Timing",
+        "description": "The deadlines for the work are determined, their schedule is approved, and instructions for installation teams are drawn up. After a detailed development of the system, the process of its implementation begins according to the approved plan."
+      }
+    }
+  },
+  "TypesSmartHome": {
+    "title": "Smart Systems: Types, Applications",
+    "intro1": "High technology is used in all areas of activity today. They allow us to significantly simplify our lives, making them comfortable. Homes that take care of their owners have become commonplace.",
+    "intro2": "A smart home from NORRIS.KG is an automated complex that controls and manages electronic equipment located in buildings, outside, or in mobile objects (cars or motorcycles). The system is divided into three main types:",
+    "wireless": "wireless",
+    "wired": "wired",
+    "hybrid": "hybrid",
+    "details1": "For small premises with a budget solution, wireless systems are sufficient. In large areas, wired or hybrid complexes should be used. Otherwise, the signal quality will be low, and the commands given to the equipment will be executed with a delay. In practice, wireless and wired solutions are used together to complement each other.",
+    "details2": "Effectively performing their tasks, they provide:",
+    "benefit1": "Increased comfort, safety of people.",
+    "benefit2": "Extended equipment life (generators, exhaust systems, air conditioners, heating and heating appliances)",
+    "benefit3": "Preservation of engineering communications.",
+    "benefit4": "Protection of property, material assets.",
+    "details3": "Systems are equipped in both residential and commercial buildings, bank offices and other facilities, including mobile objects such as cars, boats, scooters, and other transport.",
+    "management_title": "Management methods, capabilities",
+    "details4": "The smart home system requires minimal attention from a person and can function without their participation. The main advantages are multitasking, economy, and simplicity of settings.",
+    "details5": "The system is controlled using a touch panel, computer, remote control, remotely via a smartphone. The possibilities of the internet allow you to make changes to the settings of heating equipment, lighting, etc., from anywhere in the world.",
+    "details6": "Set a specific algorithm, and the actions will be accurately executed by the smart home. Possible scenarios:"
+  },
+  "LinkPage": {
+    "title": "Free Specialist Consultation",
+    "subtitle": "Get a free consultation from our experienced specialists. We will help you understand all the nuances and offer the best solutions for your project."
+  }
 }

@@ -40,7 +40,7 @@
     "**/*.tsx",
     "src",
     ".next/types/**/*.ts"
-, "next.config.mjs"  ],
+, "next.config.mjs", "pages/api", "pages/api"  ],
   "exclude": [
     "node_modules"
   ],

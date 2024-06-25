@@ -33,7 +33,7 @@ const services = [
 const Services: React.FC = () => {
     return (
         <div className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold text-center mb-8">Наши услуги</h1>
+            <h1 className="pt-20 text-4xl font-bold text-center mb-8">Наши услуги</h1>
             <div className="space-y-16">
                 {services.map((service, index) => (
                     <motion.div
