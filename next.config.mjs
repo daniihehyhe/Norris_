@@ -1,20 +1,21 @@
-import nextIntl from "next-intl/plugin";
+import nextIntl from 'next-intl/plugin';
 
-// Your existing Next.js configuration
+const withNextIntl = nextIntl('./src/i18n.ts');
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
     appDir: true,
   },
   images: {
-    domains: ["tailwindui.com"],
+    domains: ['tailwindui.com'],
   },
+  output: 'export',
 };
 
-// Use nextIntl to extend your configuration with the next-intl plugin
-const withNextIntl = nextIntl("./src/i18n.ts");
-
 export default withNextIntl(nextConfig);
+
 
 
 

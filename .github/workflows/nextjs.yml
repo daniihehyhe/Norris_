@@ -80,6 +80,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name:  Deploy Norris.kg
+      - name: Deploy Norris.kg
         id: deployment
         uses: actions/deploy-pages@v4
