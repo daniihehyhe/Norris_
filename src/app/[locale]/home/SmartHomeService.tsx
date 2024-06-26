@@ -1,4 +1,4 @@
-// src/components/SmartHomeService.tsx
+'use client'
 import React, { useEffect, useRef } from "react";
 import clsx from "clsx";
 import Image from "next/image";

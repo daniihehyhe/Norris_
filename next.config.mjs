@@ -4,14 +4,6 @@ const withNextIntl = nextIntl('./src/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
-  images: {
-    domains: ['tailwindui.com'],
-  },
-  output: 'export',
 };
 
 export default withNextIntl(nextConfig);

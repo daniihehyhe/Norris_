@@ -1,5 +1,5 @@
 
-"use client";
+'use clinet'
 
 import TypesSmartHome from '@/components/TypesSmartHome';
 import ContractStages from './home/ProjectStagesSmartHome';
