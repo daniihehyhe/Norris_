@@ -26,7 +26,7 @@ module.exports = {
 				"linebreak-style": ["error", "unix"],
 				"quotes": ["error", "single"],
 				"comma-dangle": ["error", "always-multiline"],
-				"@typescript-eslint/no-explicit-any": 0
+				"@typescript-eslint/no-explicit-any": 0,
 			}
 		}
 	]
