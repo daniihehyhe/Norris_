@@ -1,10 +1,7 @@
-name: Deploy Next.js to Vercel
+name: Deploy to Server
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
 
@@ -13,22 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Build Next.js application
+      - name: Build project
         run: yarn build
 
-      - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      - name: Create deployment package
+        run: tar -czf norris.kg.tar.gz .next public
+
+      - name: Deploy to server
         run: |
-          npx vercel --prod --token $VERCEL_TOKEN --confirm
+          scp norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/path/to/deploy
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "
+            cd ../var/www/html/ &&
+            tar -xzf norris.kg.tar.gz &&
+            rm norris.kg.tar.gz &&
+            # Здесь могут быть дополнительные команды, например, перезапуск веб-сервера
+            "
