@@ -1,4 +1,4 @@
-// components/CallbackRequest.tsx
+// модальная окно автоматически выводиться на экран. для отпраки данных клиента номер имя 
 import React, { useState, useEffect } from "react";
 import ContactModal from "./ContactModal";
 
