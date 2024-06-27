@@ -20,18 +20,8 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: yarn install
-
       - name: Build project
-        run: |
-          export PATH=$(yarn bin):$PATH
-          yarn build
+        run: yarn build
 
       - name: Create deployment package
         run: tar -czf norris.kg.tar.gz .next public
@@ -39,9 +29,9 @@ jobs:
       - name: Deploy to server
         run: |
           scp norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/
-          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "
-            cd /var/www/html/  &&
-            tar -xzf norris.kg.tar.gz &&
-            rm norris.kg.tar.gz &&
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+            cd /var/www/html/
+            tar -xzf norris.kg.tar.gz
+            rm norris.kg.tar.gz
             # Здесь могут быть дополнительные команды, например, перезапуск веб-сервера
-          "
+          EOF
