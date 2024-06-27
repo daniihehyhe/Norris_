@@ -15,32 +15,24 @@ jobs:
 
       - name: Set up SSH
         run: |
-          # Создание папки .ssh и установка прав
           mkdir -p ~/.ssh
-          # Добавление приватного SSH-ключа
           echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          # Добавление сервера в список известных хостов
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Build project
         run: |
-          # Экспорт пути Yarn
           export PATH=$(yarn bin):$PATH
           yarn build
 
       - name: Create deployment package
-        run: |
-          # Создание архива с собранным проектом
-          tar -czf norris.kg.tar.gz .next public
+        run: tar -czf norris.kg.tar.gz .next public
 
       - name: Deploy to server
         run: |
-          # Копирование архива на сервер
-          scp norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/
-          # Распаковка архива на сервере и удаление архива
+          scp norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:../var/www/html/
           ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            cd /var/www/html/
+            cd ../var/www/html/
             tar -xzf norris.kg.tar.gz
             rm norris.kg.tar.gz
             # Здесь могут быть дополнительные команды, например, перезапуск веб-сервера
