@@ -21,7 +21,9 @@ jobs:
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Build project
-        run: yarn build
+        run: |
+          export PATH=$(yarn bin):$PATH
+          yarn build
 
       - name: Create deployment package
         run: tar -czf norris.kg.tar.gz .next public
