@@ -24,11 +24,8 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: Export static files
-        run: yarn export
-
       - name: Create deployment package
-        run: tar -czf norris.kg.tar.gz out
+        run: tar -czf norris.kg.tar.gz .next public
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -60,5 +57,7 @@ jobs:
             cd /var/www/html/norris/
             tar -xzf norris.kg.tar.gz
             rm norris.kg.tar.gz
-            # Здесь могут быть дополнительные команды, например, перезапуск веб-сервера
+            yarn install --production
+            pm2 restart your-app-name || pm2 start npm --name "your-app-name" -- start
+            # Убедитесь, что PM2 установлен на вашем сервере
           EOF
