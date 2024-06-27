@@ -38,7 +38,7 @@ jobs:
 
       - name: Deploy to server
         run: |
-          scp norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/path/to/deploy
+          scp norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:../var/www/html/
           ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "
             cd ../var/www/html/  &&
             tar -xzf norris.kg.tar.gz &&
