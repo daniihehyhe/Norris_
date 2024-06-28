@@ -1,7 +1,7 @@
 
 'use clinet'
 
-import TypesSmartHome from '@/components/TypesSmartHome';
+import TypesSmartHome from '@/app/[locale]/home/TypesSmartHome';
 import ContractStages from './home/ProjectStagesSmartHome';
 import SmartHomeService from './home/SmartHomeService';
 import LetterByLetter from "../../components/LetterByLetter";
@@ -11,7 +11,7 @@ import ComponentA from './home/ComponentA';
 import ComponentB from './home/ComponentB';
 import ComponentC from './home/ComponentC';
 import ComponentD from './home/ComponentD';
-import TypesSliderItemSmartHome from '@/components/TypesSliderItemSmartHome';
+import TypesSliderItemSmartHome from '@/app/[locale]/home/TypesSliderItemSmartHome';
 import LinkPage from '@/components/LinkPage';
 
 

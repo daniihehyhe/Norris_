@@ -26,19 +26,20 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   const currentTime = Date.now();
-  const oneHour = 20 * 60 * 1000; // 1 час в миллисекундах
+  const oneMinute = 1 * 60 * 1000; // 1 минута в миллисекундах
 
-  if (userRequestTimestamps[phone] && currentTime - userRequestTimestamps[phone] < oneHour) {
-    console.log('User has already sent a message in the last hour');
-    return res.status(429).json({ message: 'You can only send one message per hour' });
+  if (userRequestTimestamps[phone] && currentTime - userRequestTimestamps[phone] < oneMinute) {
+    console.log('User has already sent a message in the last minute');
+    return res.status(429).json({ message: 'You can only send one message per minute' });
   }
 
   // Обновить время последнего отправленного сообщения
   userRequestTimestamps[phone] = currentTime;
 
   const apiKey = process.env.CALLMEBOT_API_KEY;
-  const recipientPhone = '996700881232'; // Определенный номер получателя
-  const message = `Имя: ${name}\nНомер телефона: ${phone}`;
+  const recipientPhone = process.env.CALLMEBOT_PHONE; // Определенный номер получателя
+  const message = `🔔 *Запрос на консультацию* 🔔\n\n🌐 *Сайт:* https://norris.kg/\n\n👤 *Имя:* ${name}\n📞 *Номер телефона:* ${phone}`;
+
   const url = `https://api.callmebot.com/whatsapp.php?phone=${recipientPhone}&text=${encodeURIComponent(message)}&apikey=${apiKey}`;
 
   try {

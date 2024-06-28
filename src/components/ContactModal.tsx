@@ -24,8 +24,8 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
         const lastSentTime = localStorage.getItem("lastSentTime");
         if (lastSentTime) {
             const elapsedTime = Date.now() - parseInt(lastSentTime);
-            if (elapsedTime < 20 * 60 * 1000) {
-                setMessage('Вы можете отправлять сообщение не чаще, чем раз в 20 минут.');
+            if (elapsedTime < 10 * 60 * 1000) {
+                setMessage('Вы можете отправлять сообщение не чаще, чем раз в 10 минут.');
                 setIsDisabled(true);
             }
         }
@@ -65,7 +65,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
             setTimeout(() => setIsDisabled(false), 20 * 60 * 1000);
             console.log('WhatsApp message sent successfully');
         } else if (response.status === 429) {
-            setMessage('Вы можете отправлять сообщение не чаще, чем раз в 20 минут.');
+            setMessage('Вы можете отправлять сообщение не чаще, чем раз в 10 минут.');
         } else {
             setMessage('Ошибка при отправке сообщения в WhatsApp.');
             console.error('Error sending WhatsApp message');
