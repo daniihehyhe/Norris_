@@ -139,7 +139,7 @@ const MenuBurger: React.FC<MenuProps> = ({ onClose }) => {
               onClick={onClose}
               key={index}
               href={item.link}
-              className="w-fit text-xl md:text-3xl py-2 hover:border-b-2 dark:hover:border-blue-500 hover:tracking-wider hover:border-yellow-600"
+              className="w-fit text-xl md:text-3xl default-border  py-2 hover:border-b-2 dark:hover:border-blue-500  hover:border-yellow-600"
             >
               {item.label}
             </Link>

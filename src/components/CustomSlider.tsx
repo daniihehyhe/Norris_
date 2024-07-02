@@ -24,7 +24,7 @@ const variants: Variants = {
 };
 
 
-const Slider: React.FC<SliderProps> = ({
+const CustomSlider: React.FC<SliderProps> = ({
     children,
     autoPlay = true,
     autoPlayInterval = 5000,
@@ -48,9 +48,9 @@ const constraintsRef = useRef<HTMLDivElement>(null);
         }
     }, [page, autoPlay, autoPlayInterval, childrenArray.length]);
     return (
-        <section className="h-screen flex justify-center">
+        <section className="h-[60vh] flex justify-center">
             <div
-                className="relative h-full w-11/12 overflow-hidden"
+ className="relative h-full w-11/12 overflow-hidden"
                 ref={constraintsRef}>
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.div
@@ -75,7 +75,8 @@ const constraintsRef = useRef<HTMLDivElement>(null);
                             x: { type: "spring", stiffness: 300, damping: 30 },
                             opacity: { duration: 0.7 },
                         }}
-                        className="absolute w-full h-full flex justify-center items-center">
+                     
+                            className="absolute w-full h-full flex justify-center items-center"> 
                         {childrenArray[page]}
                     </motion.div>
                 </AnimatePresence>
@@ -109,4 +110,4 @@ const constraintsRef = useRef<HTMLDivElement>(null);
     );
 };
 
-export default Slider;
+export default CustomSlider;

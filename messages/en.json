@@ -1,4 +1,9 @@
 {
+  "mainMeta":{
+    "title": "SMART HOME TURNKEY in Bishkek",
+    "description": "Automation of engineering systems. Voice control. Installation of the “Smart Home” system.",
+    "welcome": "Welcome to the Smart Home website"
+  },
   "Index": {
     "title": "Hello world!"
   },
@@ -180,5 +185,23 @@
   "LinkPage": {
     "title": "Free Specialist Consultation",
     "subtitle": "Get a free consultation from our experienced specialists. We will help you understand all the nuances and offer the best solutions for your project."
+  },
+  "SecurityFeatures": {
+    "title": "What can a fire and security alarm system do?",
+    "subtitle": "The security and fire alarm system performs many useful and important functions. It can be assigned various tasks based on the features and requirements of the object. The main ones include:",
+    "stages": {
+      "item1": "Access control to the object. The software has a 'friend-foe' face recognition function and will alert you if a subject not listed in the database approaches your door.",
+      "item2": "Protection against intrusion into the territory. It triggers if an unauthorized person appears in the protected perimeter. It won't react to a cat or dog accidentally wandering into the yard.",
+      "item3": "Prevention of water leaks, gas leaks, electrical system short circuits. In the event of an emergency, the communications in the 'smart home' automatically shut down. Fire suppression devices activate in case of a fire."
+    },
+    "info": "The security and fire alarm system integrates with other equipment, significantly expanding its functionality. The 'smart home' can perform not only security tasks but also many other functions.",
+    "slider": {
+      "item1": "Open garage doors",
+      "item2": "Create the appearance of the owners being present",
+      "item3": "Turn lights on and off at a set time",
+      "item4": "Raise and lower blinds",
+      "item5": "Work as a baby monitor"
+    },
+    "advantages": "The main advantages of 'smart' technology are reliability, fast response, ease of settings, and the ability to control it remotely."
   }
 }

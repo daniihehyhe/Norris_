@@ -55,7 +55,7 @@ const ThemeToggleButton: React.FC = () => {
 
             {menuOpen && (
                 <div
-                    className="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-300 opacity-100"
+                    className="origin-top-right absolute -right-5 md:left-0  mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-300 opacity-100"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="menu-button">
