@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -46,7 +47,8 @@ const ComponentD: React.FC = () => {
                     alt="Security Animation"
                     width={200}
                     height={200}
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg w-auto"
+                    priority 
                 />
             </motion.div>
         </div>

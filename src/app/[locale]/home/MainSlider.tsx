@@ -122,6 +122,7 @@ const MainSlider: React.FC = () => {
                             alt={slide.title}
                             fill
                             className="w-full h-full object-cover"
+                            priority 
                         />
                         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-4">
                             <h2 className="text-5xl w-5/6 font-bold mb-10">

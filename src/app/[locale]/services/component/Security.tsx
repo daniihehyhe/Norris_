@@ -49,6 +49,7 @@ const Services: React.FC = () => {
                                 width={700}
                                 height={500}
                                 className="w-full h-auto object-cover rounded-lg shadow-md"
+                                priority 
                             />
                         </div>
                         <div className="md:w-1/2 md:pl-8 p-4 flex items-center">

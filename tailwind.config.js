@@ -25,8 +25,8 @@ module.exports = {
       },
       fontSize:{
         contText: "clamp(0.75rem, 0.482rem + 0.714vw, 1.125rem);",
-        subText:"clamp(0.875rem, 0.339rem + 1.429vw, 1.625rem)",
-        titleText:"clamp(1.50rem, -0.536rem + 4.762vw, 3.75rem)"
+        subText:"clamp(0.875rem, 0.339rem + 1.429vw, 1.225rem)",
+        titleText:"clamp(1.50rem, -0.536rem + 4.762vw, 3.25rem)"
       },
       spacing: {
         'textClamp': 'clamp(1rem, -4.357rem + 14.286vw, 8.5rem)',

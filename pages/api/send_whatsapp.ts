@@ -26,7 +26,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   const currentTime = Date.now();
-  const oneMinute = 1 * 60 * 1000; // 1 минута в миллисекундах
+  const oneMinute = 10  * 1000; // 1 минута в миллисекундах
 
   if (userRequestTimestamps[phone] && currentTime - userRequestTimestamps[phone] < oneMinute) {
     console.log('User has already sent a message in the last minute');

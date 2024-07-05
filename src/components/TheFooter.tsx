@@ -7,6 +7,8 @@ import whiteLogo from '@public/images/white_logo.png';
 import Image from 'next/image';
 import SocialLink from './SocialLink';
 
+
+
 function TheFooter() {
     const t = useTranslations('footer');
 
@@ -28,6 +30,7 @@ function TheFooter() {
         <>
             <div className='container mx-auto' id="mapContainer">
                 <iframe
+                title={t("address")}
                     id="googleMap"
                     className="w-full h-64"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d731.0574036548701!2d74.5864628!3d42.8679975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb76a5ccec697%3A0x1033d2839123ff1d!2sNorris%20Service!5e0!3m2!1sru!2skg!4v1715775977645!5m2!1sru!2skg"
@@ -45,6 +48,7 @@ function TheFooter() {
                                     src={ whiteLogo.src}
                                     width={150}
                                     height={70}
+                                    className='w-auto'
                                     alt="logo_norris.kg"
                                 />
                             </h3>
@@ -55,7 +59,7 @@ function TheFooter() {
                             <nav className="text-gray-400">
                                 {menuItemsWindowHeader.map((item, index) => (
                                     <div key={index} className="hover:text-gray-600">
-                                        <Link href={item.link}>{item.label}</Link>
+                                        <Link  rel="noopener noreferrer" href={item.link}>{item.label}</Link>
                                     </div>
                                 ))}
                             </nav>

@@ -104,14 +104,14 @@ const MenuBurger: React.FC<MenuProps> = ({ onClose }) => {
   return (
     <main className="fixed top-0 left-0 h-screen z-50 w-full bg-gray-200 dark:bg-gray-900 p-4 md:mx-auto overflow-y-auto">
       <section className="flex container mx-auto relative flex-col-reverse gap-5 md:gap-0 md:flex-row justify-between items-center md:mb-5">
-        <Link href="/">
+        <Link href="/"  rel="noopener noreferrer">
           <Image
             onClick={onClose}
             src={theme === "light" ? logo.src : whiteLogo.src}
             width={150}
             height={70}
             alt="logo_norris.kg"
-            className="hidden lg:block"
+            className="hidden lg:block w-auto"
           />
         </Link>
         <div className="flex items-center gap-4 md:gap-8 mb-4 md:mb-0">
@@ -189,11 +189,12 @@ const MenuBurger: React.FC<MenuProps> = ({ onClose }) => {
     disabled={isSending || isDisabled}>
     {tc("submitButton")}
     <Image
-        className="ml-10"
+        className="ml-10 w-auto"
         src={Arrow_long_right}
         width={40}
         height={20}
         alt="Arrow_long_right"
+        priority 
     />
 </button>
 

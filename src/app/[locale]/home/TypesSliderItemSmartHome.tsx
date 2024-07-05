@@ -33,10 +33,12 @@ function TypesSliderItemSmartHome() {
                         {t(item.id)}
                     </p>
                     <Image
+                    className="w-auto"
                         src={item.image}
                         height={250}
                         width={222}
                         alt={item.alt}
+                        priority 
                     />
                 </div>
             ))}

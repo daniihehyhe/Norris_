@@ -57,7 +57,7 @@ function ProtectingYourSafety() {
         transition={{ duration: 0.5 }}
         className="bg-white rounded-lg shadow-md overflow-hidden"
       >
-        <Image src={blinds} alt="Blinds" width={600} height={400} className="w-full h-48 object-cover" />
+        <Image src={blinds} alt="Blinds" width={600} height={400} className="w-full h-48 object-cover" priority  />
         <div className="p-4">
           <h3 className="text-xl font-bold mb-2">Blinds</h3>
           <p>Автоматические жалюзи для вашего дома.</p>
@@ -69,7 +69,7 @@ function ProtectingYourSafety() {
         transition={{ duration: 0.5 }}
         className="bg-white rounded-lg shadow-md overflow-hidden"
       >
-        <Image src={radio} alt="Radio" width={600} height={400} className="w-full h-48 object-cover" />
+        <Image src={radio} alt="Radio" width={600} height={400} className="w-full h-48 object-cover" priority  />
         <div className="p-4">
           <h3 className="text-xl font-bold mb-2">Radio</h3>
           <p>Система радиоуправления для вашего комфорта.</p>
@@ -81,7 +81,7 @@ function ProtectingYourSafety() {
         transition={{ duration: 0.5 }}
         className="bg-white rounded-lg shadow-md overflow-hidden"
       >
-        <Image src={house} alt="House" width={600} height={400} className="w-full h-48 object-cover" />
+        <Image src={house} alt="House" width={600} height={400} className="w-full h-48 object-cover" priority  />
         <div className="p-4">
           <h3 className="text-xl font-bold mb-2">House</h3>
           <p>Современный умный дом с автоматизированными системами.</p>
@@ -93,7 +93,7 @@ function ProtectingYourSafety() {
         transition={{ duration: 0.5 }}
         className="bg-white rounded-lg shadow-md overflow-hidden"
       >
-        <Image src={gate} alt="Gate" width={600} height={400} className="w-full h-48 object-cover" />
+        <Image src={gate} alt="Gate" width={600} height={400} className="w-full h-48 object-cover" priority />
         <div className="p-4">
           <h3 className="text-xl font-bold mb-2">Gate</h3>
           <p>Умные ворота для надежной охраны территории.</p>
@@ -105,7 +105,7 @@ function ProtectingYourSafety() {
         transition={{ duration: 0.5 }}
         className="bg-white rounded-lg shadow-md overflow-hidden"
       >
-        <Image src={gate1} alt="Gate 1" width={600} height={400} className="w-full h-48 object-cover" />
+        <Image src={gate1} alt="Gate 1" width={600} height={400} className="w-full h-48 object-cover" priority />
         <div className="p-4">
           <h3 className="text-xl font-bold mb-2">Gate 1</h3>
           <p>Еще один вариант умных ворот для вашего дома.</p>

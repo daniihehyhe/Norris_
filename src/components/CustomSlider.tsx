@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, ReactNode, useEffect, useRef } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { RiArrowRightWideLine, RiArrowLeftWideFill } from "react-icons/ri";
@@ -81,12 +82,12 @@ const constraintsRef = useRef<HTMLDivElement>(null);
                     </motion.div>
                 </AnimatePresence>
                 <div
-                    className="absolute hidden top-1/2 left-4 transform duration-200 hover:bg-slate-200 -translate-y-1/2 z-10 sm:flex items-center justify-center w-10 h-10 bg-white bg-opacity-75 rounded-full cursor-pointer md:left-2"
+                    className="absolute hidden top-1/2 text-black left-4 transform duration-200 hover:bg-slate-200 -translate-y-1/2  sm:flex items-center justify-center w-10 h-10 bg-white bg-opacity-75 rounded-full cursor-pointer md:left-2"
                     onClick={() => paginate(-1)}>
                     <RiArrowLeftWideFill />
                 </div>
                 <div
-                    className="hidden  absolute top-1/2 right-4 transform duration-200 hover:bg-slate-200 -translate-y-1/2 z-10 sm:flex items-center justify-center w-10 h-10 bg-white bg-opacity-75 rounded-full cursor-pointer md:right-2"
+                    className="hidden  absolute top-1/2 text-black right-4 transform duration-200 hover:bg-slate-200 -translate-y-1/2 sm:flex items-center justify-center w-10 h-10 bg-white bg-opacity-75 rounded-full cursor-pointer md:right-2"
                     onClick={() => paginate(1)}>
                     <RiArrowRightWideLine />
                 </div>
@@ -96,7 +97,7 @@ const constraintsRef = useRef<HTMLDivElement>(null);
                             key={index}
                             className={`w-6 h-2 duration-1000 rounded-full cursor-pointer transition-transform ${
                                 index === page
-                                    ? "bg-green-600 w-9"
+                                    ? "bg-blue-600 w-9"
                                     : "bg-gray-500"
                             }`}
                             onClick={() =>

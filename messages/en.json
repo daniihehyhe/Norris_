@@ -1,8 +1,10 @@
 {
-  "mainMeta":{
+  "mainMeta": {
     "title": "SMART HOME TURNKEY in Bishkek",
     "description": "Automation of engineering systems. Voice control. Installation of the “Smart Home” system.",
-    "welcome": "Welcome to the Smart Home website"
+    "welcome": "Welcome to the Smart Home website",
+    "serviceTitle":"What services do we offer?",
+    "ServiceDescription":"If you live in Bishkek, another city of Kyrgyzstan, want to equip your office, flat with \"smart home\" systems, contact our company. \"Norris Service\" is a team of specialists with extensive experience in the practical application of IT-technologies."
   },
   "Index": {
     "title": "Hello world!"
@@ -68,7 +70,7 @@
     "linkOrOffice": "Reach out to us via phone, email, or visit us at our location.",
     "officeManager": "Office Manager",
     "socialTitle": "We are on social networks",
-    "socialSubtitle":"Subscribe to get more information"
+    "socialSubtitle": "Subscribe to get more information"
   },
   "slides_slide1_img": "/images/slider/2.webp",
   "slides_slide1_title": "Smart Home Installation",
@@ -95,9 +97,13 @@
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "submitButton": "Submit",
-    "agreePolicy": "By sending us your phone, you agree to the Personal Data Processing Policy. We do not share your phone with third parties."
+    "agreePolicy": "By sending us your phone, you agree to the Personal Data Processing Policy. We do not share your phone with third parties.",
+    "fillFields": "Please fill in all fields.",
+    "invalidPhone": "The phone number should only contain digits and be at least 9 characters long.",
+    "sendMessageSuccess": "WhatsApp message sent successfully!",
+    "sendMessageError": "Error sending WhatsApp message.",
+    "sendMessageTooFrequent": "You can send messages no more than once every 10 second."
   },
-
   "SmartHomeServices": {
     "camera": {
       "title": "Camera",

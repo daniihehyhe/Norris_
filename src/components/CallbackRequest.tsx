@@ -1,6 +1,7 @@
 // модальная окно автоматически выводиться на экран. для отпраки данных клиента номер имя 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ButtonHTMLAttributes } from "react";
 import ContactModal from "./ContactModal";
+
 
 const CallbackRequest: React.FC = () => {
     const [showModal, setShowModal] = useState(false);
@@ -30,9 +31,27 @@ const CallbackRequest: React.FC = () => {
           document.body.style.overflow = "auto";
       }
   }, [showModal]);
-    const handleClose = () => {
+
+
+ const handleClose = () => {
+    setShowModal(false);
+};
+
+const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
         setShowModal(false);
+    }
+};
+
+useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+        document.removeEventListener('keydown', handleKeyDown);
     };
+}, []);
+
+
 
     return (
         <div>

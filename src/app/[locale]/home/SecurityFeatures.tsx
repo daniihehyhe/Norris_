@@ -51,10 +51,10 @@ const SecurityFeatures: React.FC = () => {
   const tStages = useTranslations("SecurityFeatures.stages")
   const tSlider = useTranslations("SecurityFeatures.slider")
   return (
-    <main className="work-stages pt-20 pb-5 bg-norris_dark">
-      <section className=' text-white px-3 py-20 '>
+    <main className="work-stages mt-3 pb-5 bg-norris_dark">
+      <section className=' text-white px-3 py-10 '>
       <h2 className="text-titleText font-bold mb-6">{t("title")}</h2>
-      <p className='text-subText my-10'>
+      <p className='text-subText my-10 italic'>
       {t("subtitle")}
       </p>
     <div className='flex flex-col lg:flex-row'>
@@ -67,7 +67,7 @@ const SecurityFeatures: React.FC = () => {
         </div>
       </section>
       <section>
-        <p className='text-subText px-5 text-white'>
+        <p className='text-subText px-5 text-white italic'>
         {t("info")}
         </p>
         <CustomSlider>
@@ -85,11 +85,12 @@ const SecurityFeatures: React.FC = () => {
                         width={222}
                         height={250}
                         alt={item.alt}
+                        priority 
                         />
                         </div>
             ))}
         </CustomSlider>
-        <p className='text-subText p-5 text-white'>
+        <p className='text-subText p-5 text-white italic'>
         {t("advantages")}
         </p>
       </section>

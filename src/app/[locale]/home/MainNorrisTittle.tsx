@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import phone from '@/../public/images/phone_smart_home.png'
 import LetterByLetter from '@/components/LetterByLetter';
@@ -13,6 +13,20 @@ function MainNorrisTittle() {
      const handleClose = () => {
         setShowModal(false);
     };
+    
+    const handleKeyDown = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+            setShowModal(false);
+        }
+    };
+    
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+    
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
 	return (
         <>
             <main className="pt-20 flex justify-between">
@@ -47,7 +61,9 @@ function MainNorrisTittle() {
                         src={phone}
                         height={900}
                         width={300}
+                        className='w-auto'
                         alt="swart home systems"
+                        priority 
                     />
                 </motion.div>
             </main>

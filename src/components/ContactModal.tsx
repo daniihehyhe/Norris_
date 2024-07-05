@@ -24,8 +24,8 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
         const lastSentTime = localStorage.getItem("lastSentTime");
         if (lastSentTime) {
             const elapsedTime = Date.now() - parseInt(lastSentTime);
-            if (elapsedTime < 10 * 60 * 1000) {
-                setMessage('Вы можете отправлять сообщение не чаще, чем раз в 10 минут.');
+            if (elapsedTime < 10  * 1000) {
+                setMessage(t("sendMessageTooFrequent"));
                 setIsDisabled(true);
             }
         }
@@ -33,11 +33,11 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
 
     const validateForm = () => {
         if (!name || !phone) {
-            setMessage('Пожалуйста, заполните все поля.');
+            setMessage(t("fillFields"));
             return false;
         }
         if (!/^\d{9,}$/.test(phone)) {
-            setMessage('Номер телефона должен содержать только цифры и быть не менее 9 символов.');
+            setMessage(t("invalidPhone"));
             return false;
         }
         return true;
@@ -59,15 +59,15 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
         });
 
         if (response.ok) {
-            setMessage('Сообщение в WhatsApp успешно отправлено!');
+            setMessage(t("sendMessageSuccess"));
             localStorage.setItem("lastSentTime", Date.now().toString());
             setIsDisabled(true);
             setTimeout(() => setIsDisabled(false), 20 * 60 * 1000);
             console.log('WhatsApp message sent successfully');
         } else if (response.status === 429) {
-            setMessage('Вы можете отправлять сообщение не чаще, чем раз в 10 минут.');
+            setMessage(t("sendMessageTooFrequent"));
         } else {
-            setMessage('Ошибка при отправке сообщения в WhatsApp.');
+            setMessage(t("sendMessageError"));
             console.error('Error sending WhatsApp message');
         }
 
@@ -135,11 +135,13 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
     disabled={isSending || isDisabled}>
     {t("submitButton")}
     <Image
-        className="ml-10"
+        className="ml-10 w-auto"
         src={Arrow_long_right}
+
         width={40}
         height={20}
         alt="Arrow_long_right"
+        priority 
     />
 </button>
 

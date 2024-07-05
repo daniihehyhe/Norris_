@@ -14,6 +14,7 @@ import MenuBurger from "./MenuBurger";
 import { useTheme } from "@/contexts/ThemeContext";
 import CallbackRequest from "./CallbackRequest";
 import ScrollToTopButton from "./ScrollToTopButton";
+import ProgressWheel from "./ProgressWheel";
 
 function TheHeader() {
     const { theme } = useTheme();
@@ -71,13 +72,13 @@ const container = {
 
     return (
         <header
-            className={`fixed w-full z-10 transition-all duration-300 p-2 ${
-                isScrolled
-                    ? "bg-gray-200 dark:bg-gray-900 dark:text-white"
-                    : "bg-transparent  shadow-md"
-            }`}>
+        className={`fixed w-full z-10 transition-all duration-300 p-2 ${
+          isScrolled
+            ? "bg-gray-200 dark:bg-gray-900 dark:text-white"
+            : "bg-transparent  shadow-md"
+        }`}
+      >
 
-                
                 <CallbackRequest/>
             <motion.section
                 variants={container}
@@ -89,11 +90,12 @@ const container = {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5 }}
                     className="flex items-center gap-4">
-                    <Link href="/">
+                    <Link  rel="noopener noreferrer" href="/">
                         <Image
                             src={theme === "light" ? logo.src : whiteLogo.src}
-                            width={150}
-                            height={70}
+                            width={100}
+                            height={50}
+                            className="w-auto"
                             alt="logo_norris.kg"
                         />
                     </Link>
@@ -108,7 +110,7 @@ const container = {
                                 dragConstraints={{ left: -100, right: 100 }}
                                 key={index}
                                 className="px-4 hover:border-b-2 dark:hover:border-blue-500 hover:border-yellow-600 rounded-b-md">
-                                <Link href={item.link}>{item.label}</Link>
+                                <Link  rel="noopener noreferrer" href={item.link}>{item.label}</Link>
                             </motion.div>
                         ))}
                     </nav>
@@ -144,6 +146,8 @@ const container = {
                 <MenuBurger onClose={toggleMenu} />
             )}
             <ScrollToTopButton/>
+            <ProgressWheel/>
+
         </header>
     );
 }

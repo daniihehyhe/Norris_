@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -56,10 +57,9 @@ const ComponentA: React.FC = () => {
                 <Image
                     src={smartHomeImage}
                     alt="Smart Home"
-                    layout="responsive"
                     width={500}
                     height={300}
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg w-auto"
                 />
             </motion.div>
         </div>
