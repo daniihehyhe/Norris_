@@ -56,7 +56,7 @@ jobs:
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.DEPLOY_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
+          echo "${{ secrets.SERVER_SSH_KEY  }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H 77.235.20.172 >> ~/.ssh/known_hosts
 
@@ -68,5 +68,5 @@ jobs:
             tar -xzf norris.kg.tar.gz
             rm norris.kg.tar.gz
             yarn install --production
-            pm2 restart your-app-name || pm2 start npm --name "your-app-name" -- start
+            pm2 restart norris-nextjs || pm2 start npm --name "norris-nextjs" -- start
           EOF
