@@ -46,18 +46,17 @@ jobs:
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SERVER_SSH_KEY }}" | sed 's/\\n/\n/g' > ~/.ssh/id_rsa
+          echo "${{ secrets.DEPLOY_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+          ssh-keyscan -H 77.235.20.172 >> ~/.ssh/known_hosts
 
       - name: Deploy to server
         run: |
-          scp -P 2609 norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/norris/
-          ssh -p 2609 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            cd /var/www/html/norris/
+          scp -P 2609 norris.kg.tar.gz daniGitAction@77.235.20.172:/var/www/html/norris/
+          ssh -p 2609 daniGitAction@77.235.20.172 << 'EOF'
+            cd /var/www/html/norris
             tar -xzf norris.kg.tar.gz
             rm norris.kg.tar.gz
             yarn install --production
             pm2 restart your-app-name || pm2 start npm --name "your-app-name" -- start
-            # Убедитесь, что PM2 установлен на вашем сервере
           EOF
