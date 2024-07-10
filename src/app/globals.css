@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-
 /* src/globals.css */
 @font-face {
   font-family: 'Montserrat';
@@ -138,3 +135,11 @@ body {
   background: rgb(18, 70, 181);
 }
 
+
+
+.fixed-icon-size {
+  width: 24px; /* Задайте подходящий размер */
+  height: 24px; /* Задайте подходящий размер */
+  display: inline-block;
+  flex-shrink: 0; /* Предотвращает изменение размера иконки */
+}

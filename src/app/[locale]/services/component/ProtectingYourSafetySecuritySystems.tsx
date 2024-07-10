@@ -1,45 +1,73 @@
 // components/SecuritySystems.tsx
+// На страже вашей безопасности
+// Что может делать охранно-пожарная сигнализация?
+// Услуги нашей компании
 import React from "react";
+import smart_home from '@/../public/assets/smart_home.jpeg';
+import Image from "next/image";
+import { FcNext } from "react-icons/fc";
 
-const SecuritySystems: React.FC = () => {
+
+const ProtectingYourSafetySecuritySystems: React.FC = () => {
     return (
-        <div className="container mx-auto px-4 py-8">
-            <h2 className="text-3xl font-bold mb-4 text-center">
+        <main>
+
+            <h5 className="text-titleText font-bold mb-4 text-center">
                 На страже вашей безопасности
-            </h2>
-            <p className="text-lg mb-4">
-                Защитить своих близких от опасности, имущество от хищений
-                поможет Smart house, или "умный дом". Это — современная
-                автоматизированная многофункциональная система, устанавливаемая:
+            </h5>
+
+
+
+            {/* На страже вашей безопасности */}
+            <section className="flex flex-col lg:flex-row">
+
+
+
+            <aside className="text-white bg-black  p-6 md:p-10  shadow-2xl">
+         <div className="relative rounded-full w-40 h-40 md:w-60 md:h-60 mx-auto mb-6">
+            <Image
+               src={smart_home}
+               fill
+               className="object-cover rounded-full"
+               alt="smart home"
+            />
+         </div>
+
+         <p className="text-lg mb-4 text-center md:text-left">
+            В комплектацию ОПС «умного дома» входят
+         </p>
+         <ul className="list-disc list-inside mb-4 text-center md:text-left">
+            <li className="flex mb-3"> <FcNext className="mr-5 fixed-icon-size"/>Камеры наблюдения, видеодомофоны.</li>
+            <li className="flex"> <FcNext className="mr-5 fixed-icon-size"/>Датчики движения, дыма, газоуловители и другие приборы.</li>
+         </ul>
+      </aside>
+
+      <div className="flex flex-col">
+         <div className="p-5 shadow-2xl grow md:mb-0">
+            <p className="text-subText italic mb-4">
+               Защитить своих близких от опасности, имущество от хищений поможет Smart house, или "умный дом". 
+               Это — современная автоматизированная многофункциональная система, устанавливаемая
             </p>
-            <ul className="list-disc list-inside mb-4">
-                <li>В городских квартирах.</li>
-                <li>Частных домовладениях.</li>
-                <li>В офисах, банках.</li>
-                <li>На предприятиях.</li>
-                <li>В торговых, складских помещениях.</li>
-                <li>На объектах особой секретности.</li>
+            <ul className="flex flex-col gap-3 mb-4">
+               <li className="flex"> <FcNext className="mr-5 fixed-icon-size"/> В городских квартирах.</li>
+               <li className="flex"> <FcNext className="mr-5 fixed-icon-size"/> Частных домовладениях.</li>
+               <li className="flex"> <FcNext className="mr-5 fixed-icon-size"/> В офисах, банках.</li>
+               <li className="flex"> <FcNext className="mr-5 fixed-icon-size"/> На предприятиях.</li>
+               <li className="flex"> <FcNext className="mr-5 fixed-icon-size"/> В торговых, складских помещениях.</li>
+               <li className="flex"> <FcNext className="mr-5 fixed-icon-size"/> На объектах особой секретности.</li>
             </ul>
-            <p className="text-lg mb-4">
-                В комплектацию ОПС «умного дома» входят:
-            </p>
-            <ul className="list-disc list-inside mb-4">
-                <li>Камеры наблюдения, видеодомофоны.</li>
-                <li>Датчики движения, дыма, газоуловители и другие приборы.</li>
-            </ul>
-            <p className="text-lg mb-4">
-                Размещают устройства на внутренних, наружных стенах зданий,
-                прилегающих к ним территориях, а также на воротах, ограждающих
-                конструкциях. Показания приборов, записи с видеокамер в реальном
-                времени поступают на управляющий блок, сохраняются в архиве.
-                Видеотехника может работать как в непрерывном режиме, так и
-                включаться в определенные часы, например, только в вечернее,
-                ночное время. В случае возникновения опасной ситуации "умная"
-                техника подает тревожный сигнал, предает информацию в службу
-                охраны. Владельцы помещения оповещаются о тревоге электронным
-                письмом, получают на телефон уведомление, сообщение WhatsApp или
-                СМС-сообщение.
-            </p>
+         </div>
+
+         <div className="bg-gray-400 p-5 text-text-subText  shadow-2xl ">
+            Размещают устройства на внутренних, наружных стенах зданий, прилегающих к ним территориях, а также на воротах, ограждающих конструкциях. Показания приборов, записи с видеокамер в реальном времени поступают на управляющий блок, сохраняются в архиве. Видеотехника может работать как в непрерывном режиме, так и включаться в определенные часы, например, только в вечернее, ночное время. В случае возникновения опасной ситуации "умная" техника подает тревожный сигнал, предает информацию в службу охраны. Владельцы помещения оповещаются о тревоге электронным письмом, получают на телефон уведомление, сообщение WhatsApp или СМС-сообщение.
+         </div>
+      </div>
+
+            </section>
+
+
+
+
             <h3 className="text-2xl font-bold mb-4">
                 Что может делать охранно-пожарная сигнализация?
             </h3>
@@ -132,8 +160,8 @@ const SecuritySystems: React.FC = () => {
                 воспользоваться бесплатной консультативной помощью вы можете,
                 связавшись с менеджерами компании.
             </p>
-        </div>
+        </main>
     );
 };
 
-export default SecuritySystems;
+export default ProtectingYourSafetySecuritySystems;

@@ -209,5 +209,323 @@
       "item5": "Work as a baby monitor"
     },
     "advantages": "The main advantages of 'smart' technology are reliability, fast response, ease of settings, and the ability to control it remotely."
+  },
+  "SafeNestSecureSmartHome": {
+    "title": "How to protect yourself from intruders?",
+    "description1": "The security system can be both wired and wireless. The wired one is more reliable and provides good signal quality. Along with devices constantly powered by the mains, wireless devices can also be used in it.",
+    "description2": "Property needs reliable protection. This issue concerns both ordinary residents, fearing domestic thefts and fires, as well as financial, commercial organizations, industrial enterprises. The security system installed in your store, office, apartment will promptly alert you of an emergency and take measures to protect it.",
+    "servicesTitle": "What services do we offer?",
+    "servicesDescription1": "If you live in Bishkek or another city in Kyrgyzstan and want to equip your office or apartment with 'smart home' systems, contact our company. 'Norris Service' is a team of specialists with extensive experience in the practical application of IT technologies.",
+    "servicesDescription2": "The company accepts orders for the re-equipment of houses for various purposes, carries out the work quickly, efficiently, and at convenient prices. Call us, leave a request on the website, provide your personal data. Managers will promptly contact you, answer all questions related to the security system, and determine the exact time and cost of its installation. We take into account the purpose, architectural features of the object, customer requirements, and their financial capabilities. Specialists of norris.kg 'Norris Service' will do everything to ensure your safety and comfort.",
+    "listItems1": "Security and fire alarm systems.",
+    "listItems2": "Video equipment, intercoms.",
+    "listItems3": "Smoke, motion detectors, annunciators.",
+    "listItems4": "Electronic locks and other technical means.",
+    "listServices1": "Development of standard and individual projects.",
+    "listServices2": "Preparation of estimate documentation.",
+    "listServices3": "Laying of low-current and power networks.",
+    "listServices4": "Installation, connection, maintenance of equipment.",
+    "listServices5": "Programming of programs, scenarios, PLCs, controllers.",
+    "listServices6": "We are engaged in the development of integrated circuits and software for them.",
+    "advantagesTitle": "Opportunities, Advantages",
+    "advantagesDescription": "Practical use of this complex has shown its high efficiency and reliability. A significant advantage is that the 'smart home' system can equip not only apartments and cottages but also warehouses, car dealerships, and shopping complexes. Their areas of application are very diverse. The list of functions they perform includes:",
+    "communicationSafety": "Safety of engineering communications. Sensors sensitive to temperature rise, smoke, gas concentration in the air, and water leaks are installed in the premises. In case of an emergency threat, the warning devices will send an alarm signal to the smartphone or computer.",
+    "accessControl": "Access control. The software allows for facial recognition. Permission to enter is granted to those whose photos are in the database. The use of biometric and electronic locks prevents unauthorized entry into the building.",
+    "perimeterProtection": "Perimeter protection. The integrity of windows and doors is controlled. Motion sensors track movement in the protected area and respond to the appearance of outsiders.",
+    "surveillance": "Surveillance cameras are installed around the perimeter of houses, at entrance gates, and parking lots, allowing for round-the-clock monitoring. The recordings can be used as evidence in case of attempted illegal actions. Automation allows for various scenarios. By simulating the presence of the owners, it will turn on the lights, raise the roller shutters at a specified time, turn on the music, and much more."
+  },
+  "SmartHomeServiceCaring": {
+    "title": "Smart Home Systems from Norris Company with Care for Your Loved Ones",
+    "description": "Home automation has firmly entered our lives. A modern person, busy with business, does not want to waste precious time solving household problems. Coming home, he strives to immerse himself in an atmosphere of comfort and tranquility. The smart home system will ensure the safety and comfort of you and your family. Everything you wouldn't want to do, the Smart Home system from NORRIS.KG will do for you! It consists of various types of relays, sensors, control controllers, video cameras, and other devices that control the system's operation.",
+    "highlight1": "Household engineering networks.",
+    "highlight2": "Security and fire alarms.",
+    "highlight3": "Electronic household appliances.",
+    "distinctiveQualitiesTitle": "Its distinctive qualities include:",
+    "distinctiveQualities1": "Ease of settings.",
+    "distinctiveQualities2": "Reliability, good extended service life.",
+    "distinctiveQualities3": "The ability to easily integrate other devices.",
+    "distinctiveQualities4": "Simplicity in maintenance.",
+    "controlOptions": "You can control the smart home in various ways: via voice assistant, computer, touch panel, remote control, smartphone. Communication protocols allow you to transmit the signal over long distances without losing its quality.",
+    "mainFunctionsTitle": "Main functions of smart homes",
+    "mainFunctionsDescription": "Automation opens up great opportunities for users. Various scenarios are created using intelligent technology for control.",
+    "function1": "Lighting.",
+    "function2": "Air conditioners, gas, electric, coal heating boilers, radiator thermostats.",
+    "function3": "Household appliances.",
+    "function4": "Multimedia systems.",
+    "sectionTitle": "The safety of your family and children will be under the reliable control of the system. The sensors installed in the room will warn you in time about malfunction of engineering networks, prevent water leakage, fire, gas or smoke leakage. If intruders attempt to break a window or open a door, the system will sound an alarm, notify you of the danger via notification, Whatsapp or SMS.",
+    "serviceList": "What services does our company provide?",
+        "aboutService":" To ensure that the equipment in your smart home works smoothly, ensuring your safety and comfort, its installation should be entrusted to experienced craftsmen. NORRIS.KG \"Norris Service\" is a company you can trust.               We have been working in the IT field since 2016, during this time we have become professionals in our field. We are distinguished by:",
+        "serviceListDescription":"To ensure that the equipment in your smart home works smoothly, ensuring your safety and comfort, its installation should be entrusted to experienced craftsmen. NORRIS.KG \"Norris Service\" is a company you can trust. We have been working in the IT field since 2016, during which time we have become professionals in our field. What sets us apart.",
+    "sectionDescription": "The sensors installed in the room will timely warn about faults in the engineering networks, prevent water leaks, fire, gas or smoke leakage. In case of an intruder attempting to break the window or open the door, the system will trigger an alarm sound and notify about the danger via notification, WhatsApp message, or SMS.",
+    "benefit1": "Responsibility;",
+    "benefit2": "Individual approach to clients;",
+    "benefit3": "Ability to find an effective solution, not shifting or looking for the guilty in the set task.",
+    "serviceCostDescription": "The cost of services provided by the company, the terms of cooperation are convenient and accessible to consumers. We perform the full range of tasks in accordance with established norms. The list of work with the system includes:",
+    "servicesList1": "Masters' visit to the site, inspection of the premises, determination of camera placement points, etc.",
+    "servicesList2": "Development of drawings, project documentation, cost estimate calculation.",
+    "servicesList3": "Installation of power and low-current lines, installation of equipment and automation.",
+    "servicesList4": "Programming of programs, scenarios, PLC, controllers.",
+    "contactUs": "Contact the managers by phone, send an application by email, on Instagram Norris.kg, and order the smart home system. The company's masters will connect and configure it quickly, neatly, and efficiently."
+  },
+  "Multimedia1": {
+    "title": "Мультимедиа для \"умного дома\" от NORRIS.KG",
+    "description": "Компания NORRIS.KG (Norris Service) принимает в Бишкеке заявки на установку мультимедиа для \"умного дома\". Оформите заказ на выполнение работ на нашем сайте. Предлагаем выгодные цены, проводим монтаж и наладку техники на высоком профессиональном уровне. При выполнении комплексных решений предоставляем клиентам приятные скидки.",
+    "section1Title": "Мультимедиа: в чем особенность?",
+    "section1Content": "Для жизни современного человека комфорт и безопасность являются значимыми факторами. По этой причине все большее количество людей предпочитают проживать в \"умном доме\". Это многофункциональная автоматизированная система, которая управляет отоплением, освещением, позволяет выполнять множество бытовых задач.",
+    "feature1": "На стенах комнат.",
+    "feature2": "Встраиваются в навесной потолок.",
+    "feature3": "Размещаются в мебельных нишах.",
+    "feature4": "Могут быть выполнены в напольном варианте.",
+    "additionalInfo": "Техника устанавливается таким образом, чтобы скрыть кабели, провода и системные блоки, не требующие постоянного доступа.",
+    "section2Title": "Возможности, способы управления",
+    "section2Content": "Синхронизирует работу всех находящихся в здании гаджетов мультирум. Управляется он посредством единого пульта или настенной панели, размещенной в удобном для пользователя месте. Также настраиваются режимы работы, комфортное освещение и выбираются треки и фильмы через специальное приложение, установленное на мобильный телефон. Отдать приказ включить телеаппаратуру, уменьшить или увеличить громкость можно через голосовое сообщение, находясь в любой комнате. Миниатюрные источники звука располагают в различных зонах — на кухне, в коридоре, зале — искусно маскируя под интерьер. Чистотой звучания они не уступают громоздким акустическим колонкам, позволяя слушать музыку в высоком качестве.",
+    "benefit1": "Смотреть и записывать передачи, спортивные матчи, идущие в прямом эфире.",
+    "benefit2": "Скачивать через интернет и сохранять на носителях аудио и видео.",
+    "benefit3": "Создавать плейлисты из своих любимых песен, настраивать очередность воспроизведения."
+  },
+  "articles": {
+    "powerSystems": "Power Systems",
+    "multimedialist": "Multimedia",
+    "homeAutomation": "Home Automation",
+    "climateControl": "Climate Control",
+    "smartLighting": "Smart Lighting",
+    "smartHomeProject": "Smart Home Project",
+    "title": "Smart Home Installation in Bishkek, Kazakhstan, Almaty, Kyrgyzstan, and Central Asia",
+    "intro": "Looking for professional smart home installation services in Bishkek, Kazakhstan, Almaty, Kyrgyzstan, or Central Asia? We offer modern solutions for your comfort and security. Our team of experts specializes in designing, installing, and configuring smart home systems, including lighting automation, heating, security systems, and much more. We use only advanced technologies and high-quality equipment to ensure maximum reliability and convenience for our clients. Whether you need a smart home for an apartment, private house, or commercial property, we are ready to offer an individual solution that fully meets your needs. Our services include: Installation and configuration of smart home systems, Lighting and climate control automation, Integration of security systems and video surveillance, Management of household appliances via smartphone, Consultations and technical support. We operate in Bishkek, Kazakhstan, Almaty, Kyrgyzstan, and across Central Asia, offering quality services at affordable prices. Contact us to discuss your project and receive a free consultation."
+
+  },
+  "ClimateControl": {
+    "title": "Climate Control in a Smart Home",
+    "imageAlt1": "Flat Image",
+    "intro": "Tired of freezing in winter and sweating in summer? Install climate control in your home. NORRIS.KG (\"Norris Service\") professionals will install the climate system in Bishkek professionally, quickly, and at a favorable price. Place an order through the company website. We offer convenient cooperation conditions, provide a warranty, and discounts for clients.",
+    "description1": "Weather has a significant impact on our lives. With the change of seasons, we face problems of cooling the apartment or office in summer and warming it during rainy and frosty periods. A climate system helps create comfortable living and working conditions. It is one of the main options of a smart home, automatically managed. This integrated system controls the operation of:",
+    "features": {
+      "feature1": "Air conditioners",
+      "feature2": "Ventilation",
+      "feature3": "Gas heating boilers",
+      "feature4": "Coal boilers",
+      "feature5": "Electric convectors, fireplaces",
+      "feature6": "Water heaters",
+      "feature7": "Ozonators, ionizers",
+      "feature8": "Electric heated floors",
+      "feature9": "Water heated floors",
+      "feature10": "Radiators and other equipment"
+    },
+    "controlMethods": {
+      "method1": "\"Smart\" block regulating the working parameters of units",
+      "method2": "Sensors measuring temperature values and air humidity levels",
+      "method3": "Thermostats, temperature controllers, servos"
+    },
+    "description2": "Touch panels, remote controls, smartphones, and voice assistants: Siri, Alice, Alexa are used to adjust the system's working parameters.",
+    "advantageTitle": "What are the advantages?",
+    "imageAlt2": "Flat Image 2",
+    "advantages": {
+      "advantage1": "Versatility. The system can be installed in any building, low-rise or high-rise, office, apartment, cottage, hotel rooms.",
+      "advantage2": "Economy. Thanks to climate control, energy costs are significantly reduced. It helps to avoid unwanted breakdowns caused by overheating of equipment, extending their operational life.",
+      "advantage3": "Ability to work according to a set program. Choose a comfortable temperature for waking up in the morning or going to bed. \"Smart\" technology will create the necessary microclimate in your bedroom or children's room.",
+      "advantage4": "User-friendly control. A simple and clear interface makes it easy to adjust the operation, maintain the necessary temperature regimes.",
+      "advantage5": "Automation allows remote control of climate control. For example, while on vacation or business trip, you can turn on heating and other devices from a significant distance from the apartment. It allows implementing any scenarios."
+    },
+    "offersTitle": "Our Offers and Advantages",
+    "imageAlt3": "Layout Plan",
+    "offersDescription": "For climate control to successfully perform its tasks, its installation should be entrusted to professionals. Order a climate system in Kyrgyzstan by submitting a request through the Norris Service website. Our company has been operating in this field since 2016 and is one of the leading developers of intelligent buildings in the republic. The sales geography covers Bishkek, cities of Chuy region, and Almaty (Kazakhstan). We perform:",
+    "offerItems": {
+      "item1": "Development of drawings and working algorithms",
+      "item2": "Design of automation panels",
+      "item3": "Wiring, electrical work",
+      "item4": "Installation, connection, adjustment of equipment"
+    },
+    "conclusion": "The work is carried out on a turnkey basis in accordance with the accepted construction standards in the republic. When developing the project, the personal wishes of the owners and the features of the object are taken into account. For each client, a variant that optimally meets their requirements and financial capabilities is selected. At the request of clients, the company's masters will professionally, quickly, and efficiently install climate control in an apartment or office. Service prices are affordable for a wide range of consumers. Additionally, we offer to order additional devices for intelligent buildings. When purchasing them, the company provides pleasant discounts. Indicate your contact details on the site, submit a request for work, and we will equip a smart home in your apartment to your taste. Norris.kg (\"Norris Service\") consultants will provide more details about the terms of cooperation and service rates. Contact them by phone or email.",
+    "text": "The climate system, which was recently considered a status symbol for owners, has transitioned into a necessary item in home ownership. Its demand is rapidly increasing. Advantages include:",
+
+    "text1":  "In addition, we offer to order additional devices for intelligent buildings. When purchasing them, the company provides pleasant discounts. Indicate your contact details on the site, submit a request for work, and we will equip a \"smart home\" in the apartment to your taste. Norris.kg (\"Norris Service\") consultants will tell you more about the terms of cooperation and service prices. Contact them by phone or email."
+  },
+  "HomeAutomation": {
+    "title": "Home Automation by NORRIS.KG",
+    "imageAlt1": "Smart Home",
+    "intro": "Do you want to ensure safe and comfortable living for yourself and your loved ones in an apartment? Contact NORRIS.KG (\"Norris Service\"), and we will automate heating equipment, household appliances, and develop a smart home based on an individual project. Place an order for turnkey work in Bishkek and other cities of Kyrgyzstan through the company website. We guarantee favorable prices, reliable quality of components and equipment. We provide discounts for implementing a complex of tasks and ordering additional options.",
+    "automationTitle": "What is Home Automation?",
+    "automationDescription": "Modern technologies make our lives safer and easier, taking on many household problems. Turn on the light in the room, play music, start the heating boiler, set the alarm clock – these and other tasks are now performed by virtual assistants.",
+    "smartHomeDescription": "\"Smart home\" is an automated system that coordinates the operation of all technical means in the room. Its components are:",
+    "features": {
+      "feature1": "Water leakage, smoke, gas leakage sensors",
+      "feature2": "Presence sensors",
+      "feature3": "IR sensors",
+      "feature4": "Executive devices – sockets, video cameras, switches, etc."
+    },
+    "controlMethodsTitle": "The smart home can be controlled in various ways:",
+    "controlMethods": {
+      "method1": "Applications on a tablet, mobile phone",
+      "method2": "Software installed on a computer, laptop",
+      "method3": "Remote controls",
+      "method4": "Controller touch panel",
+      "method5": "Voice assistant (speakers)"
+    },
+    "combinationMethods": "Control methods can be combined, choosing the most convenient for each specific case.",
+    "capabilitiesTitle": "What can the smart home do?",
+    "imageAlt2": "Auto Light",
+    "capabilitiesDescription": "Its capabilities are great, functionality can be expanded, adapting the room using automation according to your tastes and needs. It will warn and take action:",
+    "capabilities": {
+      "capability1": "If the house is threatened by fire, there is a pipe leak, the heating boiler and other communications are out of order",
+      "capability2": "Protect the house from intruders, property from theft, and timely warn you and the security service about the situation",
+      "capability3": "During a long absence, the house will automatically raise the blinds, turn on the indoor and outdoor lights, simulating the presence of the owners",
+      "capability4": "Take care of your health, create an optimal microclimate in the room. Each room can have its own temperature regime",
+      "capability5": "\"Smart home\" will start heating in case of sudden cold, and air conditioning in hot weather",
+      "capability6": "Command the robot vacuum cleaner to start cleaning, take care of the water and food supply for pets",
+      "capability7": "Timely turn on the news broadcast, favorite movie, adjust the playlist",
+      "capability8": "Turn off or brighten the lighting. Wake you up in the morning with a pleasant melody, make coffee, read a bedtime story to the child, and much more."
+    },
+    "comfortDescription": "Automated equipment in homes ensures safe and comfortable living for their owners. It helps save energy, time, and reduce heating and electricity costs. The downside is that extended configuration requires significant expenses.",
+    "offerTitle": "What do we offer?",
+    "offerDescription": "To ensure the equipment works efficiently, it should be purchased from proven manufacturers, and experienced specialists should be involved in the installation. One of the companies developing smart homes in Kyrgyzstan is \"Norris Service\". We provide our clients with:",
+    "offers": {
+      "offer1": "Convenient cooperation conditions",
+      "offer2": "Free consultative assistance",
+      "offer3": "Pleasant discounts",
+      "offer4": "Two-year warranty on the work performed by us"
+    },
+    "conclusion": "Automation is carried out taking into account the characteristics of a specific object and customer requirements. For each task, the company's engineers prepare an individual project, drawings, and necessary documentation. The installation and adjustment of smart home equipment are performed within the terms specified in the contract. Submit an application through our website, order the automation of residential, commercial, or other premises. The work is carried out on a turnkey basis by teams of masters with extensive practical experience and comprehensive knowledge in the field of modern technologies. Contact the company's managers to get detailed information about the services we provide and the terms of cooperation."
+  },
+  "Multimedia": {
+    "title": "Multimedia for Smart Home by NORRIS.KG",
+    "imageAlt": "Multimedia",
+    "intro": "NORRIS.KG (Norris Service) accepts applications in Bishkek for the installation of multimedia for a smart home. Place an order for the work on our website. We offer favorable prices, perform installation and adjustment of equipment at a high professional level. When implementing comprehensive solutions, we provide clients with pleasant discounts.",
+    "section1Title": "Multimedia: What's Special About It?",
+    "section1Description1": "Comfort and safety are significant factors in the life of a modern person. For this reason, more and more people prefer to live in a smart home. It is a multifunctional automated system that manages heating, lighting, and allows you to perform many household tasks.",
+    "section1Description2": "Multimedia is one of its components, providing pleasant leisure time for household members. It includes television, audio equipment, and gaming gadgets. Depending on the style of the rooms and the preferences of the owners, acoustics, projectors, and televisions are installed:",
+    "features": {
+      "feature1": "On the walls of the rooms",
+      "feature2": "Embedded in the suspended ceiling",
+      "feature3": "Placed in furniture niches",
+      "feature4": "Can be made in floor-standing versions"
+    },
+    "section1Description3": "The equipment is installed in such a way as to hide cables, wires, and system blocks that do not require constant access.",
+    "section2Title": "Capabilities and Control Methods",
+    "section2Description1": "Synchronizes the operation of all gadgets in the building using a multiroom system. It is controlled via a single remote or a wall panel placed in a convenient location for the user. Operating modes, comfortable lighting, and track and film selections are also configured through a special application installed on a mobile phone. Commands to turn on the TV, decrease or increase the volume can be given via a voice message from any room. Miniature sound sources are placed in various zones—kitchen, corridor, living room—skillfully blending into the interior. Their sound quality rivals bulky acoustic speakers, allowing you to listen to music in high quality.",
+    "section2Description2": "Thanks to smart multimedia, you have the opportunity to:",
+    "capabilities": {
+      "capability1": "Watch and record broadcasts, sports matches in live mode",
+      "capability2": "Download and store audio and video via the internet",
+      "capability3": "Create playlists of your favorite songs, set playback order",
+      "capability4": "Collect a movie library for your home theater",
+      "capability5": "Play a track that will sound throughout the apartment, or choose a different composition for each room",
+      "capability6": "Play a fairy tale for the child or watch a favorite movie in the children's room"
+    },
+    "section2Description3": "Each family member will determine for themselves how and with what to fill their free time.",
+    "section3Title": "Our Offers",
+    "section3Description1": "Interested in modern technologies? Want to make your apartment more comfortable? Don't know where to order multimedia installation in Bishkek? Seek help from Norris Service. We offer a wide range of services related to smart homes and provide simple and effective solutions. The work is performed by highly qualified and experienced company masters in accordance with the standards established in the republic. They take on:",
+    "offers": {
+      "offer1": "Project development",
+      "offer2": "Cost estimation",
+      "offer3": "Installation and connection of equipment"
+    },
+    "section3Description2": "We ensure high-quality sound from Hi-End and Hi-Fi class acoustics.",
+    "section3Description3": "Leave an application on our website, and we will convert your apartment or office into a smart home, ensuring their safety and comfort. Detailed information about the terms of cooperation with NORRIS.KG and possible discounts can be obtained from the company's managers. Contact them at a convenient time for you by phone or email."
+  },
+  "PowerSystems": {
+    "title": "Power and Low-Voltage Systems from NORRIS.KG",
+    "imageAlt": "Smart Home",
+    "intro": "NORRIS.KG (Norris Service) performs installation work on laying power and low-voltage systems in smart homes. We accept orders from individuals, commercial and government organizations from Bishkek and nearby settlements. We provide a two-year warranty on the services provided, offer convenient cooperation conditions and affordable prices.",
+    "section1Title": "Why is it important?",
+    "section1Description": "Equipping smart homes is a task that requires significant financial investment and certain skills. Most consumers start small, installing multimedia and climate control in their apartments, gradually adding other options. For their functioning in a smart home, wiring plays an important role. Installed according to all the rules, it provides:",
+    "features": {
+      "feature1": "Supply of energy from power sources to equipment.",
+      "feature2": "Uninterrupted operation of devices.",
+      "feature3": "Management, information exchange and communication between them."
+    },
+    "imageAlt2": "Auto Light",
+    "section2Description": "The wired system has proven its high efficiency. It is used to equip residential and commercial buildings, hotels, offices, etc. Its distinctive qualities include reliability, long service life, and easy equipment integration. It is installed during the construction of buildings up to the finishing stage of premises and does not require special maintenance. Cable lines and wires are placed under the ceiling, in niches, covered with panels so as not to spoil the aesthetics of the rooms.",
+    "section3Title": "Features of Low-Voltage Systems",
+    "section3Description": "Electrics in smart homes consist of power and low-voltage systems. The first type of cable is designed for a load of 220 volts or more. They are used to supply electricity from the distribution panel to the device connection points. Low-voltage - low-voltage networks that provide the operation of:",
+    "lowVoltageSystems": {
+      "system1": "Television.",
+      "system2": "Computer equipment.",
+      "system3": "Fire alarm system.",
+      "system4": "Intercoms.",
+      "system5": "Surveillance cameras."
+    },
+    "section4Description": "In intelligent buildings, instead of conventional power cables, products with built-in communication lines and electrical wires are used. They allow signals to be supplied for lighting control, raising blinds, etc. Rooms are equipped with sockets with remote switching and the ability to monitor power consumption levels. Both classic and touch switches are used, responding to a wave or touch of the hand. The possibilities that new technologies open up to consumers are limitless. Automation makes life simpler, safer, and more comfortable.",
+    "section5Title": "Our Services",
+    "section5Description1": "When laying electrical wiring, it should be taken into account that it is much more difficult to re-equip old wiring systems than to make new ones. Planning the construction of a smart home, consider the possibility of expanding functionality and the likelihood of increasing the load on the electrical system. Entrust the installation to experienced craftsmen.",
+    "section5Description2": "You can order work in Bishkek from NORRIS.KG specialists. We are one of the leading companies in Kyrgyzstan involved in the development of smart buildings for various purposes. Among our customers are commercial, government organizations, and individuals, whom we have helped to implement many interesting projects. Our company is distinguished by:",
+    "benefits": {
+      "benefit1": "High professionalism and extensive practical experience of employees.",
+      "benefit2": "Responsible attitude and individual approach to each client.",
+      "benefit3": "Balanced pricing policy that makes our services accessible to a wide range of consumers."
+    },
+    "conclusion1": "Order the laying of a wired system by visiting our office in Bishkek or place an order through the NORRIS.KG website or Instagram. The wiring in your smart home will be laid quickly and efficiently.",
+    "conclusion2": "The company's craftsmen promptly go to objects in the city and region, assess the complexity of the task and take the necessary measurements. Specialists prepare project documentation taking into account established building standards and customer requirements. Get detailed information about the services provided by our managers by contacting them in any convenient way for you. The smart home from NORRIS.KG will take care of your safety and comfort."
+  },
+  "SmartHomeProject": {
+    "title": "Smart Home Project by NORRIS.KG",
+    "intro": "Order the development of a smart home project in Bishkek through the NORRIS.KG website. We accept orders from all interested government, commercial organizations, and individuals. We offer affordable prices, guarantee professional execution of the full package of project documentation, and strict adherence to deadlines.",
+    "section1Title": "Smart Home: What is it, what does it consist of?",
+    "section1Description": "High-tech multifunctional intelligent buildings are in high demand in our country's market. The system combines various technical means, the coordinated work of which ensures the safety of property, comfort, and health of people. The kit includes:",
+    "features": {
+      "feature1": "Controller.",
+      "feature2": "Various types of sensors.",
+      "feature3": "Expansion modules.",
+      "feature4": "Set of actuators.",
+      "feature5": "Programming of programs, scenarios, PLC, controllers.",
+      "feature6": "Development of integrated circuits and software for them."
+    },
+    "section2Description": "To put them into operation, laying power cables and low-voltage lines is required. Management and adjustment of operating parameters are carried out using a computer, remote control, voice commands, touch panels, or remotely via a smartphone. To ensure that the equipment is properly integrated, interacts seamlessly and without delays, special attention should be paid to design.",
+    "section3Title": "What does project work include?",
+    "section3Description": "It consists of a series of activities, each of which plays an important role in the successful implementation of the task. They can be conditionally divided into several main stages:",
+    "steps": {
+      "step1": "Gathering information about the object: The condition of communications, architecture, room layout, convenience of connection to power supply are assessed. The purpose of the building, the requirements of the owners, the possibility of using additional subsystems during long-term operation are taken into account.",
+      "step2": "Creating a sketch: The number of parts, length, cross-section of wires and cables required for installation in a smart home are calculated. An estimate is drawn up and agreed with the customer. Changes are made if necessary.",
+      "step3": "Preparation of documentation: Drawings are created according to which the distribution boards, cameras, power supplies, and other elements will be placed in the building. Routes for laying low-voltage and power cable lines are modeled.",
+      "step4": "Determining the timing of work: A schedule is approved, and instructions for installation teams are drawn up."
+    },
+    "section4Title": "Why contact our company?",
+    "section4Description": "Without sufficient experience and knowledge, it is impossible to qualitatively perform all the work in a smart home. To avoid undesirable consequences, they should not be carried out independently. Need professional services? Contact NORRIS Service. The company's specialization is the automation of buildings for various purposes. Among our clients are well-known industrial and commercial organizations in Bishkek. The geography of smart home sales expands every year, covering Almaty and cities in the Chuy region. Our strengths are:",
+    "advantages": {
+      "advantage1": "High professionalism of the engineering and technical staff. The extensive practical experience of specialists allows us to handle projects of any complexity.",
+      "advantage2": "Responsible attitude to work and strict fulfillment of contractual obligations.",
+      "advantage3": "Reasonable pricing policy, making our services accessible to a wide range of consumers."
+    },
+    "conclusion1": "We offer many ready-made solutions. You can choose one of them or leave a request for the development of a project to order. Financial capabilities and customer preferences are taken into account. Computer programs are used for system development, allowing us to effectively perform our work. High-quality components that have passed mandatory certification are used during installation.",
+    "conclusion2": "To order a smart home, contact NORRIS.KG managers by email or phone, leave your request. We will call you back promptly, calculate the cost of the project, and clarify the timing of its implementation. An apartment or office re-equipped to a smart home according to our project will be a reliable guarantee of your safety and comfort."
+  },
+  "SmartLighting": {
+    "title": "\"Smart\" lighting by NORRIS.KG",
+    "intro": "Want to install \"smart\" lighting in an apartment or office at an affordable price? Not sure which company to contact in Bishkek for help? Apply through the NORRIS.KG (\"Norris Service\") website or Instagram. We carry out installation quickly, efficiently, and provide a two-year warranty on the services we provide.",
+    "section1Title": "What does \"smart\" lighting consist of?",
+    "section1Description": "\"Smart\" lighting is one of the main options installed in intelligent buildings. It consists of the following elements:",
+    "elements": {
+      "element1": "Ceiling, wall lights.",
+      "element2": "Nightlights.",
+      "element3": "Sconces.",
+      "element4": "Desk lamps.",
+      "element5": "Light panels.",
+      "element6": "LED strips and bulbs.",
+      "element7": "Overhead and built-in sockets, switches.",
+      "element8": "Sensors, relays, devices controlling their operation."
+    },
+    "section2Description": "Regular lighting fixtures operate at a network voltage of 220V, LED strips – at 12 volts, 24 volts, 48 volts. To connect them, special power supply units are required. Wireless system management is carried out in several ways:",
+    "methods": {
+      "method1": "Using voice.",
+      "method2": "Applications installed on a mobile phone or remote control.",
+      "method3": "Automation with various scenarios."
+    },
+    "section3Description": "To ensure they work successfully, it is necessary to maintain uninterrupted communication between all devices. The architecture of the \"smart home\" allows you to control them using various communication protocols: ZigBee, Z-wave, Matter, Lora, Bluetooth, Wi-Fi.",
+    "section4Title": "What can it do?",
+    "section4Description": "\"Smart\" light can perform many tasks. Its main functions:",
+    "functions": {
+      "function1": "Turning lights on and off by motion sensor, timer.",
+      "function2": "Changing light intensity, temperature.",
+      "function3": "Creating lighting scenarios."
+    },
+    "section5Description": "Turning the light on by a motion sensor is very convenient when moving in the dark or when your hands are full. Using a timer, you can set modes where the lights will turn on at specific times. The system will change the lighting in the room in the evening, making the light warmer, creating a cozy atmosphere.",
+    "section6Title": "Our offers",
+    "section6Description": "If you need to install lighting in a \"smart home,\" a good solution would be to contact NORRIS.KG (\"Norris Service\"). Our company has extensive experience in this field, uses advanced technologies, certified materials, and equipment. We accept applications from commercial firms and private customers from Bishkek and other cities in Kyrgyzstan, offering them:",
+    "offers": {
+      "offer1": "Convenient cooperation conditions.",
+      "offer2": "Affordable prices for all types of services.",
+      "offer3": "Providing a warranty."
+    },
+    "section7Description": "Approaching each client individually, we strive to meet their requirements, find simple and effective solutions. When developing a project, the characteristics of buildings and the financial capabilities of customers are taken into account. If certain elements do not meet the price, similar components are selected that are not inferior in quality to the originals.",
+    "conclusion": "Apply for the installation of \"smart\" lighting through the company's website or Instagram, and we will complete the system installation in the shortest possible time. Do you have any questions related to the \"smart home\"? Ask our managers and get comprehensive answers."
   }
 }

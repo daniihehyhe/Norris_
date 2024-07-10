@@ -11,7 +11,6 @@ const ContactsPage = () => {
        <>
        <MainInfo/>
        <SocialLinkContact/>
-       <LinkPage/>
        </>
     );
 };

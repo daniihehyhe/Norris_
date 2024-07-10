@@ -16,7 +16,7 @@ const AboutPage = () => {
     return (
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 py-16">
             <PageInProgress/>
-            {/* <motion.div
+            <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -173,8 +173,7 @@ const AboutPage = () => {
                         </li>
                     </ul>
                 </div>
-            </motion.div> */}
-        <LinkPage/>
+            </motion.div>
         </div>
     );
 };

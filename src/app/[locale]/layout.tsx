@@ -4,6 +4,7 @@ import { ThemeProvider } from '../../contexts/ThemeContext';
 import TheHeader from '../../components/TheHeader';
 import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
+import LinkPage from '@/components/LinkPage';
 
 export async function generateMetadata() {
   const t = await getTranslations('mainMeta' );
@@ -38,11 +39,12 @@ const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
 
   return (
     <html lang={locale}>
-      <body>
+      <body className='font-Montserrat'>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <TheHeader />
             <div className="container mx-auto">{children}</div>
+            <LinkPage/>
             <TheFooter />
           </ThemeProvider>
         </NextIntlClientProvider>

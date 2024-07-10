@@ -8,7 +8,6 @@ const PortfolioPage = () => {
     return (
         <>
         <PageInProgress/>
-        <LinkPage/>
         </>
     );
 };

@@ -1,11 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata() {
-   const t = await getTranslations('mainMeta');
+   const t = await getTranslations('SmartLighting');
 
    return {
-      title: t('serviceTitle'),
-      description: t('ServiceDescription'),
+      title: t('title'),
+      description: t('intro'),
    };
 }
 type Props = {
