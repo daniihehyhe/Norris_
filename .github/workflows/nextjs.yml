@@ -58,7 +58,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SERVER_SSH_KEY  }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H 77.235.20.172 >> ~/.ssh/known_hosts
+          ssh-keyscan -H  -p 2609 77.235.20.172 >> ~/.ssh/known_hosts
 
       - name: Deploy to server
         run: |
