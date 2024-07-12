@@ -7,7 +7,6 @@ import ComponentB from './home/ComponentB';
 import ComponentC from './home/ComponentC';
 import ComponentD from './home/ComponentD';
 import TypesSliderItemSmartHome from '@/app/[locale]/home/TypesSliderItemSmartHome';
-import LinkPage from '@/components/LinkPage';
 import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import SecurityFeatures from './home/SecurityFeatures';
@@ -32,13 +31,12 @@ const Page = () => {
       <TypesSliderItemSmartHome />
       <ContractStages />
       <SmartHomeService />
-      <LinkPage />
-      <CustomSlider>
+      {/* <CustomSlider>
         <ComponentA />
         <ComponentB />
         <ComponentC />
         <ComponentD />
-      </CustomSlider>
+      </CustomSlider> */}
     </>
   );
 };

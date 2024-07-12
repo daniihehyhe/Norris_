@@ -7,15 +7,23 @@ import {
     FaMoneyBillWave,
     FaTachometerAlt,
 } from "react-icons/fa";
-import PageInProgress from "@/components/PageInProgress";
-import LinkPage from "@/components/LinkPage";
+import BenefitsWorkingCompany from "./content/BenefitsWorkingCompany";
+import FAQ from "./content/FAQ";
+
 
 
 const AboutPage = () => {
    
     return (
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 py-16">
-            <PageInProgress/>
+            <p className="text-titleText font-semibold my-5 ml-3">
+            История развития
+            </p>
+            <p className="text-subText ml-1">
+            Мы подберем и настроим для вас оборудование, которое сделает ваш дом более комфортным и безопасным: освещение, камеры видеонаблюдения, умные замки, датчики протечек, температуры и движения. Спроектированные нами сценарии будут работать даже в ваше отсутствие.
+            </p>
+            <FAQ/>
+            <BenefitsWorkingCompany/>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -174,6 +182,9 @@ const AboutPage = () => {
                     </ul>
                 </div>
             </motion.div>
+
+
+       
         </div>
     );
 };

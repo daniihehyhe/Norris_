@@ -99,7 +99,7 @@ function MainInfo() {
                             <FaMapMarkerAlt className="text-orange-500 text-5xl mr-4" />
                             <div>
                                 <h3 className="text-2xl font-bold mb-1">
-                                    Locatio{t("location")}
+                                    {t("location")}
                                 </h3>
                                 <p className="text-gray-700 dark:text-gray-300">
                                {t("address")}
