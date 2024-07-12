@@ -18,6 +18,15 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install
 
@@ -28,7 +37,7 @@ jobs:
         run: tar -czf norris.kg.tar.gz .next public messages
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: norris.kg
           path: norris.kg.tar.gz
@@ -39,25 +48,24 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: norris.kg
 
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.SERVER_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+          ssh-keyscan -H 217.29.26.220 >> ~/.ssh/known_hosts
 
       - name: Deploy to server
         run: |
-          scp norris.kg.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/norris/
-          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            cd /var/www/html/norris/
+          scp norris.kg.tar.gz danigit@217.29.26.220:/var/www/html/norris/
+          ssh danigit@217.29.26.220 << 'EOF'
+            cd /var/www/html/norris
             tar -xzf norris.kg.tar.gz
             rm norris.kg.tar.gz
             yarn install --production
-            pm2 restart your-app-name || pm2 start npm --name "your-app-name" -- start
-            # Убедитесь, что PM2 установлен на вашем сервере
+            pm2 restart norris-nextjs || pm2 start npm --name "norris-nextjs" -- start
           EOF
