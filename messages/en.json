@@ -290,6 +290,7 @@
     "climateControl": "Climate Control",
     "smartLighting": "Smart Lighting",
     "smartHomeProject": "Smart Home Project",
+    "SmartHomeOverview":"Smart Home overview",
     "title": "Smart Home Installation in Bishkek, Kazakhstan, Almaty, Kyrgyzstan, and Central Asia",
     "intro": "Looking for professional smart home installation services in Bishkek, Kazakhstan, Almaty, Kyrgyzstan, or Central Asia? We offer modern solutions for your comfort and security. Our team of experts specializes in designing, installing, and configuring smart home systems, including lighting automation, heating, security systems, and much more. We use only advanced technologies and high-quality equipment to ensure maximum reliability and convenience for our clients. Whether you need a smart home for an apartment, private house, or commercial property, we are ready to offer an individual solution that fully meets your needs. Our services include: Installation and configuration of smart home systems, Lighting and climate control automation, Integration of security systems and video surveillance, Management of household appliances via smartphone, Consultations and technical support. We operate in Bishkek, Kazakhstan, Almaty, Kyrgyzstan, and across Central Asia, offering quality services at affordable prices. Contact us to discuss your project and receive a free consultation."
 
@@ -612,6 +613,54 @@
     ]
   },
   "smartHomeProject": {
+    "title": "Smart Home Project by NORRIS.KG",
+    "intro": "Order the development of a smart home project in Bishkek through the NORRIS.KG website. We accept applications from all interested governmental, commercial organizations, and private individuals. We offer convenient prices, guarantee professional execution of the full package of project documentation, and precise adherence to deadlines.",
+    "section1Title": "\"Smart Home\": What is it, and what does it consist of?",
+    "section1Content": "High-tech multifunctional intelligent buildings are in high demand in our country's market. The system integrates various technical means, the coordinated work of which ensures the safety of property, comfort, and health of people. The package includes:",
+    "list1": {
+      "item1": "Controller.",
+      "item2": "Various types of sensors.",
+      "item3": "Expansion modules.",
+      "item4": "Set of actuators.",
+      "item5": "Programming programs, scenarios, PLC, controllers.",
+      "item6": "Development of integrated circuits and software for them."
+    },
+    "image1Alt": "Layout Plan",
+    "section2Content": "To put them into operation, it is necessary to lay power cables and low-voltage lines. Control and adjustment of operating parameters are carried out using a computer, remote control, voice commands, touch panels, or remotely via a smartphone.",
+    "section3Title": "What does the project work include?",
+    "section3Content": "It consists of a series of events, each of which plays an important role in the successful implementation of the task. They can be conditionally divided into several main stages:",
+    "list2": {
+      "item1": {
+        "title": "Collecting information about the object:",
+        "content": "The state of communications, architecture, room layout, convenience of connection to power supply are assessed. The purpose of the building, owner requirements, the possibility of using additional subsystems in the future long-term operation are taken into account."
+      },
+      "item2": {
+        "title": "Creating a sketch:",
+        "content": "The number of parts, length, and cross-section of wires and cables needed for installation in a smart home are calculated. A budget is drawn up and agreed upon with the customer. If necessary, changes are made."
+      },
+      "item3": {
+        "title": "Preparing documentation:",
+        "content": "Drawings are created, showing where the switchboard, cameras, power supplies, and other elements will be placed in the building. Paths for laying low-voltage and power cable lines are modeled."
+      },
+      "item4": {
+        "title": "Determining the timing of the work:",
+        "content": "A schedule is approved, and instructions for installation teams are drawn up."
+      }
+    },
+    "image2Alt": "Smart Home",
+    "section4Content": "After the detailed development of the system, the process of its implementation begins according to the approved plan.",
+    "section5Title": "Why should you contact our company?",
+    "section5Content": "Without sufficient experience and knowledge, it is impossible to qualitatively complete the entire range of work in a smart home. To avoid undesirable consequences, you should not do it yourself. Need professional services? Contact Norris Service. The company's specialization is the automation of buildings of various purposes. Our clients include well-known industrial and commercial organizations in Bishkek. The geography of the smart home sales expands every year, covering Almaty and cities of the Chui region. Our strengths are:",
+    "list3": {
+      "item1": "High professionalism of the engineering and technical staff. The extensive practical experience of specialists allows working on projects of any complexity.",
+      "item2": "Responsible attitude to work and strict fulfillment of contractual obligations.",
+      "item3": "Reasonable pricing policy, making our services accessible to a wide range of consumers."
+    },
+    "image3Alt": "Smart Home",
+    "section6Content": "We offer many ready-made solutions. You can choose one of them or leave a request for the development of a project according to an individual order. Financial possibilities and preferences of clients are taken into account. Computer programs are used for system development, which allows us to efficiently perform our work. Certified components are used during installation.",
+    "contact": "To order a smart home, contact the managers of NORRIS.KG by email or phone, leave your request. We will call you back promptly, calculate the cost of the project, and clarify the terms of its implementation. An apartment or office, re-equipped under a smart home according to our project, will become a reliable guarantee of your safety and comfort."
+  },
+  "SmartHomeOverview": {
     "title": "Smart Home Project by NORRIS.KG",
     "intro": "Order the development of a smart home project in Bishkek through the NORRIS.KG website. We accept applications from all interested governmental, commercial organizations, and private individuals. We offer convenient prices, guarantee professional execution of the full package of project documentation, and precise adherence to deadlines.",
     "section1Title": "\"Smart Home\": What is it, and what does it consist of?",
