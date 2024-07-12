@@ -62,7 +62,7 @@ jobs:
 
       - name: Deploy to server
         run: |
-          scp  norris.kg.tar.gz daniGitAction@217.29.26.220:/var/www/html/norris/
+          scp  norris.kg.tar.gz danigit@217.29.26.220:/var/www/html/norris/
           ssh  danigit@217.29.26.220 << 'EOF'
             cd /var/www/html/norris
             tar -xzf norris.kg.tar.gz
