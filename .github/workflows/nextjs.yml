@@ -62,8 +62,8 @@ jobs:
 
       - name: Deploy to server
         run: |
-          scp -P 2609 norris.kg.tar.gz daniGitAction@77.235.20.172:/var/www/html/norris/
-          ssh -p 2609 daniGitAction@77.235.20.172 << 'EOF'
+          scp  norris.kg.tar.gz daniGitAction@217.29.26.220:/var/www/html/norris/
+          ssh  danigit@217.29.26.220 << 'EOF'
             cd /var/www/html/norris
             tar -xzf norris.kg.tar.gz
             rm norris.kg.tar.gz
