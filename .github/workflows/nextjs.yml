@@ -27,7 +27,6 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-
       - name: Install dependencies
         run: yarn install
 
@@ -56,14 +55,14 @@ jobs:
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SERVER_SSH_KEY  }}" | tr -d '\r' > ~/.ssh/id_rsa
+          echo "${{ secrets.SERVER_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H  217.29.26.220 >> ~/.ssh/known_hosts
+          ssh-keyscan -H 217.29.26.220 >> ~/.ssh/known_hosts
 
       - name: Deploy to server
         run: |
-          scp  norris.kg.tar.gz danigit@217.29.26.220:/var/www/html/norris/
-          ssh  danigit@217.29.26.220 << 'EOF'
+          scp norris.kg.tar.gz danigit@217.29.26.220:/var/www/html/norris/
+          ssh danigit@217.29.26.220 << 'EOF'
             cd /var/www/html/norris
             tar -xzf norris.kg.tar.gz
             rm norris.kg.tar.gz
