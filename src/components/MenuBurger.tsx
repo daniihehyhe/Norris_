@@ -105,7 +105,7 @@ const MenuBurger: React.FC<MenuProps> = ({ onClose }) => {
     <main className="fixed top-0 left-0 h-screen z-50 w-full bg-gray-200 dark:bg-gray-900 p-4 md:mx-auto overflow-y-auto">
       <section className="flex container mx-auto relative flex-col-reverse gap-5 md:gap-0 md:flex-row justify-between items-center md:mb-5">
         <Link href="/"  rel="noopener noreferrer">
-          <Image
+          <Image loading='lazy'
             onClick={onClose}
             src={theme === "light" ? logo.src : whiteLogo.src}
             width={150}
@@ -188,7 +188,7 @@ const MenuBurger: React.FC<MenuProps> = ({ onClose }) => {
     className={`btn flex self-center px-6 py-2 w-fit items-center justify-center ${isSending || isDisabled ? 'bg-gray-400 cursor-not-allowed' : 'hover:bg-moss_green_dark'}`}
     disabled={isSending || isDisabled}>
     {tc("submitButton")}
-    <Image
+    <Image loading='lazy'
         className="ml-10 w-auto"
         src={Arrow_long_right}
         width={40}

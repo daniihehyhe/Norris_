@@ -18,7 +18,7 @@ function BenefitsWorkingCompany() {
         {t("section1.text")}
       </p>
       <div className=" lg:ml-20 relative w-60 h-52   lg:w-1/5  ">
-      <Image src={flat} alt="Smart Home" fill className="object-cover rounded-3xl" />
+      <Image loading='lazy' src={flat} alt="Smart Home" fill className="object-cover rounded-3xl" />
       <div className="absolute bg-norris_dark  -top-6 -left-10 px-4 py-1 rounded-3xl text-contText italic">{t("section1.label1")} </div>
       <div className=" absolute bg-norris_dark  -bottom-6 -right-10 px-4 py-1 rounded-3xl text-contText italic">{t("section1.label2")}</div>
       </div>
@@ -29,7 +29,7 @@ function BenefitsWorkingCompany() {
       {t("section2.text")}
       </p>
       <div className=" lg:ml-20 relative w-60 h-52   lg:w-1/5  ">
-      <Image src={flat2} alt="Smart Home" fill className="object-cover rounded-3xl" />
+      <Image loading='lazy'  src={flat2} alt="Smart Home" fill className="object-cover rounded-3xl" />
       <div className="absolute bg-norris_dark  -top-6 -left-10 px-4 py-1 rounded-3xl text-contText italic">{t("section2.label1")}</div>
       <div className=" absolute bg-norris_dark  -bottom-6 -right-10 px-4 py-1 rounded-3xl text-contText italic">{t("section2.label2")}</div>
       </div>
@@ -41,7 +41,7 @@ function BenefitsWorkingCompany() {
       {t("section3.text")}
       </p>
       <div className=" lg:ml-20 relative w-60 h-52   lg:w-1/5  ">
-      <Image src={layout_plan} alt="Smart Home" fill className="object-cover rounded-3xl" />
+      <Image loading='lazy' src={layout_plan} alt="Smart Home" fill className="object-cover rounded-3xl" />
       <div className="absolute bg-norris_dark  -top-6 -left-10 px-4 py-1 rounded-3xl text-contText italic">{t("section3.label1")}</div>
       <div className=" absolute bg-norris_dark  -bottom-6 -right-10 px-4 py-1 rounded-3xl text-contText italic">{t("section3.label2")}</div>
       </div>

@@ -50,7 +50,7 @@ useEffect(() => {
           }
         </main>
         <main className='relative md:w-1/2 h-64 md:h-auto'>
-          <Image src={document_sign} alt='document sign' className='object-cover w-auto' priority />
+          <Image loading='lazy' src={document_sign} alt='document sign' className='object-cover w-auto' priority />
         </main>
       </div>
     </section>

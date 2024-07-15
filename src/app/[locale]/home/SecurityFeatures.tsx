@@ -79,7 +79,7 @@ const SecurityFeatures: React.FC = () => {
                         {tSlider(item.id)}
                     </p>
 
-                    <Image
+                    <Image loading='lazy'
                     className='w-56 h-40 object-cover'
                         src={item.image}
                         width={222}

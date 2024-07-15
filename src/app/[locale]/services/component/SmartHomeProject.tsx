@@ -31,7 +31,7 @@ const SmartHomeProject: React.FC = () => {
         <li>{t('list1.item5')}</li>
         <li>{t('list1.item6')}</li>
       </ul>
-      <Image src={layout_plan} alt={t('image1Alt')} className="rounded-lg shadow-md mb-8" />
+      <Image loading='lazy' src={layout_plan} alt={t('image1Alt')} className="rounded-lg shadow-md mb-8" />
       <p className="text-lg mb-4">
         {t('section2Content')}
       </p>
@@ -55,7 +55,7 @@ const SmartHomeProject: React.FC = () => {
           <strong>{t('list2.item4.title')}</strong> {t('list2.item4.content')}
         </li>
       </ul>
-      <Image src={flat} alt={t('image2Alt')} className="rounded-lg shadow-md mb-8" />
+      <Image loading='lazy' src={flat} alt={t('image2Alt')} className="rounded-lg shadow-md mb-8" />
       <p className="text-lg mb-4">
         {t('section4Content')}
       </p>
@@ -70,7 +70,7 @@ const SmartHomeProject: React.FC = () => {
         <li>{t('list3.item2')}</li>
         <li>{t('list3.item3')}</li>
       </ul>
-      <Image src={flat2} alt={t('image3Alt')} className="rounded-lg shadow-md mb-8" />
+      <Image loading='lazy' src={flat2} alt={t('image3Alt')} className="rounded-lg shadow-md mb-8" />
       <p className="text-lg mb-4">
         {t('section6Content')}
       </p>

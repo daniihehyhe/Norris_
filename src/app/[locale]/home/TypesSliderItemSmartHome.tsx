@@ -32,7 +32,7 @@ function TypesSliderItemSmartHome() {
                     <p className="w-60 md:w-72  text-white text-center sm:text-start text-contText mr-5">
                         {t(item.id)}
                     </p>
-                    <Image
+                    <Image loading='lazy'
                     className="w-auto"
                         src={item.image}
                         height={250}

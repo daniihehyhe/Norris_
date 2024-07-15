@@ -14,7 +14,7 @@ const PowerSystems: React.FC = () => {
                 {t('title')}
             </h1>
             <div className="flex justify-center mb-6">
-                <Image src={smart_home} alt={t('imageAlt')} className="rounded-lg shadow-md w-full h-64 object-cover" />
+                <Image loading='lazy' src={smart_home} alt={t('imageAlt')} className="rounded-lg shadow-md w-full h-64 object-cover" />
             </div>
             <h2 className="text-lg mb-4 ">
                 {t('intro')}
@@ -29,7 +29,7 @@ const PowerSystems: React.FC = () => {
                 <li><FaShieldAlt className="inline-block text-blue-500 mr-2" /> {t('features.feature3')}</li>
             </ul>
             <div className="flex justify-center mb-6">
-                <Image src={auto_light} alt={t('imageAlt2')} className="rounded-lg shadow-md w-full h-64 object-cover" />
+                <Image loading='lazy' src={auto_light} alt={t('imageAlt2')} className="rounded-lg shadow-md w-full h-64 object-cover" />
             </div>
             <p className="text-lg mb-4 ">
                 {t('section2Description')}

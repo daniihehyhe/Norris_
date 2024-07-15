@@ -45,13 +45,14 @@ const ComponentC: React.FC = () => {
                 animate="visible"
                 variants={imageVariants}
                 className="absolute top-0 right-0 m-8">
-                <Image
+                <Image loading='lazy'
                     src={lamp}
                     alt="Lamp Animation"
                     width={200}
                     height={200}
                     className="rounded-lg shadow-lg w-auto"
                     priority 
+                    
                 />
             </motion.div>
         </div>

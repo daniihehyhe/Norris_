@@ -44,7 +44,7 @@ function TheFooter() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div>
                             <h3 className="text-xl font-bold mb-4">
-                                <Image
+                                <Image loading='lazy'
                                     src={ whiteLogo.src}
                                     width={150}
                                     height={70}

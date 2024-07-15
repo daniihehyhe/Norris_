@@ -13,7 +13,7 @@ const HomeAutomation: React.FC = () => {
                 {t("title")}
             </h2>
             <div className="flex justify-center mb-6">
-                <Image src={smart_home} alt={t("imageAlt1")} className="rounded-lg shadow-md w-full h-64 object-cover" />
+                <Image loading='lazy' src={smart_home} alt={t("imageAlt1")} className="rounded-lg shadow-md w-full h-64 object-cover" />
             </div>
             <p className="text-lg mb-4 ">
                 {t("intro")}
@@ -48,7 +48,7 @@ const HomeAutomation: React.FC = () => {
             </p>
             <h3 className="text-2xl font-bold mb-4 text-blue-900">{t("capabilitiesTitle")} </h3>
             <div className="flex justify-center mb-6">
-                <Image src={auto_light} alt={t("imageAlt2")} className="rounded-lg shadow-md w-full h-64 object-cover" />
+                <Image loading='lazy' src={auto_light} alt={t("imageAlt2")} className="rounded-lg shadow-md w-full h-64 object-cover" />
             </div>
             <p className="text-lg mb-4 ">
                 {t("capabilitiesDescription")}

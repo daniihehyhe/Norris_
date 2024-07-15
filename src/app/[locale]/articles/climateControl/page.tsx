@@ -14,7 +14,7 @@ const ClimateControl: React.FC = () => {
                 {t("title")}
             </h1>
             <div className="flex justify-center mb-6">
-                <Image src={flat} alt={t("imageAlt1")} className="rounded-lg shadow-md w-1/2" />
+                <Image loading='lazy' src={flat} alt={t("imageAlt1")} className="rounded-lg shadow-md w-1/2" />
             </div>
             <h2 className="text-lg mb-4 ">
                 {t("intro")}
@@ -45,7 +45,7 @@ const ClimateControl: React.FC = () => {
             </h4>
             <h3 className="text-2xl font-bold mb-4 text-blue-900">{t("advantageTitle")} </h3>
             <div className="flex justify-center mb-6">
-                <Image src={flat2} alt={t("imageAlt2")} className="rounded-lg shadow-md w-1/2" />
+                <Image loading='lazy' src={flat2} alt={t("imageAlt2")} className="rounded-lg shadow-md w-1/2" />
             </div>
             <p className="text-lg mb-4 ">
                 {t("text")}
@@ -66,7 +66,7 @@ const ClimateControl: React.FC = () => {
                 {t("offersTitle")}
             </h3>
             <div className="flex justify-center mb-6">
-                <Image src={layout_plan} alt={t("imageAlt3")} className="rounded-lg shadow-md w-1/2" />
+                <Image loading='lazy' src={layout_plan} alt={t("imageAlt3")} className="rounded-lg shadow-md w-1/2" />
             </div>
             <p className="text-lg mb-4 ">
                 {t("offersDescription")}

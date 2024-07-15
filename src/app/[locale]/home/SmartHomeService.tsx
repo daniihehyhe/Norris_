@@ -97,7 +97,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({
                 reverse ? "md:flex-row-reverse" : "",
             )}>
             <div className="w-full md:w-1/2 p-4">
-                <Image
+                <Image loading='lazy'
                     src={`/images/slider/${image}`}
                     alt={title}
                     width={400}

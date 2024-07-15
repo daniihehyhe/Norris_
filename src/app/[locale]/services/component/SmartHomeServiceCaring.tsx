@@ -37,7 +37,7 @@ const SmartHomeServiceCaring: React.FC = () => {
                {t("title")}
             </p>
             <div className="flex items-center">
-               <Image
+               <Image loading='lazy'
                className='hidden  md:block'
                   src={phone_smart_home}
                   width={300}
@@ -48,7 +48,7 @@ const SmartHomeServiceCaring: React.FC = () => {
                </p>
             </div>
             <div className=" w-11/12 h-80 relative  ">
-               <Image
+               <Image loading='lazy'
                   className="object-cover"
                   src={flat}
                   alt="flat"
@@ -136,7 +136,7 @@ const SmartHomeServiceCaring: React.FC = () => {
                   </ul>
                </div>
                <div className="relative ml-5 h-auto w-4/5">
-                  <Image
+                  <Image loading='lazy'
                      src={smart_home}
                      fill
                      className="hidden lg:block object-contain"

@@ -25,7 +25,7 @@ const ProtectingYourSafetySecuritySystems: React.FC = () => {
 
             <aside className="text-white bg-black  p-6 md:p-10  shadow-2xl">
          <div className="relative rounded-full w-40 h-40 md:w-60 md:h-60 mx-auto mb-6">
-            <Image
+            <Image loading='lazy'
                src={smart_home}
                fill
                className="object-cover rounded-full"

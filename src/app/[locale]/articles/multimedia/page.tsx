@@ -13,7 +13,7 @@ const Multimedia: React.FC = () => {
                 {t('title')}
             </h2>
             <div className="flex justify-center mb-6">
-                <Image src={multimediaImage} alt={t('imageAlt')} className="rounded-lg shadow-md w-full h-64 object-cover" />
+                <Image loading='lazy' src={multimediaImage} alt={t('imageAlt')} className="rounded-lg shadow-md w-full h-64 object-cover" />
             </div>
             <p className="text-lg mb-4 ">
                 {t('intro')}

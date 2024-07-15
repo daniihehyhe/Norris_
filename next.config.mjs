@@ -1,20 +1,19 @@
 import nextIntl from 'next-intl/plugin';
+import withPlugins from 'next-compose-plugins';
+import optimizedImages from 'next-optimized-images';
+import TerserPlugin from 'terser-webpack-plugin';
+import crypto from 'crypto';
 
+// Конфигурация next-intl
 const withNextIntl = nextIntl('./src/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-};
-
-export default withNextIntl(nextConfig);
-
-
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
-
-module.exports = withPlugins([optimizedImages], {
   images: {
-    domains: ['https://norris.kg/'], // Добавьте свои домены
+    domains: ['norris.kg'], 
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    formats: ['image/avif', 'image/webp'],
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -46,20 +45,21 @@ module.exports = withPlugins([optimizedImages], {
       };
     }
 
+    config.optimization = {
+      ...config.optimization,
+      minimize: true,
+      minimizer: [
+        new TerserPlugin({
+          terserOptions: {
+            compress: true,
+            mangle: true,
+          },
+        }),
+      ],
+    };
+
     return config;
   },
-});
+};
 
-// import nextIntl from 'next-intl/plugin';
-
-// const withNextIntl = nextIntl('./src/i18n.ts');
-
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   i18n: {
-//     locales: ['en', 'ru', 'ky', 'kz'],
-//     defaultLocale: 'en',
-//   },
-// };
-
-// export default withNextIntl(nextConfig);
+export default withNextIntl(withPlugins([optimizedImages], nextConfig));

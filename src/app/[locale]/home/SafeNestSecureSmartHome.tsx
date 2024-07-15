@@ -32,7 +32,7 @@ function SafeNestSecureSmartHome() {
 
             <section className="flex flex-col  md:flex-row mb-14 pt-20 justify-center items-start md:items-center">
                <div className="mb-5 md:mb-0 md:mr-5 w-20 md:w-96">
-                  <Image
+                  <Image loading='lazy'
                      src={offender}
                      alt="Smart Home"
                      layout="responsive"

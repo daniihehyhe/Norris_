@@ -23,11 +23,6 @@ const ComponentA: React.FC = () => {
     const handleOpenModal = () => {
         setShowModal(true);
     };
-
-    const handleCloseModal = () => {
-        setShowModal(false);
-    };
-
     return (
         <div
             className="relative flex flex-col md:flex-row justify-between items-center w-full h-screen p-8 bg-cover bg-center"
@@ -54,7 +49,7 @@ const ComponentA: React.FC = () => {
                 animate="visible"
                 variants={imageVariants}
                 className="flex-1 p-4">
-                <Image
+                <Image loading='lazy'
                     src={smartHomeImage}
                     alt="Smart Home"
                     width={500}

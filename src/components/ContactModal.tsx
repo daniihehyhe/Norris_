@@ -134,7 +134,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
     className={`btn flex self-center px-6 mx-auto mb-3 py-2 w-fit items-center justify-center ${isSending || isDisabled ? 'bg-gray-400 cursor-not-allowed' : 'hover:bg-moss_green_dark'}`}
     disabled={isSending || isDisabled}>
     {t("submitButton")}
-    <Image
+    <Image loading='lazy'
         className="ml-10 w-auto"
         src={Arrow_long_right}
 

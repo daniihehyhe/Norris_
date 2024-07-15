@@ -91,7 +91,7 @@ const container = {
                     transition={{ delay: 0.5 }}
                     className="flex items-center gap-4">
                     <Link  rel="noopener noreferrer" href="/">
-                        <Image
+                        <Image loading='lazy'
                             src={theme === "light" ? logo.src : whiteLogo.src}
                             width={100}
                             height={50}

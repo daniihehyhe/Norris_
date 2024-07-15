@@ -90,7 +90,7 @@ export default function LanguageSwitcher() {
                                 onClick={() =>
                                     handleLanguageChange(language.locale)
                                 }>
-                                <Image
+                                <Image loading='lazy'
                                     src={language.flag}
                                     alt={t(language.labelKey)}
                                     width={20}

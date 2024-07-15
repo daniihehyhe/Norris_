@@ -42,7 +42,7 @@ const ComponentD: React.FC = () => {
                 animate="visible"
                 variants={imageVariants}
                 className="absolute top-0 right-0 m-8">
-                <Image
+                <Image loading='lazy'
                     src={security}
                     alt="Security Animation"
                     width={200}
