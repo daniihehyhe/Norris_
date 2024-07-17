@@ -85,7 +85,6 @@ const SecurityFeatures: React.FC = () => {
                         width={222}
                         height={250}
                         alt={item.alt}
-                        priority 
                         />
                         </div>
             ))}

@@ -51,7 +51,6 @@ const ComponentC: React.FC = () => {
                     width={200}
                     height={200}
                     className="rounded-lg shadow-lg w-auto"
-                    priority 
                     
                 />
             </motion.div>

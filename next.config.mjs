@@ -24,7 +24,6 @@ const nextConfig = {
           chunks: 'all',
           name: 'framework',
           test: /[\\/]node_modules[\\/](react|react-dom|next)[\\/]/,
-          priority: 40,
           enforce: true,
         },
         lib: {
@@ -38,7 +37,6 @@ const nextConfig = {
             }
             return hash.digest('hex').slice(0, 8);
           },
-          priority: 30,
           minChunks: 1,
           reuseExistingChunk: true,
         },

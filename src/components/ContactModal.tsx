@@ -141,7 +141,6 @@ const ContactModal: React.FC<ContactModalProps> = ({ showModal, onClose }) => {
         width={40}
         height={20}
         alt="Arrow_long_right"
-        priority 
     />
 </button>
 

@@ -38,7 +38,6 @@ function TypesSliderItemSmartHome() {
                         height={250}
                         width={222}
                         alt={item.alt}
-                        priority 
                     />
                 </div>
             ))}

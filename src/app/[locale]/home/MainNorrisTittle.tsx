@@ -63,7 +63,6 @@ function MainNorrisTittle() {
                         width={300}
                         className='w-auto'
                         alt="swart home systems"
-                        priority 
                     />
                 </motion.div>
             </main>
@@ -88,7 +87,7 @@ function MainNorrisTittle() {
             </main>
             <main className="relative bg-norris_dark p-textClamp">
                 <motion.div
-                    className="absolute text-contText flex justify-center items-center px-3 text-white h-24 md:h-40 w-56  md:w-2/6 text-center  -top-[90px] md:-top-28 right-2 md:right-1/4 bg-moss_green rounded-lg"
+                    className="absolute text-contText flex justify-center items-center py-2 text-white h-24 md:h-40 w-56  md:w-2/6 text-center  -top-[90px] md:-top-28 right-2 md:right-1/4 bg-moss_green rounded-lg"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}>

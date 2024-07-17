@@ -96,7 +96,6 @@ export default function LanguageSwitcher() {
                                     width={20}
                                     height={20}
                                     className="mr-2 w-auto"
-                                    priority 
                                 />
                                 {t(language.labelKey)}
                             </button>

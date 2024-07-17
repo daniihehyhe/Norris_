@@ -103,7 +103,6 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({
                     width={400}
                     height={300}
                     className="w-full h-auto object-cover rounded-lg shadow-lg"
-                    priority 
                 />
             </div>
             <div className="w-full md:w-1/2 p-6">
