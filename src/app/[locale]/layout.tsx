@@ -26,6 +26,12 @@ export async function generateMetadata() {
          address: 'Бокомбаева 177',
          phone: '+996553228888',
       },
+      twitter: {
+        card: 'summary_large_image',
+        title: t('title'),
+        description: t('description'),
+        image: '/favicon.ico?v=4' 
+      }
    };
 }
 
