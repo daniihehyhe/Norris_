@@ -22,7 +22,7 @@ export async function generateMetadata() {
          description: t('description'),
          type: 'website', // Вы можете изменить тип в зависимости от вашего контента
          url: 'https://www.norris.kg/', // URL вашей страницы
-         image: '/favicon.ico?v=4', // URL изображения для превью
+         image: 'https://www.norris.kg/favicon.ico', // URL изображения для превью
          address: 'Бокомбаева 177',
          phone: '+996553228888',
       },
