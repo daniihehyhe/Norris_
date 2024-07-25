@@ -3,6 +3,7 @@
       "title": "Умный дом под ключ в Бишкеке - Автоматизация и голосовое управление",
       "description": "Профессиональная установка системы 'Умный Дом' в Бишкеке. Автоматизация инженерных систем, голосовое управление и полный комплекс услуг по настройке умного дома для вашего комфорта и безопасности. Адрес: Боконбаева 177. Телефон: +996553228888.",
         "welcome": "Добро пожаловать на сайт Умный Дом",
+        "keywords": "smart home, home automation, security, energy efficiency, smart home Bishkek, voice control, phone control, android control, iPhone control, smart home Kyrgyzstan, smart home installation, smart home installation Bishkek, smart home installation Kyrgyzstan, smart home installation Naryn, smart home installation Issyk-Kul, smart home installation Talas, smart home installation Chuy, smart home installation Osh, smart home installation Jalal-Abad, smart home installation Batken, smart home installation Almaty, smart home installation Kazakhstan",
         "serviceTitle": "Какие услуги мы предлагаем?",
         "ServiceDescription": "Если вы проживаете в Бишкеке, другом городе Кыргызстана, хотите оборудовать системами «умного дома» офис, квартиру, обратитесь в нашу компанию. «Норрис Сервис» — команда специалистов, обладающая большим опытом в сфере практического применения IT-технологий."
     },
@@ -108,12 +109,12 @@
         "camera": {
             "title": "Камера",
             "description": "Управляйте камерами вашего дома из любой точки мира. Вы можете просматривать прямые трансляции, просматривать записи и даже управлять углом наклона камер удаленно. Это идеальное решение для обеспечения безопасности вашего дома в любое время.",
-            "image": "1.webp"
+            "image": "security_home.png"
         },
         "security": {
             "title": "Безопасность",
             "description": "Обеспечьте безопасность вашего дома с помощью передовых систем. Наши решения по безопасности включают сигнализации, датчики движения и умные замки, которые вы можете контролировать с телефона. Обеспечьте безопасность своего дома и близких с помощью наших комплексных систем безопасности.",
-            "image": "2.webp"
+            "image": "norris_system.png"
         },
         "smartSpeakers": {
             "title": "Умные Колонки",
@@ -123,12 +124,12 @@
         "sensors": {
             "title": "Датчики",
             "description": "Датчики присутствия, света, газа, температуры. Наши датчики могут обнаруживать движение, изменения освещения, утечки газа и колебания температуры. Эти датчики обеспечивают вам постоянный контроль за состоянием вашего дома.",
-            "image": "4.webp"
+            "image": "washing_machine_logo.png"
         },
         "curtainsLighting": {
             "title": "Шторы и Освещение",
             "description": "Управляйте шторами, освещением и жалюзи из любой точки мира. Вы можете устанавливать расписания, управлять ими удаленно и создавать идеальную атмосферу в любое время дня и ночи. Повышайте комфорт и удобство с помощью умного управления освещением и оконными покрытиями.",
-            "image": "5.webp"
+            "image": "blinds.png"
         }
     },
     "MainNorrisTittle": {

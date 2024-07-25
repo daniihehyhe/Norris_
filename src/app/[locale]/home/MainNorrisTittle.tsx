@@ -87,14 +87,14 @@ function MainNorrisTittle() {
             </main>
             <main className="relative bg-norris_dark p-textClamp">
                 <motion.div
-                    className="absolute text-contText flex justify-center items-center py-2 text-white h-24 md:h-40 w-56  md:w-2/6 text-center  -top-[90px] md:-top-28 right-2 md:right-1/4 bg-moss_green rounded-lg"
+                    className="absolute text-contText flex justify-center items-center p-3 text-white md:h-40 w-4/5  md:w-2/6 text-center  -top-[100px] md:-top-28 right-2 md:right-1/4 bg-moss_green rounded-lg"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}>
                     {t("request")}
                 </motion.div>
                 <motion.p
-                    className="text-white text-subText md:leading-2xl"
+                    className="text-white mt-10 text-subText md:leading-2xl"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}>

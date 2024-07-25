@@ -3,6 +3,7 @@
     "title": "Smart Home Turnkey Solution in Bishkek - Automation and Voice Control",
     "description": "Professional installation of the 'Smart Home' system in Bishkek. Engineering systems automation, voice control, and a full range of services for setting up a smart home for your comfort and safety.Address: Bokombaeva 177. Phone: +996553228888.",
     "welcome": "Welcome to the Smart Home website",
+    "keywords": "smart home, home automation, security, energy efficiency, smart home Bishkek, voice control, phone control, android control, iPhone control, smart home Kyrgyzstan, smart home installation, smart home installation Bishkek, smart home installation Kyrgyzstan, smart home installation Naryn, smart home installation Issyk-Kul, smart home installation Talas, smart home installation Chuy, smart home installation Osh, smart home installation Jalal-Abad, smart home installation Batken, smart home installation Almaty, smart home installation Kazakhstan",
     "serviceTitle":"What services do we offer?",
     "ServiceDescription":"If you live in Bishkek, another city of Kyrgyzstan, want to equip your office, flat with \"smart home\" systems, contact our company. \"Norris Service\" is a team of specialists with extensive experience in the practical application of IT-technologies."
   },
@@ -108,12 +109,12 @@
     "camera": {
       "title": "Camera",
       "description": "Manage your home cameras from anywhere in the world. You can monitor live footage, review recordings, and even control the angle of the cameras remotely. It's a perfect solution for ensuring your home security at all times.",
-      "image": "1.webp"
+      "image": "security_home.png"
     },
     "security": {
       "title": "Security",
       "description": "Ensure your home's security with advanced systems. Our security solutions include alarms, motion detectors, and smart locks that you can control from your phone. Keep your home and loved ones safe with our comprehensive security systems.",
-      "image": "2.webp"
+      "image": "norris_system.png"
     },
     "smartSpeakers": {
       "title": "Smart Speakers",
@@ -123,12 +124,12 @@
     "sensors": {
       "title": "Sensors",
       "description": "Presence, light, gas, temperature sensors. Our range of sensors can detect motion, changes in lighting, gas leaks, and temperature fluctuations. These sensors ensure you are always aware of the conditions in your home.",
-      "image": "4.webp"
+      "image": "washing_machine_logo.png"
     },
     "curtainsLighting": {
       "title": "Curtains and Lighting",
       "description": "Manage your curtains, lighting, and blinds from anywhere. You can set schedules, control them remotely, and create the perfect ambiance for any time of day or night. Enhance your comfort and convenience with smart control over your home’s lighting and window treatments.",
-      "image": "5.webp"
+      "image": "blinds.png"
     }
   },
   "MainNorrisTittle": {
