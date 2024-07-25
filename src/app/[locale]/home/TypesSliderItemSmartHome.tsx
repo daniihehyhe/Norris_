@@ -2,10 +2,10 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import konditsioner from "@/../public/images/konditsioner.jpg";
-import night_light from "@/../public/images/night_light.jpeg";
-import auto_light from "@/../public/images/auto_light.jpg";
-import vacuum_cleaner from "@/../public/images/vacuum_cleaner.jpg";
+import konditsioner from "@/../public/images/konditsioner.png";
+import night_light from "@/../public/images/slider/light_control.png";
+import auto_light from "@/../public/images/light_home_control.png";
+import vacuum_cleaner from "@/../public/images/vacuum_cleaner_smart.png";
 import CustomSlider from "@/components/CustomSlider";
 
 interface SliderItem {
@@ -28,17 +28,21 @@ function TypesSliderItemSmartHome() {
             {sliderItems.map((item) => (
                 <div
                     key={item.id}
-                    className="flex flex-col gap-2 md:flex-row bg-norris_dark p-4 md:p-16 w-fit  items-center justify-center rounded-3xl">
+                    className="flex flex-col gap-2 md:flex-row bg-norris_dark p-4 md:p-10 w-fit  items-center justify-center rounded-3xl">
                     <p className="w-60 md:w-72  text-white text-center sm:text-start text-contText mr-5">
                         {t(item.id)}
                     </p>
+                    <div className="relative w-64 h-64">
+
                     <Image loading='lazy'
                     className="w-auto"
-                        src={item.image}
-                        height={250}
-                        width={222}
-                        alt={item.alt}
+                    src={item.image}
+                    fill
+                    // height={250}
+                    // width={222}
+                    alt={item.alt}
                     />
+                    </div>
                 </div>
             ))}
         </CustomSlider>

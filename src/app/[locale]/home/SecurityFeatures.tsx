@@ -2,11 +2,11 @@
 'use client'
 
 import React from 'react';
-import blinds from '@/../public/images/slider/blinds.jpeg'
-import radio from '@/../public/images/slider/radio.jpeg'
-import house from '@/../public/images/slider/house.jpg'
-import gate from '@/../public/images/slider/gate.jpg'
-import gate1 from '@/../public/images/slider/l_3.jpg'
+import blinds from '@/../public/images/slider/blinds.png'
+import radio from '@/../public/images/slider/radio_nanny.webp'
+import house from '@/../public/images/slider/security_home.png'
+import gate from '@/../public/images/slider/gates.png'
+import gate1 from '@/../public/images/slider/light_control.png'
 import CustomSlider from '@/components/CustomSlider';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -78,14 +78,18 @@ const SecurityFeatures: React.FC = () => {
                     <p className="w-60 md:w-72  text-white text-center sm:text-start text-contText mr-5">
                         {tSlider(item.id)}
                     </p>
+<div className='relative w-64 h-64'>
 
-                    <Image loading='lazy'
-                    className='w-56 h-40 object-cover'
-                        src={item.image}
-                        width={222}
-                        height={250}
-                        alt={item.alt}
-                        />
+                    <Image 
+                    loading='lazy'
+                    className='w-56 h-40 top-0 left-0 object-cover'
+                    src={item.image}
+                    fill
+                    // width={200}
+                    // height={200}
+                    alt={item.alt}
+                    />
+                    </div>
                         </div>
             ))}
         </CustomSlider>

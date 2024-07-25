@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
-import phone from '@/../public/images/phone_smart_home.png'
+import norris_system from '@/../public/images/norris_system.png'
 import LetterByLetter from '@/components/LetterByLetter';
 import { useTranslations } from 'next-intl';
 import ContactModal from '@/components/ContactModal';
@@ -43,7 +43,7 @@ function MainNorrisTittle() {
                     </div>
                     <motion.button
                     onClick={() => setShowModal(true)}
-                        className="btn px-6 text-lg py-2"
+                        className="btn mt-5 px-6 text-lg py-2"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
                         {t("button")}
@@ -58,11 +58,11 @@ function MainNorrisTittle() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}>
                     <Image loading='lazy'
-                        src={phone}
+                        src={norris_system}
                         height={900}
                         width={300}
                         className='w-auto'
-                        alt="swart home systems"
+                        alt="norris swart home systems"
                     />
                 </motion.div>
             </main>

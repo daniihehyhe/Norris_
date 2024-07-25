@@ -13,8 +13,6 @@ import SecurityFeatures from './home/SecurityFeatures';
 import CustomSlider from '@/components/CustomSlider';
 
 
-
-
 const Page = () => {
   const t = useTranslations('mainMeta');
   return (
@@ -24,6 +22,11 @@ const Page = () => {
         <meta property="og:title" content={t('title')} />
         <meta property="og:description" content={t('description')} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://norris.kg/favicon.ico" />
+        <link rel="alternate" hrefLang="en" href="https://norris.kg/en" />
+        <link rel="alternate" hrefLang="ru" href="https://norris.kg/ru" />
+        <link rel="alternate" hrefLang="kg" href="https://norris.kg/kg" />
+        <link rel="alternate" hrefLang="kz" href="https://norris.kg/kz" />
       </Head>
       <MainNorris />
       <SecurityFeatures />
