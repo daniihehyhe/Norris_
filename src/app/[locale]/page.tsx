@@ -23,6 +23,11 @@ const Page = () => {
         <meta property="og:description" content={t('description')} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://norris.kg/favicon.ico" />
+        <meta property="twitter:url" content="https://norris.kg" />
+        <meta property="twitter:title" content={t('title')} />
+        <meta property="twitter:description" content={t('description')} />
+        <meta property="twitter:type" content="website" />
+        <meta property="twitter:image" content="https://norris.kg/favicon.ico" />
         <link rel="alternate" hrefLang="en" href="https://norris.kg/en" />
         <link rel="alternate" hrefLang="ru" href="https://norris.kg/ru" />
         <link rel="alternate" hrefLang="kg" href="https://norris.kg/kg" />

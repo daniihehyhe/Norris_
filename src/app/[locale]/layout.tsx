@@ -23,7 +23,7 @@ export async function generateMetadata() {
          description: t('description'),
          type: 'website', // Вы можете изменить тип в зависимости от вашего контента
          url: 'https://www.norris.kg/', // URL вашей страницы
-         image: '/logo_norris.png' , 
+         images: 'https://norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhite_logo.c2d68419.png&w=256&q=75' , 
 
          address: 'Боконбаева 177',
          phone: '+996553228888',
@@ -32,7 +32,7 @@ export async function generateMetadata() {
         card: 'summary_large_image',
         title: t('title'),
         description: t('description'),
-        image: '/logo_norris.png', 
+        images: 'https://norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhite_logo.c2d68419.png&w=256&q=75', 
       }
    };
 }
