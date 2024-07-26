@@ -6,7 +6,38 @@ import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
 import LinkPage from '@/components/LinkPage';
 import Head from 'next/head';
-
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+   canonical: 'https://www.norris.kg/',
+   languages: {
+     'en-US': 'https://www.norris.kg/en',
+     'ka': 'https://www.norris.kg/kz',
+     'kg': 'https://www.norris.kg/kg',
+     'ru': 'https://www.norris.kg/ru',
+   },
+   media: {
+     'only screen and (max-width: 600px)': 'https://nextjs.org/mobile',
+   },
+   types: {
+     'application/rss+xml': 'https://nextjs.org/rss',
+   },
+ },
+}
 export async function generateMetadata() {
    const t = await getTranslations('mainMeta');
 
@@ -24,16 +55,21 @@ export async function generateMetadata() {
          description: t('description'),
          type: 'website',
          url: 'https://norris.kg/', // URL вашей страницы
-         image: '/logo_norris.png',
+         images: [ {
+            url: 'https://norris.kg/favicon.ico', // Must be an absolute URL
+            width: 800,
+            height: 600,
+          },],
          address: 'Боконбаева 177',
          phone: '+996553228888',
+         locale: 'en_US',
       },
       twitter: {
          card: 'summary_large_image',
          title: t('title'),
          url: 'https://norris.kg/', 
          description: t('description'),
-         image: '/logo_norris.png',
+         images: ['https://norris.kg/favicon.ico'],
       }
    };
 }
