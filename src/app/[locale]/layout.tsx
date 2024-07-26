@@ -45,19 +45,19 @@ export async function generateMetadata() {
             // height: 200,
           }],
       },
-      robots: {
-         index: false,
-         follow: true,
-         nocache: true,
-         googleBot: {
-           index: true,
-           follow: false,
-           noimageindex: true,
-           'max-video-preview': -1,
-           'max-image-preview': 'large',
-           'max-snippet': -1,
-         },
-       },
+      // robots: {
+      //    index: false,
+      //    follow: true,
+      //    nocache: true,
+      //    googleBot: {
+      //      index: true,
+      //      follow: false,
+      //      noimageindex: true,
+      //      'max-video-preview': -1,
+      //      'max-image-preview': 'large',
+      //      'max-snippet': -1,
+      //    },
+      //  },
        alternates: {
         canonical: 'https://www.norris.kg/',
         languages: {
