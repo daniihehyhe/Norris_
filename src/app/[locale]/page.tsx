@@ -8,16 +8,16 @@ import ComponentC from './home/ComponentC';
 import ComponentD from './home/ComponentD';
 import TypesSliderItemSmartHome from '@/app/[locale]/home/TypesSliderItemSmartHome';
 import { useTranslations } from 'next-intl';
-import Head from 'next/head';
+// import Head from 'next/head';
 import SecurityFeatures from './home/SecurityFeatures';
-import CustomSlider from '@/components/CustomSlider';
+// import CustomSlider from '@/components/CustomSlider';
 
 
 const Page = () => {
   const t = useTranslations('mainMeta');
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta property="og:url" content="https://norris.kg" />
         <meta property="og:title" content={t('title')} />
         <meta property="og:description" content={t('description')} />
@@ -32,7 +32,7 @@ const Page = () => {
         <link rel="alternate" hrefLang="ru" href="https://norris.kg/ru" />
         <link rel="alternate" hrefLang="kg" href="https://norris.kg/kg" />
         <link rel="alternate" hrefLang="kz" href="https://norris.kg/kz" />
-      </Head>
+      </Head> */}
       <MainNorris />
       <SecurityFeatures />
       <TypesSmartHome />

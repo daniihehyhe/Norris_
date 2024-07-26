@@ -5,6 +5,7 @@ import TheHeader from '../../components/TheHeader';
 import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
 import LinkPage from '@/components/LinkPage';
+import Head from 'next/head';
 
 export async function generateMetadata() {
    const t = await getTranslations('mainMeta');
@@ -21,17 +22,18 @@ export async function generateMetadata() {
       openGraph: {
          title: t('title'),
          description: t('description'),
-         type: 'website', // Вы можете изменить тип в зависимости от вашего контента
-         url: 'https://norris.kg/favicon.ico', // URL вашей страницы
-         images: '/logo_norris.png?v=4' , 
+         type: 'website',
+         url: 'https://norris.kg/', // URL вашей страницы
+         image: '/logo_norris.png',
          address: 'Боконбаева 177',
          phone: '+996553228888',
       },
       twitter: {
-        card: 'summary_large_image',
-        title: t('title'),
-        description: t('description'),
-        images: 'https://norris.kg/favicon.ico', 
+         card: 'summary_large_image',
+         title: t('title'),
+         url: 'https://norris.kg/', 
+         description: t('description'),
+         image: '/logo_norris.png',
       }
    };
 }
@@ -51,6 +53,12 @@ const RootLayout: React.FC<Props> = ({
 
    return (
       <html lang={locale}>
+         <Head>
+            <link rel="alternate" hrefLang="en" href="https://norris.kg/en" />
+            <link rel="alternate" hrefLang="ru" href="https://norris.kg/ru" />
+            <link rel="alternate" hrefLang="kg" href="https://norris.kg/kg" />
+            <link rel="alternate" hrefLang="kz" href="https://norris.kg/kz" />
+         </Head>
          <body className="font-Montserrat">
             <NextIntlClientProvider messages={messages}>
                <ThemeProvider>
