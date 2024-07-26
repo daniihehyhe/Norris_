@@ -26,7 +26,7 @@ export async function generateMetadata() {
          type: 'website',
          url: 'https://norris.kg/', // URL вашей страницы
          images: [ {
-            url: 'https://nextjs.org/og.png', // Must be an absolute URL
+            url: 'https://norris.kg/favicon.ico', // Must be an absolute URL
             width: 800,
             height: 600,
           },],
@@ -39,7 +39,11 @@ export async function generateMetadata() {
          title: t('title'),
          url: 'https://norris.kg/', 
          description: t('description'),
-         images: ['https://nextjs.org/og.png'],
+         images: [{
+            url: 'https://norris.kg/favicon.ico', // Must be an absolute URL
+            width: 800,
+            height: 600,
+          }],
       },
       robots: {
          index: false,
