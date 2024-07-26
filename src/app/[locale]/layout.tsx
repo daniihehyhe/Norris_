@@ -27,7 +27,7 @@ export async function generateMetadata() {
          description: t('description'),
          url: 'https://norris.kg/', // URL вашей страницы
          images: [ {
-            url: 'https://norris.kg/images/logo_norris.png?v=4', // Must be an absolute URL
+            url: 'https://norris.kg/opengraph-image.png', // Must be an absolute URL
             width: 300,
             height: 300,
           },],
@@ -42,7 +42,7 @@ export async function generateMetadata() {
          title: t('title'),
          description: t('description'),
          images: [{
-            url: 'https://norris.kg/images/logo_norris.png?v=4', // Must be an absolute URL
+            url: 'https://norris.kg/opengraph-image.png', // Must be an absolute URL
             width: 200,
             height: 200,
           }],
