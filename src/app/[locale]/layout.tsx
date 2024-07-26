@@ -6,8 +6,6 @@ import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
 import LinkPage from '@/components/LinkPage';
 
-
-
 export async function generateMetadata() {
    const t = await getTranslations('mainMeta');
 
@@ -21,28 +19,30 @@ export async function generateMetadata() {
          shortcut: ['/apple-touch-icon.png'],
       },
       openGraph: {
+         site_name:"norris.kg",
          title: t('title'),
-         description: t('description'),
          type: 'website',
+         description: t('description'),
          url: 'https://norris.kg/', // URL вашей страницы
          images: [ {
             url: 'https://www.norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_norris.8bb0ae4d.png&w=256&q=75', // Must be an absolute URL
-            width: 200,
-            height: 200,
+            // width: 300,
+            // height: 300,
           },],
          address: 'Боконбаева 177',
          phone: '+996553228888',
          locale: 'en_US',
       },
       twitter: {
+         site_name:"norris.kg",
+         url: 'https://norris.kg/', 
          card: 'summary_large_image',
          title: t('title'),
-         url: 'https://norris.kg/', 
          description: t('description'),
          images: [{
             url: 'https://www.norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_norris.8bb0ae4d.png&w=256&q=75', // Must be an absolute URL
-            width: 200,
-            height: 200,
+            // width: 200,
+            // height: 200,
           }],
       },
       robots: {
