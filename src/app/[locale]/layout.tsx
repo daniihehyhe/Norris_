@@ -5,39 +5,9 @@ import TheHeader from '../../components/TheHeader';
 import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
 import LinkPage from '@/components/LinkPage';
-import Head from 'next/head';
-import type { Metadata } from 'next'
- 
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-   canonical: 'https://www.norris.kg/',
-   languages: {
-     'en-US': 'https://www.norris.kg/en',
-     'ka': 'https://www.norris.kg/kz',
-     'kg': 'https://www.norris.kg/kg',
-     'ru': 'https://www.norris.kg/ru',
-   },
-   media: {
-     'only screen and (max-width: 600px)': 'https://nextjs.org/mobile',
-   },
-   types: {
-     'application/rss+xml': 'https://nextjs.org/rss',
-   },
- },
-}
+
+
+
 export async function generateMetadata() {
    const t = await getTranslations('mainMeta');
 
@@ -70,7 +40,29 @@ export async function generateMetadata() {
          url: 'https://norris.kg/', 
          description: t('description'),
          images: ['https://norris.kg/favicon.ico'],
-      }
+      },
+      robots: {
+         index: false,
+         follow: true,
+         nocache: true,
+         googleBot: {
+           index: true,
+           follow: false,
+           noimageindex: true,
+           'max-video-preview': -1,
+           'max-image-preview': 'large',
+           'max-snippet': -1,
+         },
+       },
+       alternates: {
+        canonical: 'https://www.norris.kg/',
+        languages: {
+          'en-US': 'https://www.norris.kg/en',
+          'ka': 'https://www.norris.kg/kz',
+          'kg': 'https://www.norris.kg/kg',
+          'ru': 'https://www.norris.kg/ru',
+        },
+      },
    };
 }
 
@@ -89,12 +81,6 @@ const RootLayout: React.FC<Props> = ({
 
    return (
       <html lang={locale}>
-         <Head>
-            <link rel="alternate" hrefLang="en" href="https://norris.kg/en" />
-            <link rel="alternate" hrefLang="ru" href="https://norris.kg/ru" />
-            <link rel="alternate" hrefLang="kg" href="https://norris.kg/kg" />
-            <link rel="alternate" hrefLang="kz" href="https://norris.kg/kz" />
-         </Head>
          <body className="font-Montserrat">
             <NextIntlClientProvider messages={messages}>
                <ThemeProvider>
