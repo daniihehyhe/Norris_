@@ -26,9 +26,9 @@ export async function generateMetadata() {
          type: 'website',
          url: 'https://norris.kg/', // URL вашей страницы
          images: [ {
-            url: 'https://norris.kg/favicon.ico', // Must be an absolute URL
-            width: 800,
-            height: 600,
+            url: 'https://www.norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_norris.8bb0ae4d.png&w=256&q=75', // Must be an absolute URL
+            width: 200,
+            height: 200,
           },],
          address: 'Боконбаева 177',
          phone: '+996553228888',
@@ -40,9 +40,9 @@ export async function generateMetadata() {
          url: 'https://norris.kg/', 
          description: t('description'),
          images: [{
-            url: 'https://norris.kg/favicon.ico', // Must be an absolute URL
-            width: 800,
-            height: 600,
+            url: 'https://www.norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_norris.8bb0ae4d.png&w=256&q=75', // Must be an absolute URL
+            width: 200,
+            height: 200,
           }],
       },
       robots: {
