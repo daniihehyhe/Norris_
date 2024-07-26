@@ -4,8 +4,6 @@ import { ThemeProvider } from '../../contexts/ThemeContext';
 import TheHeader from '../../components/TheHeader';
 import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
-import logo from '@public/images/logo_norris.png'
-
 import LinkPage from '@/components/LinkPage';
 
 export async function generateMetadata() {
@@ -24,12 +22,14 @@ export async function generateMetadata() {
          title: t('title'),
          type: 'website',
          description: t('description'),
-         url: 'https://norris.kg/', // URL вашей страницы
-         images: [ {
-            url: 'https://norris.kg/opengraph-image.png', // Must be an 
-          },],
-         address: 'Боконбаева 177',
-         phone: '+996553228888',
+         images: [
+            {
+              url: 'https://norris.kg/images/opengraph-image.png', // Must be an absolute URL
+              width: 1200,
+              height: 630,
+            },
+         ],
+         url: 'https://norris.kg/', 
          locale: 'en_US',
       },
       twitter: {
@@ -38,9 +38,13 @@ export async function generateMetadata() {
          card: 'summary_large_image',
          title: t('title'),
          description: t('description'),
-         images: [{
-            url: 'https://norris.kg/opengraph-image.png', 
-          }],
+         images: [
+            {
+              url: 'https://norris.kg/images/opengraph-image.png', // Must be an absolute URL
+              width: 1200,
+              height: 630,
+            },
+         ],
       },
       robots: {
          index: false,
