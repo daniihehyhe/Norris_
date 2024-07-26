@@ -4,6 +4,8 @@ import { ThemeProvider } from '../../contexts/ThemeContext';
 import TheHeader from '../../components/TheHeader';
 import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
+import logo from '@public/images/logo_norris.png'
+
 import LinkPage from '@/components/LinkPage';
 
 export async function generateMetadata() {
@@ -25,9 +27,9 @@ export async function generateMetadata() {
          description: t('description'),
          url: 'https://norris.kg/', // URL вашей страницы
          images: [ {
-            url: 'https://www.norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_norris.8bb0ae4d.png&w=256&q=75', // Must be an absolute URL
-            // width: 300,
-            // height: 300,
+            url: 'https://norris.kg/images/logo_norris.png?v=4', // Must be an absolute URL
+            width: 300,
+            height: 300,
           },],
          address: 'Боконбаева 177',
          phone: '+996553228888',
@@ -40,24 +42,24 @@ export async function generateMetadata() {
          title: t('title'),
          description: t('description'),
          images: [{
-            url: 'https://www.norris.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_norris.8bb0ae4d.png&w=256&q=75', // Must be an absolute URL
-            // width: 200,
-            // height: 200,
+            url: 'https://norris.kg/images/logo_norris.png?v=4', // Must be an absolute URL
+            width: 200,
+            height: 200,
           }],
       },
-      // robots: {
-      //    index: false,
-      //    follow: true,
-      //    nocache: true,
-      //    googleBot: {
-      //      index: true,
-      //      follow: false,
-      //      noimageindex: true,
-      //      'max-video-preview': -1,
-      //      'max-image-preview': 'large',
-      //      'max-snippet': -1,
-      //    },
-      //  },
+      robots: {
+         index: false,
+         follow: true,
+         nocache: true,
+         googleBot: {
+           index: true,
+           follow: false,
+           noimageindex: true,
+           'max-video-preview': -1,
+           'max-image-preview': 'large',
+           'max-snippet': -1,
+         },
+       },
        alternates: {
         canonical: 'https://www.norris.kg/',
         languages: {
