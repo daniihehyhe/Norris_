@@ -26,7 +26,7 @@ export async function generateMetadata() {
          type: 'website',
          url: 'https://norris.kg/', // URL вашей страницы
          images: [ {
-            url: 'https://norris.kg/favicon.ico', // Must be an absolute URL
+            url: 'logo_norris.png', // Must be an absolute URL
             width: 800,
             height: 600,
           },],
@@ -39,7 +39,7 @@ export async function generateMetadata() {
          title: t('title'),
          url: 'https://norris.kg/', 
          description: t('description'),
-         images: ['https://norris.kg/favicon.ico'],
+         images: ['logo_norris.png'],
       },
       robots: {
          index: false,
