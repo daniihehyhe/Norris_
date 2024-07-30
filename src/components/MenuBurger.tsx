@@ -104,7 +104,7 @@ const MenuBurger: React.FC<MenuProps> = ({ onClose }) => {
   return (
     <main className="fixed top-0 left-0 h-screen z-50 w-full bg-gray-200 dark:bg-gray-900 p-4 md:mx-auto overflow-y-auto">
       <section className="flex container mx-auto relative flex-col-reverse gap-5 md:gap-0 md:flex-row justify-between items-center md:mb-5">
-        <Link href="/"  rel="noopener noreferrer">
+        <Link href="/"  rel="canonical">
           <Image loading='lazy'
             onClick={onClose}
             src={theme === "light" ? logo.src : whiteLogo.src}

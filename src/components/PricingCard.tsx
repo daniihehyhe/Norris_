@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface PricingCardProps {
@@ -42,11 +43,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
                     </li>
                 ))}
             </ul>
-            <a
-                href="#"
+            <Link href="/"  rel="canonical"
                 className={`block mt-6 text-center text-white py-2 rounded-full ${buttonColor} hover:opacity-90 transition-opacity duration-300`}>
                 {buttonLabel}
-            </a>
+            </Link>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 
@@ -18,9 +19,9 @@ function NotFound() {
                         The page you are looking for might have been removed,
                         had its name changed, or is temporarily unavailable.
                     </p>
-                    <a href="/" className="text-blue-500 hover:underline">
+                    <Link href="/"  rel="canonical"  className="text-blue-500 hover:underline">
                         Go to Homepage
-                    </a>
+                    </Link>
                 </div>
             </body>
         </html>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.norris.kg/</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/" />
+
+  </url>
+  <url>
+    <loc>https://www.norris.kg/about</loc>
+    <lastmod>2024-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/about" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/about" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/about" />
+
+  </url>
+  <url>
+    <loc>https://www.norris.kg/contact</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/contact" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/contact" />
+  </url>
+   <url>
+    <loc>https://www.norris.kg/services</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/services" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/services" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/services" />
+  </url>
+   <url>
+    <loc>https://www.norris.kg/portfolio</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6/priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/portfolio" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/portfolio" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/portfolio" />
+  </url>
+   <url>
+    <loc>https://www.norris.kg/articles</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles" />
+  </url>
+   <url>
+    <loc>https://www.norris.kg/articles/powerSystems</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles/powerSystems" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles/powerSystems" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles/powerSystems" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles/powerSystems" />
+  </url>
+  <url>
+    <loc>https://www.norris.kg/articles/climateControl</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles/climateControl" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles/climateControl" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles/climateControl" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles/climateControl" />
+  </url>
+  <url>
+    <loc>https://www.norris.kg/articles/homeAutomation</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles/homeAutomation" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles/homeAutomation" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles/homeAutomation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles/homeAutomation" />
+  </url>
+  <url>
+    <loc>https://www.norris.kg/articles/multimedia</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles/multimedia" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles/multimedia" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles/multimedia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles/multimedia" />
+  </url>
+  <url>
+    <loc>https://www.norris.kg/articles/SmartHomeOverview</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles/SmartHomeOverview" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles/SmartHomeOverview" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles/SmartHomeOverview" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles/SmartHomeOverview" />
+  </url>
+  <url>
+    <loc>https://www.norris.kg/articles/smartHomeProject</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles/smartHomeProject" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles/smartHomeProject" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles/smartHomeProject" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles/smartHomeProject" />
+  </url>
+  <url>
+    <loc>https://www.norris.kg/articles/smartLighting</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.norris.kg/ru/articles/smartLighting" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://www.norris.kg/kg/articles/smartLighting" />
+    <xhtml:link rel="alternate" hreflang="kz" href="https://www.norris.kg/kz/articles/smartLighting" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.norris.kg/en/articles/smartLighting" />
+  </url>
+  <!-- Добавьте дополнительные URL так же, как показано выше -->
+</urlset>

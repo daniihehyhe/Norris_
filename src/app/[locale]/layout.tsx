@@ -5,6 +5,8 @@ import TheHeader from '../../components/TheHeader';
 import TheFooter from '../../components/TheFooter';
 import { getTranslations } from 'next-intl/server';
 import LinkPage from '@/components/LinkPage';
+import Head from 'next/head';
+import GoogleTagManager from '@/components/GoogleTagManager';
 
 export async function generateMetadata() {
    const t = await getTranslations('mainMeta');
@@ -87,6 +89,9 @@ const RootLayout: React.FC<Props> = ({
 
    return (
       <html lang={locale}>
+         <head>
+<GoogleTagManager/>
+         </head>
          <body className="font-Montserrat">
             <NextIntlClientProvider messages={messages}>
                <ThemeProvider>

@@ -45,7 +45,7 @@ function SocialLink() {
         </Link>
     </li>
     <li>
-        <Link target="_blank"  rel="noopener noreferrer" href="mailto:sale@norris.kg">
+        <Link target="_blank"  rel="nofollow" href="mailto:sale@norris.kg">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -58,7 +58,7 @@ function SocialLink() {
         </Link>
     </li>
     <li>
-        <Link target="_blank"  rel="noopener noreferrer" href="https://tiktok.com/norris.kg">
+        <Link target="_blank"  rel="nofollow" href="https://tiktok.com/norris.kg">
             <svg
                 fill="#000000"
                 width="24px"

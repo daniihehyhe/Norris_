@@ -90,7 +90,7 @@ const container = {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5 }}
                     className="flex items-center gap-4">
-                    <Link  rel="noopener noreferrer" href="/">
+                    <Link  rel="canonical" href="/">
                         <Image loading='lazy'
                             src={theme === "light" ? logo.src : whiteLogo.src}
                             width={100}
