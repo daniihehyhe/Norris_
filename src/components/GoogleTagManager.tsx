@@ -4,7 +4,7 @@ import React from 'react';
 const GoogleTagManager: React.FC = () => {
   return (
     <>
-      {/* Google Tag Manager */}
+      {/* Google Tag Manager for GTM-557XBV6F */}
       <Script id="google-tag-manager" strategy="afterInteractive">
         {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,6 +15,36 @@ const GoogleTagManager: React.FC = () => {
         `}
       </Script>
       {/* End Google Tag Manager */}
+
+      {/* Google tag (gtag.js) for G-JKBWEP1NMS */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-JKBWEP1NMS"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init-G-JKBWEP1NMS" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JKBWEP1NMS');
+        `}
+      </Script>
+
+      {/* Google tag (gtag.js) for G-YJ8Z2LPVYG */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-YJ8Z2LPVYG"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init-G-YJ8Z2LPVYG" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YJ8Z2LPVYG');
+        `}
+      </Script>
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
