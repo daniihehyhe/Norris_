@@ -16,7 +16,7 @@ export async function generateMetadata() {
       description: t('description'),
       keywords: t('keywords'),
       icons: {
-         icon: ['/logo_norris.png?v=4'],
+         icon: ['/android-chrome-192x192?v=4'],
          apple: ['/apple-touch-icon.png?v=4'],
          shortcut: ['/apple-touch-icon.png'],
       },
