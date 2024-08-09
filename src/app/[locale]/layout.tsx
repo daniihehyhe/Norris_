@@ -49,7 +49,7 @@ export async function generateMetadata() {
          ],
       },
       robots: {
-         index: false,
+         index: true,
          follow: true,
          nocache: true,
          googleBot: {

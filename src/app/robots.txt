@@ -1,6 +1,3 @@
 User-agent: *
-Disallow: /private/
-Disallow: /admin/
-Disallow: /not-found/
 Allow: /
 Sitemap: https://www.norris.kg/sitemap.xml
